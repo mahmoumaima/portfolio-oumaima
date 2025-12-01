@@ -1,4 +1,4 @@
-body {
+﻿body {
     background: #f7f8fc;
     color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -85,8 +85,7 @@ body {
     position: relative;
     min-height: 75vh;
     padding: 120px 0 100px;
-    background: linear-gradient(135deg, rgba(15, 15, 15, 0.88), rgba(15, 15, 35, 0.75)),
-                url('https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=1600&q=80') center/cover;
+    background: center/cover;
     overflow: hidden;
     color: #fff;
 }
@@ -435,38 +434,38 @@ body {
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.05);
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .live-preview .mockup-track {
     display: flex;
     flex-direction: column;
-    animation: none;
-    gap: 0;
     width: 100%;
-    padding: 0;
-    box-sizing: border-box;
+    height: calc(var(--mockup-height) * 6); /* 6 visuels empilés */
+    transform: translateY(0);
+    animation: none;
+    transition: transform 0.6s ease;
+    pointer-events: auto;
 }
 .live-preview .mockup-track img {
     width: 100%;
     height: var(--mockup-height);
+    object-fit: fill;
     display: block;
-    object-fit: cover;
 }
-.mockup-screen:hover .mockup-track {
-    animation: scrollMockup 30s ease-in-out forwards;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+
+
+.live-preview .mockup-screen:hover .mockup-track,
+.live-preview .mockup-screen:focus-within .mockup-track {
+    animation: mockup-scroll-vert-once 50s linear forwards;
 }
-@keyframes scrollMockup {
+
+@keyframes mockup-scroll-vert-once {
     0% { transform: translateY(0); }
-    100% { transform: translateY(calc(-100% + var(--mockup-height))); }
+    100% { transform: translateY(calc(-1 * var(--mockup-height) * 5)); }
 }
 .live-preview video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .live-preview label {
     display: block;
@@ -494,6 +493,11 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-height: 504px;
+    overflow: visible;
+}
+.preview-summary h3 {
+    color: var(--primary-color);
 }
 .preview-metrics {
     margin: 22px 0;
@@ -533,6 +537,11 @@ body {
 }
 .preview-summary .demo-results-list {
     margin-top: 20px;
+    max-height: var(--mockup-height);
+    overflow-y: auto;
+    padding-right: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) rgba(0,0,0,0.06);
 }
 @media (max-width: 992px) {
     .project-preview-box {
@@ -548,14 +557,14 @@ body {
     .project-preview-box .project-preview-text {
         order: 2;
     }
-    .live-preview .mockup-screen {
-        --mockup-height: 300px;
-    }
+    .live-preview .mockup-screen { --mockup-height: 320px; }
+    .preview-summary { max-height: none; overflow: visible; }
+    .preview-summary .demo-results-list { max-height: none; overflow: visible; }
 }
 @media (max-width: 600px) {
-    .live-preview .mockup-screen {
-        --mockup-height: 240px;
-    }
+    .live-preview .mockup-screen { --mockup-height: 260px; }
+    .preview-summary { max-height: none; overflow: visible; }
+    .preview-summary .demo-results-list { max-height: none; overflow: visible; }
     .project-preview-box {
         padding: 30px 20px;
         gap: 16px;

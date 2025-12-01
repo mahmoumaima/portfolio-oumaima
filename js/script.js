@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
   // --- Navigation : burger, smooth scroll, active section
   const hamburger = document.querySelector('.hamburger');
   const navMenu = document.querySelector('.nav-menu');
@@ -301,3 +301,4 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log('%c👋 Bienvenue sur mon portfolio!', 'color: var(--red); font-size: 24px; font-weight: bold;');
   console.log('%cDéveloppé par Oumaima', 'color: #764BA2; font-size: 14px;');
 });
+

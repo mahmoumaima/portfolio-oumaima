@@ -1,0 +1,23 @@
+# Dépendances et builds
+node_modules/
+.parcel-cache/
+dist/
+build/
+coverage/
+
+# Environnements
+.env
+.env.local
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/
+*.log
+Thumbs.db
+
+# Archives temporaires
+*.zip
+*.tar
+*.gz
+resources/

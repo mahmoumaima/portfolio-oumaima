@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSE Avocats - Tests QA | Portfolio Oumaima</title>
+    <link rel="shortcut icon" href="../assets/favicone.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lib.min.css">
+    <link rel="stylesheet" href="../css/global.min.css">
+    <link rel="stylesheet" href="../css/global.responsive.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/projet-template.css">
+</head>
+<body id="top" class="project-template">
+    <header class="project-header">
+        <nav class="navbar bootsnav bg-transparent navbar-top nav-box-width navbar-transparent-no-sticky">
+            <div class="container-fluid nav-header-container h-50px sm-h-70px">
+                <div class="col d-none d-md-block text-start ps-0">
+                    <div class="header-social-icon border-none no-padding-left no-margin-left">
+                        <a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a>
+                        <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="masthead-logo-centered">
+                    <img src="../assets/logo.png" alt="Logo Oumaima">
+                </div>
+                <div class="nav-container">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html">Portfolio</a></li>
+                        <li><a href="#overview" class="active">Projet</a></li>
+                        <li><a href="#ressources">Ressources</a></li>
+                        <li><a href="#repo">Code</a></li>
+                        <li><a href="#live-preview">Démonstration</a></li>
+                    </ul>
+                    <div class="hamburger"><span></span><span></span><span></span></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="project-masthead" style="background-image: linear-gradient(135deg, rgba(20,20,20,0.85), rgba(40,40,60,0.75)), url('../assets/projets/jse/jse.png');">
+        <div class="container">
+            <span class="masthead-badge animate__animated animate__fadeInDown">
+                <i class="fa-solid fa-vial"></i> Tests Fonctionnels
+            </span>
+            <h1 class="project-title animate__animated animate__fadeInUp">JSE Avocats</h1>
+            <p class="project-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                Tests fonctionnels d'un site WordPress de cabinet d'avocats : exécution du cahier de recette sur Notion, tests exploratoires thématiques et documentation des anomalies.
+            </p>
+            <div class="masthead-tags animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="tag tag-icon"><i class="fa-solid fa-clipboard-check"></i> Cahier de recette</span>
+                <span class="tag tag-icon"><i class="fa-solid fa-magnifying-glass"></i> Tests exploratoires</span>
+                <span class="tag tag-icon"><i class="fa-brands fa-docker"></i> Docker</span>
+                <span class="tag tag-icon"><i class="fa-brands fa-wordpress"></i> WordPress</span>
+            </div>
+            <div class="masthead-cta animate__animated animate__fadeInUp animate__delay-1s">
+                <a href="#ressources" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explorer les ressources</a>
+                <a href="#live-preview" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Voir le rendu</a>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="section-block section-light">
+        <div class="container">
+            <div class="section-title">Aperçu général</div>
+            <div class="section-heading">Vision, portée et résultats</div>
+            <div class="project-info-grid notebook-layout">
+                <div class="card-glass">
+                    <h3>Résumé du projet</h3>
+                    <p>
+                        Intégration d'une agence web en tant que stagiaire QA Tester. L'agence travaille sur le site d'un cabinet d'avocats 
+                        éco-responsables (JSE Avocats). Mission confiée par Sacha, référente QA : tester la première version du site WordPress 
+                        en cours de développement.
+                    </p>
+                    <p>
+                        Double approche de tests : exécuter les tests fonctionnels à partir d'un cahier de recette fourni (Notion), 
+                        puis mener des sessions de tests exploratoires pour identifier les anomalies non prévues dans le cahier. 
+                        L'environnement de test fonctionne en local via Docker.
+                    </p>
+                    <ul class="functionalities">
+                        <li><strong>Installation Docker :</strong> télécharger le conteneur, lancer l'environnement et vérifier l'accès au site local (localhost:8081).</li>
+                        <li><strong>Cahier de recette :</strong> lire l'intégralité du cahier Notion, exécuter les tests étape par étape, noter les résultats (OK/KO) et commentaires.</li>
+                        <li><strong>Tests exploratoires :</strong> 3 sessions thématiques (10-15 min chacune) - données (textes longs, caractères spéciaux), préférences (navigation privée, différents navigateurs, redimensionnement), tests libres sur l'interface.</li>
+                        <li><strong>Documentation anomalies :</strong> ajouter chaque anomalie découverte dans le cahier avec format "test exploratoire #X", étapes de reproduction et résultat obtenu.</li>
+                    </ul>
+                </div>
+                <div class="card-glass">
+                    <h3>Détails clés</h3>
+                    <ul class="project-meta">
+                        <li>
+                            <span class="meta-title"><i class="fa-solid fa-building-columns"></i> Client</span>
+                            <span class="meta-value">JSE Avocats, cabinet d'avocats éco-responsables</span>
+                        </li>
+                        <li>
+                            <span class="meta-title"><i class="fa-solid fa-user-tie"></i> Référente QA</span>
+                            <span class="meta-value">Sacha</span>
+                        </li>
+                        <li>
+                            <span class="meta-title"><i class="fa-solid fa-user-gear"></i> Rôle</span>
+                            <span class="meta-value">Stagiaire QA Tester</span>
+                        </li>
+                        <li>
+                            <span class="meta-title"><i class="fa-solid fa-calendar-days"></i> Durée</span>
+                            <span class="meta-value">30h</span>
+                        </li>
+                        <li>
+                            <span class="meta-title"><i class="fa-solid fa-clock"></i> Sessions exploratoires</span>
+                            <span class="meta-value">3 thèmes × 10-15 min (max 1h total)</span>
+                        </li>
+                        <li>
+                            <span class="meta-title"><i class="fa-solid fa-diagram-project"></i> Livrables</span>
+                            <span class="meta-value">Cahier de recette complété sur Notion avec anomalies documentées</span>
+                        </li>
+                    </ul>
+                    <h3>Stack & Outils</h3>
+                    <div class="tech-grid">
+                        <span class="tech-tile"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="tech-tile"><i class="fa-brands fa-wordpress"></i> WordPress</span>
+                        <span class="tech-tile"><i class="fa-solid fa-note-sticky"></i> Notion</span>
+                        <span class="tech-tile"><i class="fa-solid fa-clipboard-check"></i> Tests fonctionnels</span>
+                        <span class="tech-tile"><i class="fa-solid fa-magnifying-glass"></i> Tests exploratoires</span>
+                        <span class="tech-tile"><i class="fa-brands fa-github"></i> GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ressources" class="section-block section-muted">
+        <div class="container">
+            <div class="section-title">Ressources</div>
+            <div class="section-heading">Environnement, cahier de recette & méthodologie</div>
+            <div class="resource-slider">
+                <button class="slider-btn slider-btn-prev" data-direction="prev" aria-label="Slide précédent"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="resource-slider-window">
+                    <div class="resource-slider-track">
+                    <article class="resource-card">
+                        <div class="resource-card-content">
+                            <span>Environnement</span>
+                            <h4>Installation Docker & Site local</h4>
+                            <p>Repository GitHub avec conteneur Docker préconfiguré. Instructions détaillées dans le README pour installer Docker, 
+                            démarrer le site WordPress et accéder à l'URL locale (http://localhost:8081).</p>
+                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
+                                <li>Télécharger et installer Docker Desktop</li>
+                                <li>Cloner le repository JSE-Avocats-V2</li>
+                                <li>Exécuter <code>docker compose up</code></li>
+                                <li>Vérifier l'accès au site local</li>
+                            </ul>
+                            <a href="https://github.com/OpenClassrooms-Student-Center/JSE-Avocats-V2" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Repository GitHub</a>
+                        </div>
+                        <div class="resource-card-media">
+                            <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=1000&q=80" alt="Docker">
+                        </div>
+                    </article>
+                    <article class="resource-card">
+                        <div class="resource-card-content">
+                            <span>Cahier de recette</span>
+                            <h4>Plan de tests Notion</h4>
+                            <p>Cahier de recette structuré sur Notion avec tous les cas de tests à exécuter. Format : cas de test, étapes à suivre, 
+                            résultat attendu, colonnes pour noter le résultat (OK/KO) et les commentaires.</p>
+                            <p style="font-size: 0.9rem; margin-top: 1rem;">
+                                <strong>Tutoriels Notion :</strong> Créer un compte gratuit, dupliquer une page Notion partagée, 
+                                rendre publique une page pour partage avec mentor/évaluateur.
+                            </p>
+                            <a href="https://www.notion.com/" target="_blank" class="btn btn-primary"><i class="fa-solid fa-note-sticky"></i> Accéder à Notion</a>
+                        </div>
+                        <div class="resource-card-media">
+                            <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1000&q=80" alt="Notion">
+                        </div>
+                    </article>
+                    <article class="resource-card">
+                        <div class="resource-card-content">
+                            <span>Méthodologie tests</span>
+                            <h4>Exécution du cahier de recette</h4>
+                            <p>Approche méthodique pour exécuter les tests fonctionnels :</p>
+                            <ol style="font-size: 0.9rem; margin-top: 1rem;">
+                                <li><strong>Lecture complète :</strong> prendre connaissance de tous les tests pour avoir une vision globale</li>
+                                <li><strong>Exécution étape par étape :</strong> suivre le cahier et dérouler les étapes décrites</li>
+                                <li><strong>Notation résultats :</strong> indiquer OK si conforme, KO si anomalie détectée</li>
+                                <li><strong>Commentaires :</strong> pour chaque KO, préciser le résultat obtenu (ex: "Le lien XXX ne fonctionne pas")</li>
+                            </ol>
+                        </div>
+                        <div class="resource-card-media">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" alt="Méthodologie">
+                        </div>
+                    </article>
+                    <article class="resource-card">
+                        <div class="resource-card-content">
+                            <span>Tests exploratoires</span>
+                            <h4>Sessions thématiques</h4>
+                            <p>Préparation et exécution de 3 sessions de tests exploratoires (10-15 min chacune) :</p>
+                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
+                                <li><strong>Session 1 - Données :</strong> tester avec textes très longs, caractères spéciaux, accentués dans les formulaires</li>
+                                <li><strong>Session 2 - Préférences :</strong> navigation privée, refus cookies, différents navigateurs, redimensionnement fenêtre, taille police</li>
+                                <li><strong>Session 3 - Tests libres :</strong> explorer l'interface sans contraintes, chercher des cas d'usage non prévus</li>
+                            </ul>
+                            <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+                                <strong>Documentation :</strong> Pour chaque anomalie → ajouter "test exploratoire #1" dans cahier, 
+                                décrire étapes de reproduction et résultat obtenu.
+                            </p>
+                        </div>
+                        <div class="resource-card-media">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="Tests">
+                        </div>
+                    </article>
+                    </div>
+                </div>
+                <button class="slider-btn slider-btn-next" data-direction="next" aria-label="Slide suivant"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="slider-progress">
+                <div class="slider-progress-line">
+                    <span class="slider-progress-bar"></span>
+                    <span class="slider-progress-dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="repo" class="section-block section-light">
+        <div class="container">
+            <div class="section-title">Code & Delivery</div>
+            <div class="section-heading">Accès Git et Environnement Docker</div>
+            <div class="repo-preview">
+                <div class="card-glass">
+                    <h3>GitHub Repository</h3>
+                    <p>Repository JSE Avocats V2 avec conteneur Docker préconfiguré, README d'installation et fichiers de composition Docker actualisés.</p>
+                    <a href="https://github.com/OpenClassrooms-Student-Center/JSE-Avocats-V2" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Voir le repository</a>
+                </div>
+                <div class="repo-terminal">
+<pre>$ git clone https://github.com/OpenClassrooms-Student-Center/JSE-Avocats-V2.git
+$ cd JSE-Avocats-V2
+
+# Démarrer Docker Desktop
+$ docker compose up
+
+# Ouvrir navigateur : http://localhost:8081
+-------------------------------
+✓ Site WordPress accessible localement
+✓ Prêt pour exécution cahier de recette
+✓ Tests exploratoires possibles</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="live-preview" class="section-block section-muted">
+        <div class="container">
+            <div class="section-title">Live Preview</div>
+            <div class="section-heading">Démonstration des livrables</div>
+            <div class="project-preview-box">
+                <div class="live-preview">
+                    <div class="mockup-screen">
+                        <div class="mockup-track">
+                            <img src="../assets/projets/jse/screen/1.png" alt="Cas de Test">
+                            <img src="../assets/projets/jse/screen/2.png" alt="Tests exploratoires">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-preview-text">
+                    <div class="preview-summary">
+                        <h3>Résultats finaux</h3>
+                        <p>
+                            Campagne de tests complète sur le site JSE Avocats : cahier de recette entièrement exécuté avec statuts documentés, 
+                            3 sessions de tests exploratoires menées selon les thématiques définies, et toutes les anomalies détectées 
+                            soigneusement documentées dans le cahier Notion.
+                        </p>
+                        <ul class="demo-results-list">
+                            <li><strong>Environnement maîtrisé :</strong> installation Docker réussie, site WordPress fonctionnel en local (localhost:8081).</li>
+                            <li><strong>Tests fonctionnels :</strong> cahier de recette Notion exécuté intégralement, chaque test noté (OK/KO) avec commentaires précis.</li>
+                            <li><strong>Tests exploratoires :</strong> 3 sessions thématiques réalisées (données, préférences, tests libres) dans le temps imparti (max 1h).</li>
+                            <li><strong>Anomalies documentées :</strong> chaque bug trouvé ajouté au cahier avec format "test exploratoire #X", étapes de reproduction détaillées.</li>
+                            <li><strong>Approche méthodique :</strong> lecture complète du cahier avant exécution, pas de tests redondants, focus sur la valeur ajoutée.</li>
+                            <li><strong>Curiosité QA :</strong> recherche de cas d'usage non prévus (ex: 2000 caractères dans champ email), différents navigateurs testés.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2 class="visually-hidden">Footer Section</h2>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-5 social-style-3 text-center text-lg-start sm-margin-10px-bottom">
+                    <div class="social-icon-style-8 d-inline-block align-middle">
+                        <ul class="small-icon mb-0">
+                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-content col-lg-4 col-md-2 text-center sm-margin-20px-bottom">
+                   <a class="logo" href="#home"><img src="../assets/logo.png" class="default" alt="Pofo" width="105" height="26"></a>
+                </div>
+                <div class="footer-content col-lg-4 col-md-5 text-center alt-font text-small font-weight-500 text-lg-end">
+                    <p>© 2025 Oumaima Mahmoudi</p>
+                </div>
+            </div>
+        </div>
+        <a id="arrow-up" class="scroll-top-arrow" href="#home" aria-label="GO UP"><i class="fa fa-arrow-up"></i></a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

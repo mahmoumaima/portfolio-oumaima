@@ -120,7 +120,7 @@ p {
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -172,7 +172,7 @@ p {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--dark-color);
+    background: crimson;
     transition: var(--transition);
 }
 
@@ -846,6 +846,11 @@ p {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        justify-content: space-between;
+        position: absolute;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -862,9 +867,10 @@ p {
     .nav-menu.active {
         left: 0;
     }
-    
+
     .hamburger {
         display: flex;
+        margin-left: auto;
     }
     
     .metro-grid {

@@ -1,0 +1,86 @@
+﻿# robots.txt - Directives pour Google, Bing et autres moteurs de recherche
+# Dernière mise à jour : 2025-11-02
+
+# ========================================
+# Section 1 : Tous les bots (par défaut)
+# ========================================
+User-agent: *
+Allow: /
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.ico
+Allow: /*.json
+Allow: /*.xml
+
+# Interdire les fichiers temporaires et système
+Disallow: /node_modules/
+Disallow: /.*\.git/
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /.cache/
+Disallow: /.idea/
+Disallow: /.vscode/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# ========================================
+# Section 2 : Configuration Google
+# ========================================
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# ========================================
+# Section 3 : Configuration Bing
+# ========================================
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# ========================================
+# Section 4 : Autres bots populaires
+# ========================================
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ========================================
+# Section 5 : Règles spécifiques pour bots intrusifs
+# ========================================
+User-agent: MJ12bot
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+# ========================================
+# Section 6 : URLs importantes
+# ========================================
+# Sitemap principal
+Sitemap: https://mahmoumaima.github.io/portfolio-oumaima/sitemap.xml
+
+# ========================================
+# Section 7 : Rate Limiting
+# ========================================
+Request-rate: 30/60  # 30 requêtes par 60 secondes (par défaut)
+
+# ========================================
+# Notes importantes :
+# - Ce fichier améliore le SEO et contrôle l'accès des crawlers
+# - Placer ce fichier à la racine du domaine
+# - URL complète : https://mahmoumaima.github.io/portfolio-oumaima/robots.txt
+# - Vérifier régulièrement dans Google Search Console
+# ========================================
