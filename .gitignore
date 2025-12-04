@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dépendances et builds
 node_modules/
 .parcel-cache/
@@ -21,3 +22,6 @@ Thumbs.db
 *.tar
 *.gz
 resources/
+=======
+.DS_Store
+>>>>>>> 765f19d (remplissage projets)
