@@ -5,292 +5,306 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Print it - Carrousel JavaScript | Portfolio Oumaima</title>
+    <meta name="description" content="Projet Print it : dynamisation d'un carrousel JavaScript pour une imprimerie. Manipulation du DOM, événements et animations. Portfolio Oumaima Mahmoudi.">
     <link rel="shortcut icon" href="../assets/favicone.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/lib.min.css">
-    <link rel="stylesheet" href="../css/global.min.css">
-    <link rel="stylesheet" href="../css/global.responsive.min.css">
+    <link rel="stylesheet" href="../css/vendors.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/projet-template.css">
 </head>
-<body id="top" class="project-template">
-    <header class="project-header">
-        <nav class="navbar bootsnav bg-transparent navbar-top nav-box-width navbar-transparent-no-sticky">
-            <div class="container-fluid nav-header-container h-50px sm-h-70px">
-                <div class="col d-none d-md-block text-start ps-0">
-                    <div class="header-social-icon border-none no-padding-left no-margin-left">
-                        <a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a>
-                        <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="masthead-logo-centered">
-                    <img src="../assets/logo.png" alt="Logo Oumaima">
-                </div>
-                <div class="nav-container">
-                    <ul class="nav-menu">
-                        <li><a href="../index.html">Portfolio</a></li>
-                        <li><a href="#overview" class="active">Projet</a></li>
-                        <li><a href="#ressources">Ressources</a></li>
-                        <li><a href="#repo">Code</a></li>
-                        <li><a href="#live-preview">Démonstration</a></li>
-                    </ul>
-                    <div class="hamburger"><span></span><span></span><span></span></div>
-                </div>
+<body id="top" class="page-projet">
+
+    <!-- Navigation flottante -->
+    <header class="entete-projet">
+        <nav class="navbar-projet">
+            <a href="../index.html" class="btn-retour" aria-label="Retour au portfolio">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Portfolio</span>
+            </a>
+            <a href="../index.html" class="logo-projet-centre">
+                <img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi">
+            </a>
+            <div class="nav-projet-actions">
+                <a href="https://github.com/OpenClassrooms-Student-Center/Print-it-JS" class="btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </nav>
     </header>
 
-    <section id="home" class="project-masthead" style="background-image: linear-gradient(135deg, rgba(25,25,25,0.85), rgba(10,10,30,0.75)), url('../assets/projets/print-it/print-it.png');">
-        <div class="container">
-            <span class="masthead-badge animate__animated animate__fadeInDown">
-                <i class="fa-brands fa-js"></i> JavaScript
-            </span>
-            <h1 class="project-title animate__animated animate__fadeInUp">Print it</h1>
-            <p class="project-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+    <!-- HERO - Bannière immersive plein écran -->
+    <section id="hero" class="hero-immersif">
+        <div class="hero-fond">
+            <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1614036634955-ae5e90f9b9eb?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="hero-overlay"></div>
+            <div class="particules-hero"></div>
+        </div>
+
+        <div class="hero-contenu">
+            <div class="hero-badge animate__animated animate__fadeInDown">
+                <span class="badge-icone"><i class="fa-brands fa-js"></i></span>
+                <span class="badge-texte">JavaScript</span>
+            </div>
+
+            <h1 class="hero-titre animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="titre-ligne">Print it</span>
+                <span class="titre-ligne titre-accent">Carrousel</span>
+            </h1>
+
+            <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
                 Dynamisation d'un carrousel avec JavaScript : navigation par flèches, bullet points synchronisés, changement d'images/textes et boucle infinie.
             </p>
-            <div class="masthead-tags animate__animated animate__fadeInUp animate__delay-1s">
-                <span class="tag tag-icon"><i class="fa-brands fa-js"></i> JavaScript</span>
-                <span class="tag tag-icon"><i class="fa-brands fa-html5"></i> HTML5</span>
-                <span class="tag tag-icon"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-                <span class="tag tag-icon"><i class="fa-solid fa-code"></i> Event Listeners</span>
+
+            <div class="hero-tags animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="hero-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="hero-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                <span class="hero-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                <span class="hero-tag"><i class="fa-solid fa-code"></i> Event Listeners</span>
             </div>
-            <div class="masthead-cta animate__animated animate__fadeInUp animate__delay-1s">
-                <a href="#ressources" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explorer les ressources</a>
-                <a href="#live-preview" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Voir le rendu</a>
-            </div>
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
+
+        </div>
+
+        <!-- Indicateur de scroll -->
+        <div class="hero-scroll">
+            <span class="scroll-texte">Découvrir</span>
+            <div class="scroll-ligne"></div>
+            <div class="scroll-cercle">
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
-    <section id="overview" class="section-block section-light">
+    <!-- PRÉSENTATION - Contexte du projet -->
+    <section id="overview" class="bloc-section section-light">
         <div class="container">
-            <div class="section-title">Aperçu général</div>
-            <div class="section-heading">Vision, portée et résultats</div>
-            <div class="project-info-grid notebook-layout">
-                <div class="card-glass">
-                    <h3>Résumé du projet</h3>
-                    <p>
-                        Premier projet freelance en JavaScript : Print it, une petite imprimerie familiale, souhaite dynamiser son site Internet statique. 
-                        Le directeur Lucien envoie un email avec une vidéo explicative du carrousel idéal qu'il souhaite pour mettre en valeur leurs services.
-                    </p>
-                    <p>
-                        Mission : transformer la bannière statique en carrousel interactif fonctionnel. Le site et le CSS sont déjà fournis, 
-                        il faut uniquement coder la partie JavaScript pour gérer la navigation, les transitions et la synchronisation des éléments.
-                    </p>
-                    <ul class="functionalities">
-                        <li><strong>Étape 1 - Flèches statiques :</strong> ajouter les images des flèches (arrow_left.png, arrow_right.png) dans la bannière en suivant les indications CSS.</li>
-                        <li><strong>Étape 2 - Event listeners :</strong> mettre un listener sur chaque flèche, tester avec console.log/alert, différencier clic gauche vs clic droit.</li>
-                        <li><strong>Étape 3 - Bullet points :</strong> ajouter autant de points que d'images dans le tableau slides[], différencier le point actif avec classe CSS spécifique.</li>
-                        <li><strong>Étape 4 - Changement d'images :</strong> au clic flèche droite → changer bullet actif, image et texte (tagLine). Idem flèche gauche pour éléments précédents.</li>
-                        <li><strong>Étape 5 - Boucle infinie :</strong> conditions pour gérer dernière image → première (clic droit) et première → dernière (clic gauche).</li>
-                    </ul>
-                </div>
-                <div class="card-glass">
-                    <h3>Détails clés</h3>
-                    <ul class="project-meta">
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-building-columns"></i> Client</span>
-                            <span class="meta-value">Print it, imprimerie familiale</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-user-tie"></i> Contact</span>
-                            <span class="meta-value">Lucien (Directeur)</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-user-gear"></i> Rôle</span>
-                            <span class="meta-value">Développeur Front-End Freelance</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-calendar-days"></i> Durée</span>
-                            <span class="meta-value">25h</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-diagram-project"></i> Livrables</span>
-                            <span class="meta-value">Carrousel fonctionnel avec navigation fluide et boucle infinie</span>
-                        </li>
-                    </ul>
-                    <h3>Stack & Outils</h3>
-                    <div class="tech-grid">
-                        <span class="tech-tile"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="tech-tile"><i class="fa-brands fa-html5"></i> HTML5</span>
-                        <span class="tech-tile"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-                        <span class="tech-tile"><i class="fa-solid fa-code"></i> DOM</span>
-                        <span class="tech-tile"><i class="fa-solid fa-bolt"></i> Event Listeners</span>
-                        <span class="tech-tile"><i class="fa-brands fa-github"></i> GitHub</span>
-                    </div>
-                </div>
+            <div class="contexte-header-v2">
+                <span class="section-label">Le Contexte</span>
+                <h2 class="section-titre-grand">Comprendre le <span class="texte-degrade">challenge</span></h2>
             </div>
-        </div>
-    </section>
+            <div class="grille-infos-projet disposition-carnet">
+                <div class="carte-verre">
+                    <h3><i class="fa-solid fa-bullseye"></i> Mission</h3>
 
-    <section id="ressources" class="section-block section-muted">
-        <div class="container">
-            <div class="section-title">Ressources</div>
-            <div class="section-heading">Brief, méthodologie & documentation</div>
-            <div class="resource-slider">
-                <button class="slider-btn slider-btn-prev" data-direction="prev" aria-label="Slide précédent"><i class="fa-solid fa-chevron-left"></i></button>
-                <div class="resource-slider-window">
-                    <div class="resource-slider-track">
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Brief client</span>
-                            <h4>Email de Lucien avec vidéo</h4>
-                            <p>Le directeur de Print it explique sa vision du carrousel idéal dans une vidéo explicative. 
-                            Les attentes sont claires : navigation fluide avec flèches, bullets synchronisés et boucle infinie.</p>
-                            <a href="https://user.oc-static.com/upload/2022/06/17/16554564334118_FR_1148_P6_Banner-Printit.png" target="_blank" class="btn btn-primary"><i class="fa-solid fa-video"></i> Voir le brief</a>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=1000&q=80" alt="Brief">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Étapes de développement</span>
-                            <h4>Roadmap du carrousel</h4>
-                            <p>Approche progressive pour construire le carrousel fonctionnel :</p>
-                            <ol style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li>Ajouter les flèches en mode statique (images arrow_left/right.png)</li>
-                                <li>Mettre event listeners sur les flèches + test console.log</li>
-                                <li>Générer les bullet points dynamiquement (1 par slide)</li>
-                                <li>Coder la navigation : changement image, texte et bullet au clic</li>
-                                <li>Implémenter la boucle infinie (conditions première/dernière)</li>
-                            </ol>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" alt="Roadmap">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Documentation</span>
-                            <h4>Ressources JavaScript</h4>
-                            <p>Documentation technique pour réussir le projet :</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li><strong>DOM :</strong> récupérer/modifier éléments HTML</li>
-                                <li><strong>Events :</strong> addEventListener, click handlers</li>
-                                <li><strong>Tableaux :</strong> compter éléments avec .length</li>
-                                <li><strong>innerHTML :</strong> modifier contenu dynamiquement</li>
-                                <li><strong>Conditions :</strong> if/else pour boucle infinie</li>
-                            </ul>
-                            <a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/Building_blocks/Events" target="_blank" class="btn btn-primary"><i class="fa-solid fa-book"></i> MDN Events</a>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=1000&q=80" alt="Documentation">
-                        </div>
-                    </article>
-                    </div>
-                </div>
-                <button class="slider-btn slider-btn-next" data-direction="next" aria-label="Slide suivant"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-            <div class="slider-progress">
-                <div class="slider-progress-line">
-                    <span class="slider-progress-bar"></span>
-                    <span class="slider-progress-dot"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="repo" class="section-block section-light">
-        <div class="container">
-            <div class="section-title">Code & Delivery</div>
-            <div class="section-heading">Accès Git et Code Source</div>
-            <div class="repo-preview">
-                <div class="card-glass">
-                    <h3>GitHub Repository</h3>
-                    <p>Code source avec HTML/CSS fournis et fichier script.js développé pour le carrousel interactif. Images des flèches et slides incluses.</p>
-                    <a href="https://github.com/OpenClassrooms-Student-Center/Print-it-JS" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Voir le repository</a>
-                </div>
-                <div class="repo-terminal">
-<pre>$ git clone https://github.com/OpenClassrooms-Student-Center/Print-it-JS.git
-$ cd Print-it-JS
-
-# Ouvrir index.html dans le navigateur
-# Tester navigation flèches + bullets
--------------------------------
-✓ Flèches fonctionnelles (gauche/droite)
-✓ Bullet points synchronisés
-✓ Images et textes changent
-✓ Boucle infinie opérationnelle</pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="live-preview" class="section-block section-muted">
-        <div class="container">
-            <div class="section-title">Live Preview</div>
-            <div class="section-heading">Démonstration interactive</div>
-            <div class="project-preview-box">
-                <div class="live-preview">
-                    <div class="mockup-screen">
-                        <div class="mockup-track">
-<<<<<<< HEAD
-                            <img src="../assets/projets/print-it/screen/1.png" alt="Ecran 1">
-                            <img src="../assets/projets/print-it/screen/2.png" alt="Ecran 2 ">
-                            <img src="../assets/projets/print-it/screen/2.png" alt="Ecran 3">
-=======
-                            <img src="../assets/projets/print-it/print-it.png" alt="Carrousel Print it">
-                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Code JavaScript">
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" alt="Résultat final">
->>>>>>> 765f19d (remplissage projets)
-                        </div>
-                    </div>
-                </div>
-                <div class="project-preview-text">
-                    <div class="preview-summary">
-                        <h3>Résultats finaux</h3>
-                        <p>
-                            Carrousel JavaScript entièrement fonctionnel pour Print it : navigation fluide par flèches, bullet points synchronisés 
-                            avec l'image active, changement automatique des textes et boucle infinie sans accroc.
+                    <div class="mission-contexte">
+                        <p class="mission-intro">
+                            Premier projet freelance en JavaScript : Print it, une petite imprimerie familiale, souhaite dynamiser son site Internet statique.
+                            Le directeur Lucien envoie un email avec une vidéo explicative du carrousel idéal qu'il souhaite.
                         </p>
-                        <ul class="demo-results-list">
-                            <li><strong>Event listeners :</strong> flèches gauche/droite détectent les clics, différenciation correcte des directions.</li>
-                            <li><strong>Bullet points dynamiques :</strong> génération automatique (1 par slide), classe CSS active sur le bullet courant.</li>
-                            <li><strong>Navigation complète :</strong> clic flèche droite → image suivante + texte + bullet actif. Idem pour flèche gauche.</li>
-                            <li><strong>Boucle infinie :</strong> dernière image → retour automatique à la première (et vice-versa), aucune erreur console.</li>
-                            <li><strong>Manipulation DOM :</strong> innerHTML pour textes, construction chemin images, gestion index tableau avec .length.</li>
-                            <li><strong>Code propre :</strong> debuggage avec console.log, conditions if/else claires, code JavaScript vanilla sans librairie.</li>
+                    </div>
+
+                    <div class="mission-objectif">
+                        <h4><i class="fa-solid fa-crosshairs"></i> Objectif</h4>
+                        <p>
+                            Transformer la bannière statique en carrousel interactif fonctionnel. Le site et le CSS sont déjà fournis,
+                            il faut uniquement coder la partie JavaScript pour gérer la navigation, les transitions et la synchronisation.
+                        </p>
+                    </div>
+
+                    <div class="mission-livrables">
+                        <h4><i class="fa-solid fa-box-open"></i> Livrables</h4>
+                        <ul class="liste-livrables">
+                            <li>Flèches de navigation</li>
+                            <li>Bullet points synchronisés</li>
+                            <li>Boucle infinie</li>
+                            <li>Code JavaScript propre</li>
                         </ul>
                     </div>
                 </div>
+                <div class="carte-verre">
+                    <h3><i class="fa-solid fa-list-check"></i> Détails clés</h3>
+                    <ul class="meta-projet">
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-building-columns"></i> Client</span>
+                            <span class="valeur-meta">Print it, imprimerie familiale</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-user-tie"></i> Contact</span>
+                            <span class="valeur-meta">Lucien (Directeur)</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-user-gear"></i> Rôle</span>
+                            <span class="valeur-meta">Développeur Front-End Freelance</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-calendar-days"></i> Durée</span>
+                            <span class="valeur-meta">25h</span>
+                        </li>
+                    </ul>
+                    <h3><i class="fa-solid fa-layer-group"></i> Stack & Outils</h3>
+                    <div class="grille-tech">
+                        <span class="tuile-tech"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-code"></i> DOM</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-bolt"></i> Event Listeners</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-github"></i> GitHub</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <h2 class="visually-hidden">Footer Section</h2>
+    <!-- TIMELINE - Parcours du projet -->
+    <section id="timeline" class="section-timeline">
+
+        <div class="container">
+            <div class="timeline-header">
+                <span class="section-label">Le Parcours</span>
+                <h2 class="section-titre-grand">Phases de <span class="texte-degrade">développement</span></h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-ligne"></div>
+
+                <article class="timeline-item" data-step="1">
+                    <div class="timeline-point">
+                        <span>01</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 1</span>
+                            <h3>Flèches statiques</h3>
+                            <p>Ajout des images des flèches (arrow_left.png, arrow_right.png) dans la bannière en suivant les indications CSS.</p>
+                            <div class="timeline-tags">
+                                <span>HTML</span>
+                                <span>Images</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="2">
+                    <div class="timeline-point">
+                        <span>02</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 2</span>
+                            <h3>Event listeners</h3>
+                            <p>Mise en place des listeners sur chaque flèche, test avec console.log/alert, différenciation du clic gauche vs clic droit.</p>
+                            <div class="timeline-tags">
+                                <span>addEventListener</span>
+                                <span>Click</span>
+                                <span>Debug</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="3">
+                    <div class="timeline-point">
+                        <span>03</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 3</span>
+                            <h3>Bullet points</h3>
+                            <p>Génération dynamique des points (1 par slide), différenciation du point actif avec une classe CSS spécifique.</p>
+                            <div class="timeline-tags">
+                                <span>DOM</span>
+                                <span>Classes</span>
+                                <span>Dynamique</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="4">
+                    <div class="timeline-point">
+                        <span>04</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 4</span>
+                            <h3>Navigation & Boucle</h3>
+                            <p>Changement d'image/texte/bullet au clic, implémentation de la boucle infinie (dernière → première et vice-versa).</p>
+                            <div class="timeline-tags">
+                                <span>Navigation</span>
+                                <span>Boucle</span>
+                                <span>Conditions</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉSULTATS - Bilan et apprentissages -->
+    <section id="resultats" class="section-resultats">
+
+        <div class="container">
+            <div class="resultats-header">
+                <span class="section-label">Les Résultats</span>
+                <h2 class="section-titre-grand">Mission <span class="texte-degrade">accomplie</span></h2>
+            </div>
+
+            <div class="resultats-contenu">
+                <p class="resultats-intro">
+                    Carrousel JavaScript entièrement fonctionnel pour Print it : navigation fluide par flèches, bullet points synchronisés
+                    avec l'image active, changement automatique des textes et boucle infinie sans accroc.
+                </p>
+                <div class="resultats-grille">
+                    <div class="resultat-carte"><i class="fa-solid fa-arrow-pointer"></i><strong>Event listeners :</strong> flèches gauche/droite détectent les clics, différenciation correcte des directions.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-circle"></i><strong>Bullet points dynamiques :</strong> génération automatique (1 par slide), classe CSS active sur le bullet courant.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-arrows-left-right"></i><strong>Navigation complète :</strong> clic flèche droite → image suivante + texte + bullet actif. Idem pour gauche.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-infinity"></i><strong>Boucle infinie :</strong> dernière image → retour automatique à la première (et vice-versa), aucune erreur console.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-code"></i><strong>Manipulation DOM :</strong> innerHTML pour textes, construction du chemin des images, gestion de l'index avec .length.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-check-double"></i><strong>Code propre :</strong> debugging avec console.log, conditions if/else claires, JavaScript vanilla sans librairie.</div>
+                </div>
+            </div>
+
+            <!-- CTA Navigation projets -->
+            <div class="projets-navigation">
+                <a href="projet-724events-tests.html" class="nav-projet-btn prev">
+                    <span class="nav-direction"><i class="fa-solid fa-arrow-left"></i> Précédent</span>
+                    <span class="nav-titre">724events</span>
+                </a>
+                <a href="../index.html#projects" class="nav-projet-btn centre">
+                    <i class="fa-solid fa-th-large"></i>
+                    <span>Tous les projets</span>
+                </a>
+                <a href="projet-site-dynamique-js.html" class="nav-projet-btn next">
+                    <span class="nav-direction">Suivant <i class="fa-solid fa-arrow-right"></i></span>
+                    <span class="nav-titre">Sophie Bluel</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 social-style-3 text-center text-lg-start sm-margin-10px-bottom">
                     <div class="social-icon-style-8 d-inline-block align-middle">
                         <ul class="small-icon mb-0">
-                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
-                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/mahmoumaima" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://medium.com/" title="Medium" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a></li>
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-content col-lg-4 col-md-2 text-center sm-margin-20px-bottom">
-                   <a class="logo" href="#home"><img src="../assets/logo.png" class="default" alt="Pofo" width="105" height="26"></a>
+                   <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi - Retour à l'accueil"></a>
                 </div>
                 <div class="footer-content col-lg-4 col-md-5 text-center alt-font text-small font-weight-500 text-lg-end">
                     <p>© 2025 Oumaima Mahmoudi</p>
                 </div>
             </div>
         </div>
-        <a id="arrow-up" class="scroll-top-arrow" href="#home" aria-label="GO UP"><i class="fa fa-arrow-up"></i></a>
     </footer>
+
+    <!-- Bouton retour en haut -->
+    <a href="#hero" class="btn-top" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/projet.js"></script>
 </body>
 </html>

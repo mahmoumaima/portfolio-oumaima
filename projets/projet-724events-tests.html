@@ -5,336 +5,307 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>724events - Tests QA Avancés | Portfolio Oumaima</title>
+    <meta name="description" content="Projet 724events : tests QA avancés d'une plateforme événementielle avec Docker, Swagger API, cahier de recette Notion et reporting Jira. Portfolio Oumaima Mahmoudi.">
     <link rel="shortcut icon" href="../assets/favicone.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/lib.min.css">
-    <link rel="stylesheet" href="../css/global.min.css">
-    <link rel="stylesheet" href="../css/global.responsive.min.css">
+    <link rel="stylesheet" href="../css/vendors.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/projet-template.css">
 </head>
-<body id="top" class="project-template">
-    <header class="project-header">
-        <nav class="navbar bootsnav bg-transparent navbar-top nav-box-width navbar-transparent-no-sticky">
-            <div class="container-fluid nav-header-container h-50px sm-h-70px">
-                <div class="col d-none d-md-block text-start ps-0">
-                    <div class="header-social-icon border-none no-padding-left no-margin-left">
-                        <a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a>
-                        <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="masthead-logo-centered">
-                    <img src="../assets/logo.png" alt="Logo Oumaima">
-                </div>
-                <div class="nav-container">
-                    <ul class="nav-menu">
-                        <li><a href="../index.html">Portfolio</a></li>
-                        <li><a href="#overview" class="active">Projet</a></li>
-                        <li><a href="#ressources">Ressources</a></li>
-                        <li><a href="#repo">Code</a></li>
-                        <li><a href="#live-preview">Démonstration</a></li>
-                    </ul>
-                    <div class="hamburger"><span></span><span></span><span></span></div>
-                </div>
+<body id="top" class="page-projet">
+
+    <!-- Navigation flottante -->
+    <header class="entete-projet">
+        <nav class="navbar-projet">
+            <a href="../index.html" class="btn-retour" aria-label="Retour au portfolio">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Portfolio</span>
+            </a>
+            <a href="../index.html" class="logo-projet-centre">
+                <img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi">
+            </a>
+            <div class="nav-projet-actions">
+                <a href="https://github.com/OpenClassrooms-Student-Center/724-Events-V2" class="btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </nav>
     </header>
 
-<<<<<<< HEAD
-    <section id="home" class="project-masthead" style="background-image: linear-gradient(135deg, rgba(20,20,20,0.85), rgba(40,40,60,0.75)), url('../assets/projets/724-events/724-events.png">
-        <div class="container">
-            <span class="masthead-badge animate__animated animate__fadeInDown">
-                <i class="fa-solid fa-flask-vial"></i> Compagne de Tests
-            </span>
-            <h1 class="project-title animate__animated animate__fadeInUp">724-events</h1>
-=======
-    <section id="home" class="project-masthead" style="background-image: linear-gradient(135deg, rgba(20,20,20,0.85), rgba(40,40,60,0.75)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1600&q=80');">
-        <div class="container">
-            <span class="masthead-badge animate__animated animate__fadeInDown">
-                <i class="fa-solid fa-flask-vial"></i> Tests Approfondis
-            </span>
-            <h1 class="project-title animate__animated animate__fadeInUp">724events</h1>
->>>>>>> 765f19d (remplissage projets)
-            <p class="project-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+    <!-- HERO - Bannière immersive plein écran -->
+    <section id="hero" class="hero-immersif">
+        <div class="hero-fond">
+            <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="hero-overlay"></div>
+            <div class="particules-hero"></div>
+        </div>
+
+        <div class="hero-contenu">
+            <div class="hero-badge animate__animated animate__fadeInDown">
+                <span class="badge-icone"><i class="fa-solid fa-flask-vial"></i></span>
+                <span class="badge-texte">Tests Approfondis</span>
+            </div>
+
+            <h1 class="hero-titre animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="titre-ligne">724events</span>
+                <span class="titre-ligne titre-accent">Tests QA</span>
+            </h1>
+
+            <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
                 Tests de plateforme événementielle : environnement Docker, cahier de recette Notion, tests exploratoires, analyse anomalies (API Swagger, logs console) et reporting Jira.
             </p>
-            <div class="masthead-tags animate__animated animate__fadeInUp animate__delay-1s">
-                <span class="tag tag-icon"><i class="fa-brands fa-jira"></i> Jira</span>
-                <span class="tag tag-icon"><i class="fa-solid fa-code"></i> Swagger API</span>
-                <span class="tag tag-icon"><i class="fa-brands fa-docker"></i> Docker</span>
-                <span class="tag tag-icon"><i class="fa-solid fa-note-sticky"></i> Notion</span>
+
+            <div class="hero-tags animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="hero-tag"><i class="fa-brands fa-jira"></i> Jira</span>
+                <span class="hero-tag"><i class="fa-solid fa-code"></i> Swagger API</span>
+                <span class="hero-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                <span class="hero-tag"><i class="fa-solid fa-note-sticky"></i> Notion</span>
             </div>
-            <div class="masthead-cta animate__animated animate__fadeInUp animate__delay-1s">
-                <a href="#ressources" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explorer les ressources</a>
-<<<<<<< HEAD
-                <a href="#live-preview" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Voir le résultat</a>
-=======
-                <a href="#live-preview" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Voir le rendu</a>
->>>>>>> 765f19d (remplissage projets)
-            </div>
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
+
+        </div>
+
+        <!-- Indicateur de scroll -->
+        <div class="hero-scroll">
+            <span class="scroll-texte">Découvrir</span>
+            <div class="scroll-ligne"></div>
+            <div class="scroll-cercle">
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
-    <section id="overview" class="section-block section-light">
+    <!-- PRÉSENTATION - Contexte du projet -->
+    <section id="overview" class="bloc-section section-light">
         <div class="container">
-            <div class="section-title">Aperçu général</div>
-            <div class="section-heading">Vision, portée et résultats</div>
-            <div class="project-info-grid notebook-layout">
-                <div class="card-glass">
-                    <h3>Résumé du projet</h3>
-                    <p>
-                        QA Tester dans une agence web développant le site de 724events, agence événementielle. Le chef de projet Jean-Baptiste 
-                        confie la mission de lancer la campagne de tests sur la première version du site déjà livrée par l'équipe dev.
-                    </p>
-                    <p>
-                        Ce projet va plus loin que le précédent : en plus du cahier de recette et des tests exploratoires, il faut 
-                        analyser en profondeur chaque anomalie détectée. Utilisation d'outils techniques : logs console navigateur, 
-                        Swagger pour tester l'API indépendamment de l'interface, et Jira pour créer des tickets d'anomalies détaillés.
-                    </p>
-                    <ul class="functionalities">
-                        <li><strong>Environnement Docker :</strong> accès au site (localhost:3000) et Swagger API (localhost:8080/api-docs), images Docker préparées pour démarrage rapide.</li>
-                        <li><strong>Instance Jira :</strong> création compte Jira gratuit, board par défaut pour création d'anomalies, export des tickets en fin de projet.</li>
-                        <li><strong>Cahier de recette Notion :</strong> lecture complète, exécution des tests, notation des résultats et identification des anomalies.</li>
-                        <li><strong>Analyse approfondie :</strong> pour chaque bug - vérifier logs console, tester API avec Swagger si backend impliqué, déterminer niveau de criticité (mineur/majeur/critique).</li>
-                        <li><strong>Tickets Jira :</strong> création ticket par anomalie avec template (description, étapes reproduction, criticité, screenshots), positionnement en 1ère colonne du board.</li>
-                        <li><strong>Tests exploratoires :</strong> 2 sessions (20 min données + 30 min tests libres), minimum 2 anomalies à trouver, respect du temps alloué dans la stratégie.</li>
-                        <li><strong>Mise à jour cahier :</strong> ajouter les anomalies exploratoires au cahier Notion, noter numéro ticket Jira en commentaire.</li>
-                        <li><strong>Bilan de campagne :</strong> rédaction finale avec objectifs stratégie, résultats exécution, liste anomalies et décision GO/NO GO.</li>
-                    </ul>
-                </div>
-                <div class="card-glass">
-                    <h3>Détails clés</h3>
-                    <ul class="project-meta">
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-building-columns"></i> Client</span>
-                            <span class="meta-value">724events, agence événementielle</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-user-tie"></i> Chef de projet</span>
-                            <span class="meta-value">Jean-Baptiste</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-user-gear"></i> Rôle</span>
-                            <span class="meta-value">QA Tester</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-calendar-days"></i> Durée</span>
-                            <span class="meta-value">40h</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-diagram-project"></i> Livrables</span>
-                            <span class="meta-value">Cahier Notion complété, tickets Jira exportés, bilan de campagne</span>
-                        </li>
-                    </ul>
-                    <h3>Stack & Outils</h3>
-                    <div class="tech-grid">
-                        <span class="tech-tile"><i class="fa-brands fa-docker"></i> Docker</span>
-                        <span class="tech-tile"><i class="fa-brands fa-jira"></i> Jira</span>
-                        <span class="tech-tile"><i class="fa-solid fa-note-sticky"></i> Notion</span>
-                        <span class="tech-tile"><i class="fa-solid fa-code"></i> Swagger</span>
-                        <span class="tech-tile"><i class="fa-solid fa-browser"></i> Chrome DevTools</span>
-                        <span class="tech-tile"><i class="fa-brands fa-github"></i> GitHub</span>
-                    </div>
-                </div>
+            <div class="contexte-header-v2">
+                <span class="section-label">Le Contexte</span>
+                <h2 class="section-titre-grand">Comprendre le <span class="texte-degrade">challenge</span></h2>
             </div>
-        </div>
-    </section>
+            <div class="grille-infos-projet disposition-carnet">
+                <div class="carte-verre">
+                    <h3><i class="fa-solid fa-bullseye"></i> Mission</h3>
 
-    <section id="ressources" class="section-block section-muted">
-        <div class="container">
-            <div class="section-title">Ressources</div>
-            <div class="section-heading">Environnement, outils QA & méthodologie</div>
-            <div class="resource-slider">
-                <button class="slider-btn slider-btn-prev" data-direction="prev" aria-label="Slide précédent"><i class="fa-solid fa-chevron-left"></i></button>
-                <div class="resource-slider-window">
-                    <div class="resource-slider-track">
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Environnement</span>
-                            <h4>Docker & Accès Swagger</h4>
-                            <p>Installation Docker complète avec images préparées (démarrage rapide). Deux URLs à retenir :</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li><strong>Site :</strong> http://localhost:3000</li>
-                                <li><strong>Swagger API :</strong> http://localhost:8080/api-docs</li>
-                            </ul>
-                            <p style="font-size: 0.9rem;">Tester le 1er endpoint GET /events/ pour vérifier que tout fonctionne.</p>
-                            <a href="https://github.com/OpenClassrooms-Student-Center/724-Events-V2" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Repository</a>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=1000&q=80" alt="Docker">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Gestion anomalies</span>
-                            <h4>Instance Jira</h4>
-                            <p>Création compte Jira gratuit + board par défaut pour anomalies. Pas de workflow spécifique nécessaire.</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li>Créer ticket type "Bug" avec bouton Créer</li>
-                                <li>Tickets positionnés auto en 1ère colonne</li>
-                                <li>Export final via tutoriel vidéo fourni</li>
-                                <li>Vérifier que fichier export contient toutes les infos</li>
-                            </ul>
-                            <a href="https://www.atlassian.com/software/jira" target="_blank" class="btn btn-primary"><i class="fa-brands fa-jira"></i> Créer compte Jira</a>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&w=1000&q=80" alt="Jira">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Analyse technique</span>
-                            <h4>Méthodologie d'analyse des anomalies</h4>
-                            <p>Pour chaque bug détecté, décider si analyse approfondie nécessaire :</p>
-                            <ol style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li><strong>Anomalie simple</strong> (wording, image manquante, front pur) → créer ticket Jira direct</li>
-                                <li><strong>Backend suspecté</strong> → approfondir l'analyse :
-                                    <ul style="margin-top: 0.5rem;">
-                                        <li>Analyser logs console navigateur</li>
-                                        <li>Utiliser Swagger pour tester API indépendamment</li>
-                                        <li>Tester chaque route méticuleusement</li>
-                                        <li>Exemple : /events/{id} nécessite récupérer id via /events/</li>
-                                    </ul>
-                                </li>
-                                <li><strong>Ticket Jira</strong> : template avec description, étapes, criticité (mineur/majeur/critique), screenshots</li>
-                            </ol>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="Analyse">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Bilan final</span>
-                            <h4>Template bilan de campagne</h4>
-                            <p>Structure du bilan final à rédiger :</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li>Objectifs de la stratégie de test</li>
-                                <li>Résultats d'exécution : fonctionnalités en échec</li>
-                                <li>Anomalies critiques et majeures</li>
-                                <li>Liste complète des anomalies</li>
-                                <li>Décision GO/NO GO selon objectifs</li>
-                            </ul>
-                            <a href="https://course.oc-static.com/projects/TL/P5/Template+de+bilan+de+campagne.odt" target="_blank" class="btn btn-primary"><i class="fa-solid fa-file-alt"></i> Template</a>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1000&q=80" alt="Bilan">
-                        </div>
-                    </article>
-                    </div>
-                </div>
-                <button class="slider-btn slider-btn-next" data-direction="next" aria-label="Slide suivant"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-            <div class="slider-progress">
-                <div class="slider-progress-line">
-                    <span class="slider-progress-bar"></span>
-                    <span class="slider-progress-dot"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="repo" class="section-block section-light">
-        <div class="container">
-            <div class="section-title">Code & Delivery</div>
-            <div class="section-heading">Accès Git et Environnement</div>
-            <div class="repo-preview">
-                <div class="card-glass">
-                    <h3>GitHub Repository</h3>
-                    <p>Repository 724-Events V2 avec Docker Compose reconfiguré, images préparées et API Swagger documentée.</p>
-                    <a href="https://github.com/OpenClassrooms-Student-Center/724-Events-V2" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Voir le repository</a>
-                </div>
-                <div class="repo-terminal">
-<pre>$ git clone https://github.com/OpenClassrooms-Student-Center/724-Events-V2.git
-$ cd 724-Events-V2
-$ docker compose up
-
-# Site : http://localhost:3000
-# API Swagger : http://localhost:8080/api-docs
--------------------------------
-✓ Environnement de test prêt
-✓ API testable indépendamment
-✓ Logs console analysables</pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="live-preview" class="section-block section-muted">
-        <div class="container">
-            <div class="section-title">Live Preview</div>
-            <div class="section-heading">Livrables & résultats</div>
-            <div class="project-preview-box">
-                <div class="live-preview">
-                    <div class="mockup-screen">
-                        <div class="mockup-track">
-<<<<<<< HEAD
-                            <img src="../assets/projets/724-events/screen/1.png" alt="Résultats des tests">
-                            <img src="../assets/projets/724-events/screen/2.png" alt="Criticité des anomalies">
-                            <img src="../assets/projets/724-events/screen/3.png" alt="Décision GO/NoGO">
-=======
-                            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80" alt="Site 724events">
-                            <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&w=800&q=80" alt="Jira board">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Analyse technique">
->>>>>>> 765f19d (remplissage projets)
-                        </div>
-                    </div>
-                </div>
-                <div class="project-preview-text">
-                    <div class="preview-summary">
-                        <h3>Résultats finaux</h3>
-                        <p>
-                            Campagne de tests complète sur plateforme événementielle : cahier de recette exécuté, anomalies analysées en profondeur 
-                            avec outils techniques (Swagger, logs console), tickets Jira détaillés et bilan de campagne rédigé.
+                    <div class="mission-contexte">
+                        <p class="mission-intro">
+                            QA Tester dans une agence web développant le site de 724events, agence événementielle. Le chef de projet Jean-Baptiste
+                            confie la mission de lancer la campagne de tests sur la première version du site déjà livrée par l'équipe dev.
                         </p>
-                        <ul class="demo-results-list">
-                            <li><strong>Environnement maîtrisé :</strong> Docker opérationnel, accès site + Swagger API, tests de formulaire contact et réservation.</li>
-                            <li><strong>Cahier de recette :</strong> exécution complète sur Notion, analyse fonctionnalités testées, détection anomalies.</li>
-                            <li><strong>Analyse approfondie :</strong> logs console, Swagger pour tester endpoints API (/events/, /events/{id}), identification root cause.</li>
-                            <li><strong>Tickets Jira professionnels :</strong> template respecté, criticité définie (mineur/majeur/critique), screenshots inclus, board exporté.</li>
-                            <li><strong>Tests exploratoires :</strong> 2 sessions (données 20min + libres 30min), minimum 2 anomalies trouvées, respect du temps.</li>
-                            <li><strong>Cahier mis à jour :</strong> anomalies exploratoires ajoutées avec numéros tickets Jira en commentaire.</li>
-                            <li><strong>Bilan de campagne :</strong> objectifs, résultats, anomalies critiques/majeures, décision GO/NO GO argumentée.</li>
+                    </div>
+
+                    <div class="mission-objectif">
+                        <h4><i class="fa-solid fa-crosshairs"></i> Objectif</h4>
+                        <p>
+                            Aller plus loin que les tests fonctionnels : analyser en profondeur chaque anomalie détectée
+                            avec les logs console navigateur, Swagger pour tester l'API, et créer des tickets Jira détaillés.
+                        </p>
+                    </div>
+
+                    <div class="mission-livrables">
+                        <h4><i class="fa-solid fa-box-open"></i> Livrables</h4>
+                        <ul class="liste-livrables">
+                            <li>Cahier Notion complété</li>
+                            <li>Tickets Jira exportés</li>
+                            <li>Bilan de campagne</li>
+                            <li>Tests exploratoires documentés</li>
                         </ul>
                     </div>
                 </div>
+                <div class="carte-verre">
+                    <h3><i class="fa-solid fa-list-check"></i> Détails clés</h3>
+                    <ul class="meta-projet">
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-building-columns"></i> Client</span>
+                            <span class="valeur-meta">724events, agence événementielle</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-user-tie"></i> Chef de projet</span>
+                            <span class="valeur-meta">Jean-Baptiste</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-user-gear"></i> Rôle</span>
+                            <span class="valeur-meta">QA Tester</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-calendar-days"></i> Durée</span>
+                            <span class="valeur-meta">40h</span>
+                        </li>
+                    </ul>
+                    <h3><i class="fa-solid fa-layer-group"></i> Stack & Outils</h3>
+                    <div class="grille-tech">
+                        <span class="tuile-tech"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-jira"></i> Jira</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-note-sticky"></i> Notion</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-code"></i> Swagger</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-browser"></i> DevTools</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-github"></i> GitHub</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <h2 class="visually-hidden">Footer Section</h2>
+    <!-- TIMELINE - Parcours du projet -->
+    <section id="timeline" class="section-timeline">
+
+        <div class="container">
+            <div class="timeline-header">
+                <span class="section-label">Le Parcours</span>
+                <h2 class="section-titre-grand">Phases de <span class="texte-degrade">tests</span></h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-ligne"></div>
+
+                <article class="timeline-item" data-step="1">
+                    <div class="timeline-point">
+                        <span>01</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 1</span>
+                            <h3>Setup environnement</h3>
+                            <p>Installation Docker, lancement du site (localhost:3000) et de Swagger API (localhost:8080/api-docs), création compte Jira.</p>
+                            <div class="timeline-tags">
+                                <span>Docker</span>
+                                <span>Swagger</span>
+                                <span>Jira</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="2">
+                    <div class="timeline-point">
+                        <span>02</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 2</span>
+                            <h3>Exécution cahier de recette</h3>
+                            <p>Lecture complète du cahier Notion, exécution méthodique des tests et notation des résultats avec identification des anomalies.</p>
+                            <div class="timeline-tags">
+                                <span>Notion</span>
+                                <span>Tests fonctionnels</span>
+                                <span>OK/KO</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="3">
+                    <div class="timeline-point">
+                        <span>03</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 3</span>
+                            <h3>Analyse approfondie</h3>
+                            <p>Pour chaque bug : analyse logs console, test API avec Swagger, détermination de la criticité et création de tickets Jira détaillés.</p>
+                            <div class="timeline-tags">
+                                <span>DevTools</span>
+                                <span>API Testing</span>
+                                <span>Jira</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="4">
+                    <div class="timeline-point">
+                        <span>04</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 4</span>
+                            <h3>Tests exploratoires & Bilan</h3>
+                            <p>2 sessions exploratoires (20 min + 30 min), minimum 2 anomalies, mise à jour cahier et rédaction du bilan de campagne GO/NO GO.</p>
+                            <div class="timeline-tags">
+                                <span>Exploratoires</span>
+                                <span>Bilan</span>
+                                <span>GO/NO GO</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉSULTATS - Bilan et apprentissages -->
+    <section id="resultats" class="section-resultats">
+
+        <div class="container">
+            <div class="resultats-header">
+                <span class="section-label">Les Résultats</span>
+                <h2 class="section-titre-grand">Mission <span class="texte-degrade">accomplie</span></h2>
+            </div>
+
+            <div class="resultats-contenu">
+                <p class="resultats-intro">
+                    Campagne de tests complète sur plateforme événementielle : cahier de recette exécuté, anomalies analysées en profondeur
+                    avec outils techniques (Swagger, logs console), tickets Jira détaillés et bilan de campagne rédigé.
+                </p>
+                <div class="resultats-grille">
+                    <div class="resultat-carte"><i class="fa-brands fa-docker"></i><strong>Environnement maîtrisé :</strong> Docker opérationnel, accès site + Swagger API, tests de formulaire contact et réservation.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-clipboard-check"></i><strong>Cahier de recette :</strong> exécution complète sur Notion, analyse fonctionnalités testées, détection anomalies.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-magnifying-glass"></i><strong>Analyse approfondie :</strong> logs console, Swagger pour tester endpoints API (/events/, /events/{id}), identification root cause.</div>
+                    <div class="resultat-carte"><i class="fa-brands fa-jira"></i><strong>Tickets Jira professionnels :</strong> template respecté, criticité définie (mineur/majeur/critique), screenshots inclus, board exporté.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-flask-vial"></i><strong>Tests exploratoires :</strong> 2 sessions (données 20min + libres 30min), minimum 2 anomalies trouvées, respect du temps.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-file-pen"></i><strong>Cahier mis à jour :</strong> anomalies exploratoires ajoutées avec numéros tickets Jira en commentaire.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-chart-pie"></i><strong>Bilan de campagne :</strong> objectifs, résultats, anomalies critiques/majeures, décision GO/NO GO argumentée.</div>
+                </div>
+            </div>
+
+            <!-- CTA Navigation projets -->
+            <div class="projets-navigation">
+                <a href="projet-jse-avocats.html" class="nav-projet-btn prev">
+                    <span class="nav-direction"><i class="fa-solid fa-arrow-left"></i> Précédent</span>
+                    <span class="nav-titre">JSE Avocats</span>
+                </a>
+                <a href="../index.html#projects" class="nav-projet-btn centre">
+                    <i class="fa-solid fa-th-large"></i>
+                    <span>Tous les projets</span>
+                </a>
+                <a href="projet-print-it-carrousel.html" class="nav-projet-btn next">
+                    <span class="nav-direction">Suivant <i class="fa-solid fa-arrow-right"></i></span>
+                    <span class="nav-titre">Print it</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 social-style-3 text-center text-lg-start sm-margin-10px-bottom">
                     <div class="social-icon-style-8 d-inline-block align-middle">
                         <ul class="small-icon mb-0">
-                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
-                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/mahmoumaima" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://medium.com/" title="Medium" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a></li>
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-content col-lg-4 col-md-2 text-center sm-margin-20px-bottom">
-                   <a class="logo" href="#home"><img src="../assets/logo.png" class="default" alt="Pofo" width="105" height="26"></a>
+                   <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi - Retour à l'accueil"></a>
                 </div>
                 <div class="footer-content col-lg-4 col-md-5 text-center alt-font text-small font-weight-500 text-lg-end">
                     <p>© 2025 Oumaima Mahmoudi</p>
                 </div>
             </div>
         </div>
-        <a id="arrow-up" class="scroll-top-arrow" href="#home" aria-label="GO UP"><i class="fa fa-arrow-up"></i></a>
     </footer>
+
+    <!-- Bouton retour en haut -->
+    <a href="#hero" class="btn-top" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/projet.js"></script>
 </body>
 </html>

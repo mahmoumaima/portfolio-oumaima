@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,9 +7,9 @@
     <!-- Titre -->
     <title>Oumaima Mahmoudi - QA Tester & Banking/Finance Expert | Portfolio</title>
     <!-- Description -->
-    <meta name="description" content="Oumaima, QA Tester with M2 in Banking and Finance. STQB certified. Expertise in agile testing, fintech solutions, product ownership, and quality assurance.">
+    <meta name="description" content="Oumaima Mahmoudi, Testeuse QA certifiée ISTQB avec un M2 en Banque et Finance. Expertise en tests fonctionnels, automatisation Cypress, méthodologie Agile et assurance qualité.">
     <!-- Keywords -->
-    <meta name="keywords" content="QA tester, quality assurance, testing software, banking finance, STQB, agile testing, fintech, product owner, M2 banking, oumaima mahmoudi">
+    <meta name="keywords" content="QA tester, testeuse fonctionnelle, assurance qualité, tests logiciels, banque finance, ISTQB, tests agile, fintech, product owner, Cypress, automatisation, oumaima mahmoudi">
     <!-- Auteur -->
     <meta name="author" content="Oumaima Mahmoudi">
     <!-- CANONICAL URL -->
@@ -21,17 +20,40 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mahmoumaima.github.io/portfolio-oumaima/">
     <meta property="og:title" content="Oumaima Mahmoudi - QA Tester & Banking Expert">
-    <meta property="og:description" content="Professional portfolio: QA Testing, Banking/Finance expertise, STQB certification, Agile methodology, Product Ownership">
-    <meta property="og:image" content="https://mahmoumaima.github.io/portfolio-oumaima/images/person.png">
+    <meta property="og:description" content="Portfolio professionnel : Tests QA, expertise Banque/Finance, certification ISTQB, méthodologie Agile, Product Ownership">
+    <meta property="og:image" content="https://mahmoumaima.github.io/portfolio-oumaima/assets/oumi.png">
+    <meta property="og:image:alt" content="Photo de Oumaima Mahmoudi, QA Tester">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="Portfolio Oumaima Mahmoudi">
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oumaima Mahmoudi - QA Tester & Banking Expert">
+    <meta name="twitter:description" content="Portfolio professionnel : Tests QA, expertise Banque/Finance, certification ISTQB, méthodologie Agile">
+    <meta name="twitter:image" content="https://mahmoumaima.github.io/portfolio-oumaima/assets/oumi.png">
+    <meta name="twitter:image:alt" content="Photo de Oumaima Mahmoudi, QA Tester">
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/favicone.png">
-    <!-- style sheets and font icons  -->
+    <!-- Preconnect pour optimiser le chargement des ressources externes -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <!-- Preload ressources critiques -->
+    <link rel="preload" as="image" href="assets/homepage.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/oumi.png" fetchpriority="high">
+    <link rel="preload" as="style" href="css/style.css">
+    <!-- Critical CSS (style.css) chargé en priorité -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/lib.min.css">
-    <link rel="stylesheet" type="text/css" href="css/global.min.css">
-    <link rel="stylesheet" type="text/css" href="css/global.responsive.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS non-critiques chargés de manière asynchrone -->
+    <link rel="stylesheet" href="css/vendors.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <!-- Fallback pour navigateurs sans JS -->
+    <noscript>
+        <link rel="stylesheet" href="css/vendors.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
 </head>
 <body>
     <header>
@@ -41,838 +63,355 @@
                 <div class="col d-none d-md-block text-start ps-0">
                     <div class="header-social-icon border-none no-padding-left no-margin-left">
                         <a href="https://linkedin.com/" title="Linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/" title="Dribbble" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>    
+                        <a href="https://github.com/" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>    
                         <a href="https://medium.com/" title="Medium" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
                         <a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>                                  
                     </div>
                 </div>
-                <div class="masthead-logo-centered">
+                <div class="logo-centre">
                     <img src="assets/logo.png" alt="Logo Oumaima">
                 </div>
                 <div class="nav-container">
                     <ul class="nav-menu">
                         <li><a href="#home" class="active">Accueil</a></li>
-                        <li><a href="#projects">Projets</a></li>
                         <li><a href="#about">À propos</a></li>
+                        <li><a href="#projects">Projets</a></li>
                         <li><a href="#skills">Compétences</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
-                    <div class="hamburger">
+                    <button type="button" class="hamburger" aria-label="Menu de navigation" aria-expanded="false">
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>
+                    </button>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- Home -->
-    <section id="home" class="wow animate__fadeIn p-0 mobile-height parallax" data-parallax-background-ratio="0.5" style='background-image: url("assets/homepage.jpg"); background-position: 0% 0px; visibility: visible; animation-name: fadeIn;'>
-        <h2 class="visually-hidden">Home Section</h2>
+    <section id="home" class="wow animate__fadeIn sans-padding hauteur-mobile parallax banniere-accueil" data-parallax-background-ratio="0.5">
+        <h2 class="cache-accessible">Section Accueil</h2>
         <div class="container text-center one-third-screen lg-h-350px md-h-500px sm-h-auto sm-padding-40px-top sm-padding-50px-bottom">
             <div class="row">
-                <div class="col-md-3 d-flex flex-column align-items-center justify-content-center one-third-screen lg-h-350px md-h-500px sm-h-auto text-center wow animate__bounceInLeft sm-h-auto sm-margin-30px-bottom" style="visibility: visible; animation-name: bounceInLeft;">
-                    <img alt="" src="assets/oumi.png" data-no-retina="">
+                <div class="col-md-3 d-flex flex-column align-items-center justify-content-center one-third-screen lg-h-350px md-h-500px sm-h-auto text-center wow animate__bounceInLeft sm-h-auto sm-margin-30px-bottom">
+                    <img alt="Photo de Oumaima Mahmoudi, QA Tester" src="assets/oumi.png">
                 </div>
-                <div class="col-md-9 d-flex flex-column align-items-center justify-content-center one-third-screen lg-h-350px md-h-500px sm-h-auto text-center wow animate__bounceInRight sm-h-auto" style="visibility: visible; animation-name: bounceInRight;">
-                    <h1 class="font-weight-300 alt-font title-large text-extra-dark-gray d-inline-block align-bottom mx-auto home-hero-title">I'm <span class="font-weight-600 text-bold-underline position-relative">Oumaima</span></h1>
-                    <div class="job-title text-small text-uppercase margin-40px-top letter-spacing-2 alt-font sm-margin-10px-top">
-                        <i class="fa-solid fa-bug"></i> Software Tester | 
+                <div class="col-md-9 d-flex flex-column align-items-center justify-content-center one-third-screen lg-h-350px md-h-500px sm-h-auto text-center wow animate__bounceInRight sm-h-auto">
+                    <h1 class="font-weight-300 alt-font title-large text-extra-dark-gray d-inline-block align-bottom mx-auto">I'm <span id="typing-name" class="font-weight-600 text-bold-underline position-relative"></span><span class="curseur-typing">|</span></h1>
+                    <div class="titre-metier text-small text-uppercase margin-20px-top letter-spacing-2 alt-font sm-margin-10px-top">
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i> Business Analyst |
+                        <i class="fa-solid fa-bug"></i> Software Tester |
                         <i class="fa fa-university" aria-hidden="true"></i> Bank & Finance
                     </div>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Project -->
-    <section id="projects" class="portfolio-metro">
-        <h2 class="visually-hidden">Projects Section</h2>
-        <div class="container">
-            <div class="section-header">
-                <h2 class="animate__animated animate__fadeInUp">Projets Récents</h2>
-                <p class="animate__animated animate__fadeInUp">Découvrez une sélection de mes réalisations</p>
-            </div>
-                <div class="metro-grid">
-                    <!--div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.05s">
-                        <div class="metro-content">
-                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80" alt="Initiation HTML">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">Intégration</span>
-                                    <h3>Initiation HTML/CSS</h3>
-                                    <p>Découverte des bases du développement web</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-html-initiation.html" class="project-link" aria-label="Initiation HTML/CSS" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/mahmoumaima/projet-html-initiation" class="project-link" aria-label="Initiation HTML/CSS github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div-->
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.1s">
-                        <div class="metro-content">
-                            <img src="assets/projets/rading-cities/rading-cities.png" alt="Riding Cities">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">Intégration</span>
-                                    <h3>Riding Cities</h3>
-                                    <p>Mise à jour de la page web de l'association</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-riding-cities.html" class="project-link" aria-label="Riding Cities" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/mahmoumaima/projet-riding-cities" class="project-link" aria-label="Riding Cities github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.15s">
-                        <div class="metro-content">
-                            <img src="assets/projets/booki/booki.png" alt="Booki">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">Responsive</span>
-                                    <h3>Booki</h3>
-                                    <p>Intégration complète d'une maquette responsive</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-booki-accueil.html" class="project-link" aria-label="Booki" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/mahmoumaima/projet-booki-accueil" class="project-link" aria-label="Booki github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.2s">
-                        <div class="metro-content">
-                            <img src="assets/projets/jse/jse.png" alt="JSE Avocats">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">QA</span>
-                                    <h3>JSE Avocats</h3>
-                                    <p>Tests fonctionnels d'un site WordPress de cabinet d'avocats</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-jse-avocats.html" class="project-link" aria-label="JSE Avocats" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/OpenClassrooms-Student-Center/JSE-Avocats-V2" class="project-link" aria-label="JSE Avocats github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.25s">
-                        <div class="metro-content">
-                            <img src="assets/projets/724-events/724-events.png" alt="724events">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">QA</span>
-                                    <h3>724events</h3>
-                                    <p>Tests de plateforme événementielle et reporting</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-724events-tests.html" class="project-link" aria-label="724events" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/OpenClassrooms-Student-Center/724-Events-V2" class="project-link" aria-label="724events github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.3s">
-                        <div class="metro-content">
-                            <img src="assets/projets/print-it/print-it.png" alt="Print it">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">JavaScript</span>
-                                    <h3>Print it</h3>
-                                    <p>Dynamisation d'un carrousel avec JavaScript</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-print-it-carrousel.html" class="project-link" aria-label="Print it" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/OpenClassrooms-Student-Center/Print-it-JS" class="project-link" aria-label="Print it github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.35s">
-                        <div class="metro-content">
-                            <img src="assets/projets/portfolio-sophie/portfolio-sophie.png" alt="Portfolio Sophie Bluel">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">Front & API</span>
-                                    <h3>Portfolio Sophie Bluel</h3>
-                                    <p>Intégration d'une API dans un portfolio d'architecte</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-site-dynamique-js.html" class="project-link" aria-label="Portfolio Sophie Bluel" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/mahmoumaima/projet-site-dynamique-js" class="project-link" aria-label="Portfolio Sophie Bluel github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.4s">
-                        <div class="metro-content">
-                            <img src="assets/projets/kasa/kasa.png" alt="Kasa React">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">React</span>
-                                    <h3>Kasa React</h3>
-                                    <p>Refonte complète en React d'une plateforme de location</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-react-kasa.html" class="project-link" aria-label="Kasa React" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/mahmoumaima/projet-react-kasa" class="project-link" aria-label="Kasa React github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.45s">
-                        <div class="metro-content">
-                            <img src="assets/projets/menu-maker/menu-maker.png" alt="Menu Maker Qwenta">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">Gestion de projet</span>
-                                    <h3>Menu Maker Qwenta</h3>
-                                    <p>Projet de mise en situation : Rôle Product Owner</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-menu-maker-qwenta.html" class="project-link" aria-label="Menu Maker Qwenta" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://www.figma.com/file/Q6NEUPqwz1U3HFaCaVoF7N/Desktop?node-id=0%3A6" class="project-link" aria-label="Menu Maker Qwenta Figma" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.5s">
-                        <div class="metro-content">
-                            <img src="assets/projets/ecoblis/eco-bliss.png" alt="Eco Bliss Bath">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">Automation</span>
-                                    <h3>Eco Bliss Bath</h3>
-                                    <p>Automatisation Cypress pour un site e-commerce eco-responsable</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-automatisation-cypress.html" class="project-link" aria-label="Eco Bliss Bath QA" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2" class="project-link" aria-label="Eco Bliss Bath QA github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.55s">
-                        <div class="metro-content">
-                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80" alt="Tomsen stratégie de test">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">QA</span>
-                                    <h3>Tomsen PayForge</h3>
-                                    <p>Mise en place de la stratégie de test pour application de paiement</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-tomsen-strategie-test.html" class="project-link" aria-label="Tomsen stratégie de test" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://www.figma.com/proto/syO91Dg60fSP9naGVKQ1KV/P11-Tomsen?page-id=0%3A1&node-id=1-43&viewport=599%2C405%2C0.16&scaling=min-zoom&starting-point-node-id=1%3A43" class="project-link" aria-label="Tomsen Figma" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.6s">
-                        <div class="metro-content">
-                            <img src="assets/projets/portfolio/portfolio.png" alt="Portfolio QA">
-                            <div class="metro-overlay">
-                                <div class="metro-info">
-                                    <span class="category">SEO & Déploiement</span>
-                                    <h3>Portfolio QA</h3>
-                                    <p>Optimisation SEO et correction des bugs d'un Portfolio professionnel à déployer sur GitHub Pages</p>
-                                    <div class="project-links">
-                                        <a href="projets/projet-portfolio-deploiement.html" class="project-link" aria-label="Portfolio QA" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                        <a href="https://github.com/mahmoumaima/projet-portfolio-deploiement" class="project-link" aria-label="Portfolio QA github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="about-section">
-        <h2 class="visually-hidden">About Section</h2>
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image animate__animated animate__fadeInLeft">
-                    <div class="image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=600&fit=crop" alt="Profile">
-                        <div class="image-decoration"></div>
-                    </div>
-                </div>
-                <div class="about-content animate__animated animate__fadeInRight">
-                    <span class="subtitle">À propos de moi</span>
-                    <h2>Testeuse Fonctionnelle</h2>
-                    <p>
-                        Je sécurise les parcours utilisateurs via des tests end-to-end Cypress, des plans de recette détaillés et une communication claire avec les équipes produit.
-                        Mon quotidien : écrire des cas d'usage, automatiser ce qui apporte le plus de valeur et documenter chaque observation dans un langage accessible.
-                    </p>
-                    <p>
-                        J'utilise des outils simples (Cypress, Postman, Notion, Excel, Jira) pour suivre la couverture, partager les bugs et accompagner les développeurs jusqu'à la mise en production.
-                        Objectif : garantir une expérience fluide et cohérente pour les utilisateurs finaux.
-                    </p>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3>7+</h3>
-                            <p>Années d'expérience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>16+</h3>
-                            <p>Projets réalisés</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>5+</h3>
-                            <p>Technologies maîtrisées</p>
-                        </div>
-                    </div>
+            <div class="indicateur-scroll">
+                <div class="scroll-mouse"></div>
+                <span class="scroll-text">Scroll</span>
+                <div class="scroll-arrows">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Skills -->
-    <section id="skills" class="skills-section">
-        <h2 class="visually-hidden">Skills Section</h2>
-        <div class="container">
-            <div class="section-header">
-                <h2 class="animate__animated animate__fadeInUp">Compétences Techniques</h2>
-                <p class="animate__animated animate__fadeInUp">Stack technologique et expertises</p>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Tests Unitaires et Automatisés</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Cypress</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Jest</span>
-                    </div>
-                </div>
-
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3>Tests fonctionnels</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Stratégie de test</span>
-                        <span class="tag">Tests Exploratoires & E2E</span>
-                        <span class="tag">Responsive web</span>
-                        <span class="tag">Accessibilité</span>
-                    </div>
-                </div>
-
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-stream"></i>
-                    </div>
-                    <h3>APIs & intégration</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Postman</span>
-                        <span class="tag">Swagger</span>
-                        <span class="tag">Collections JSON</span>
-                    </div>
-                </div>
-
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Développement Web</h3>
-                    <div class="skill-tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Chrome DevTools</span>
-                    </div>
-                </div>
-
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Suivi & documentation</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Excel</span>
-                        <span class="tag">Jira</span>
-                        <span class="tag">Trello</span>
-                        <span class="tag">Notion</span>
-                        <span class="tag">Figma</span>
-                    </div>
-                </div>
-
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Organisation & CI</h3>
-                    <div class="skill-tags">
-                        <span class="tag">GitHub Actions</span>
-                        <span class="tag">Git</span>
-                        <span class="tag">Revues de code</span>
-                        <span class="tag">Checklists QA</span>
-                        <span class="tag">Rétrospectives</span>
-                    </div>
-                </div>
-            </div>
+    <!-- Projets -->
+    <section id="projects" class="section-projets section-constellation" aria-labelledby="projects-title">
+        <!-- Fond étoilé animé -->
+        <div class="constellation-bg">
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
+            <div class="etoile"></div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="animate__animated animate__fadeInUp">Restons en Contact</h2>
-                <p class="animate__animated animate__fadeInUp">Intéressé par une collaboration ? Discutons de votre projet</p>
+        <div class="conteneur">
+            <div class="entete-section">
+                <h2 id="projects-title" class="animate__animated animate__fadeInUp">Projets Récents</h2>
+                <p class="animate__animated animate__fadeInUp">Explorez ma constellation de réalisations</p>
             </div>
-            
-            <div class="contact-grid">
-                <div class="contact-info animate__animated animate__fadeInLeft">
-                    <h3>Informations de contact</h3>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>contact@portfolio.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Téléphone</h4>
-                                <p>+33 6 XX XX XX XX</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Localisation</h4>
-                                <p>Paris, France</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <form id="contact-form" class="contact-form animate__animated animate__fadeInRight" action="https://formspree.io/f/xyzvrdek" method="POST" novalidate>
-                    <div class="form-group">
-                        <label for="contact-name">Votre nom</label>
-                        <input id="contact-name" type="text" name="name" placeholder="Votre nom" minlength="2" maxlength="80" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Votre email</label>
-                        <input id="contact-email" type="email" name="email" placeholder="Votre email" required aria-required="true" inputmode="email" autocomplete="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-subject">Sujet</label>
-                        <input id="contact-subject" type="text" name="subject" placeholder="Sujet" maxlength="120">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message">Votre message</label>
-                        <textarea id="contact-message" name="message" placeholder="Votre message" rows="5" minlength="10" maxlength="1000" required aria-required="true"></textarea>
-                    </div>
-                    <div class="form-progress" aria-hidden="true">
-                        <div class="form-progress-bar"></div>
-                    </div>
-                    <p class="form-result" role="status" aria-live="polite" aria-atomic="true"></p>
-                    <button type="submit" class="btn btn-primary">Envoyer le message</button>
-                </form>
+            <!-- Filtres créatifs -->
+            <div class="filtres-constellation">
+                <button type="button" class="filtre-btn active" data-filter="all">
+                    <span class="filtre-icone"><i class="fas fa-star"></i></span>
+                    <span class="filtre-texte">Tous</span>
+                    <span class="filtre-count">12</span>
+                </button>
+                <button type="button" class="filtre-btn" data-filter="integration">
+                    <span class="filtre-icone"><i class="fas fa-code"></i></span>
+                    <span class="filtre-texte">Intégration</span>
+                    <span class="filtre-count">3</span>
+                </button>
+                <button type="button" class="filtre-btn" data-filter="qa">
+                    <span class="filtre-icone"><i class="fas fa-bug"></i></span>
+                    <span class="filtre-texte">QA</span>
+                    <span class="filtre-count">3</span>
+                </button>
+                <button type="button" class="filtre-btn" data-filter="js">
+                    <span class="filtre-icone"><i class="fab fa-js"></i></span>
+                    <span class="filtre-texte">JavaScript</span>
+                    <span class="filtre-count">2</span>
+                </button>
+                <button type="button" class="filtre-btn" data-filter="react">
+                    <span class="filtre-icone"><i class="fab fa-react"></i></span>
+                    <span class="filtre-texte">React</span>
+                    <span class="filtre-count">1</span>
+                </button>
+                <button type="button" class="filtre-btn" data-filter="automation">
+                    <span class="filtre-icone"><i class="fas fa-robot"></i></span>
+                    <span class="filtre-texte">Automation</span>
+                    <span class="filtre-count">1</span>
+                </button>
+                <button type="button" class="filtre-btn" data-filter="gestion">
+                    <span class="filtre-icone"><i class="fas fa-tasks"></i></span>
+                    <span class="filtre-texte">Gestion</span>
+                    <span class="filtre-count">2</span>
+                </button>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <h2 class="visually-hidden">Footer Section</h2>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-5 social-style-3 text-center text-lg-start sm-margin-10px-bottom">
-                    <div class="social-icon-style-8 d-inline-block align-middle">
-                        <ul class="small-icon mb-0">
-                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://github.com/" title="Dribbble" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
-                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>                                      
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-content col-lg-4 col-md-2 text-center sm-margin-20px-bottom">
-                   <a class="logo" href="#home"><img src="assets/logo.png" class="default" alt="Pofo" width="105" height="26"></a> 
-                </div>
-                <div class="footer-content col-lg-4 col-md-5 text-center alt-font text-small font-weight-500 text-lg-end">
-                    <p>© 2025 Oumaima Mahmoudi</p>
-                </div>
-            </div>
-        </div>
-        <!-- Arrow up -->
-        <a id="arrow-up" class="scroll-top-arrow" href="#home" aria-label="GO UP"><i class="fa fa-arrow-up"></i></a>
-    </footer>
-
-    <!-- JS Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/contact.js"></script>
-    <!-- JSON-LD for Google -->
-    <script type="application/ld+json">
-        {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Oumaima Mahmoudi",
-        "url": "https://mahmoumaima.github.io/portfolio-oumaima/",
-        "image": "https://mahmoumaima.github.io/portfolio-oumaima/assets/oumi.png",
-        "description": "QA Tester & Banking/Finance Expert",
-        "jobTitle": ["QA Tester", "Banking Specialist", "Product Owner"],
-        "sameAs": [
-            "https://github.com/mahmoumaima"
-        ],
-        "knowsAbout": [
-            "Quality Assurance",
-            "Software Testing",
-            "Banking Systems",
-            "Financial Technology",
-            "Agile Methodology",
-            "STQB Certification",
-            "Test Automation",
-            "Product Ownership"
-        ],
-        "workLocation": {
-            "@type": "Place",
-            "name": "Remote"
-        }
-        }
-    </script>
-</body>
-</html>
-
-
-
-=======
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- Titre -->
-    <title>Oumaima Mahmoudi - QA Tester & Banking/Finance Expert | Portfolio</title>
-    <!-- Description -->
-    <meta name="description" content="Oumaima, QA Tester with M2 in Banking and Finance. STQB certified. Expertise in agile testing, fintech solutions, product ownership, and quality assurance.">
-    <!-- Keywords -->
-    <meta name="keywords" content="QA tester, quality assurance, testing software, banking finance, STQB, agile testing, fintech, product owner, M2 banking, oumaima mahmoudi">
-    <!-- Auteur -->
-    <meta name="author" content="Oumaima Mahmoudi">
-    <!-- CANONICAL URL -->
-    <link rel="canonical" href="https://mahmoumaima.github.io/portfolio-oumaima/">
-    <!-- ROBOTS -->
-    <meta name="robots" content="index, follow">
-    <!-- OPEN GRAPH  -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mahmoumaima.github.io/portfolio-oumaima/">
-    <meta property="og:title" content="Oumaima Mahmoudi - QA Tester & Banking Expert">
-    <meta property="og:description" content="Professional portfolio: QA Testing, Banking/Finance expertise, STQB certification, Agile methodology, Product Ownership">
-    <meta property="og:image" content="https://mahmoumaima.github.io/portfolio-oumaima/images/person.png">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="assets/favicone.png">
-    <!-- style sheets and font icons  -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/lib.min.css">
-    <link rel="stylesheet" type="text/css" href="css/global.min.css">
-    <link rel="stylesheet" type="text/css" href="css/global.responsive.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <!-- Navigation -->
-        <nav class="navbar bootsnav bg-transparent navbar-top nav-box-width navbar-transparent-no-sticky on no-full">
-            <div class="container-fluid nav-header-container h-50px sm-h-70px">
-                <div class="col d-none d-md-block text-start ps-0">
-                    <div class="header-social-icon border-none no-padding-left no-margin-left">
-                        <a href="https://linkedin.com/" title="Linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/" title="Dribbble" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>    
-                        <a href="https://medium.com/" title="Medium" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a>
-                        <a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>                                  
-                    </div>
-                </div>
-                <div class="masthead-logo-centered">
-                    <img src="assets/logo.png" alt="Logo Oumaima">
-                </div>
-                <div class="nav-container">
-                    <ul class="nav-menu">
-                        <li><a href="#home" class="active">Accueil</a></li>
-                        <li><a href="#projects">Projets</a></li>
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#skills">Compétences</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Home -->
-    <section id="home" class="wow animate__fadeIn p-0 mobile-height parallax" data-parallax-background-ratio="0.5" style='background-image: url("assets/homepage.jpg"); background-position: 0% 0px; visibility: visible; animation-name: fadeIn;'>
-        <h2 class="visually-hidden">Home Section</h2>
-        <div class="container text-center one-third-screen lg-h-350px md-h-500px sm-h-auto sm-padding-40px-top sm-padding-50px-bottom">
-            <div class="row">
-                <div class="col-md-3 d-flex flex-column align-items-center justify-content-center one-third-screen lg-h-350px md-h-500px sm-h-auto text-center wow animate__bounceInLeft sm-h-auto sm-margin-30px-bottom" style="visibility: visible; animation-name: bounceInLeft;">
-                    <img alt="" src="assets/oumi.png" data-no-retina="">
-                </div>
-                <div class="col-md-9 d-flex flex-column align-items-center justify-content-center one-third-screen lg-h-350px md-h-500px sm-h-auto text-center wow animate__bounceInRight sm-h-auto" style="visibility: visible; animation-name: bounceInRight;">
-                    <h1 class="font-weight-300 alt-font title-large text-extra-dark-gray d-inline-block align-bottom mx-auto home-hero-title">I'm <span class="font-weight-600 text-bold-underline position-relative">Oumaima</span></h1>
-                    <div class="job-title text-small text-uppercase margin-40px-top letter-spacing-2 alt-font sm-margin-10px-top">
-                        <i class="fa-solid fa-bug"></i> Software Tester | 
-                        <i class="fa fa-university" aria-hidden="true"></i> Bank & Finance
-                    </div>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project -->
-    <section id="projects" class="portfolio-metro">
-        <h2 class="visually-hidden">Projects Section</h2>
-        <div class="container">
-            <div class="section-header">
-                <h2 class="animate__animated animate__fadeInUp">Projets Récents</h2>
-                <p class="animate__animated animate__fadeInUp">Découvrez une sélection de mes réalisations</p>
-            </div>
-            
-                                                                                                            <div class="metro-grid">
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.05s">
-                    <div class="metro-content">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80" alt="Initiation HTML">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">Intégration</span>
+            <div class="grille-projets grille-constellation">
+                <div class="carte-projet etoile-projet" data-category="integration" data-wow-delay="0.05s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?auto=format&fit=crop&w=600&q=75" alt="Projet Initiation HTML/CSS - Apprentissage des bases du développement web" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">Intégration</span>
                                 <h3>Initiation HTML/CSS</h3>
                                 <p>Découverte des bases du développement web</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-html-initiation.html" class="project-link" aria-label="Initiation HTML/CSS" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/mahmoumaima/projet-html-initiation" class="project-link" aria-label="Initiation HTML/CSS github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-html-initiation.html" class="lien-projet" aria-label="Initiation HTML/CSS" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/" class="lien-projet" aria-label="Initiation HTML/CSS github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.1s">
-                    <div class="metro-content">
-                        <img src="assets/projets/rading-cities/rading-cities.png" alt="Riding Cities">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">Intégration</span>
+                <div class="carte-projet etoile-projet" data-category="integration" data-wow-delay="0.1s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?auto=format&fit=crop&w=600&q=75" alt="Projet Riding Cities - Site web association de skateboard" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">Intégration</span>
                                 <h3>Riding Cities</h3>
                                 <p>Mise à jour de la page web de l'association</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-riding-cities.html" class="project-link" aria-label="Riding Cities" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/mahmoumaima/projet-riding-cities" class="project-link" aria-label="Riding Cities github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-riding-cities.html" class="lien-projet" aria-label="Riding Cities" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/" class="lien-projet" aria-label="Riding Cities github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.15s">
-                    <div class="metro-content">
-                        <img src="assets/projets/booki/booki.png" alt="Booki">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">Responsive</span>
+                <div class="carte-projet etoile-projet" data-category="integration" data-wow-delay="0.15s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=75" alt="Projet Booki - Plateforme de réservation d'hébergements responsive" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">Responsive</span>
                                 <h3>Booki</h3>
                                 <p>Intégration complète d'une maquette responsive</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-booki-accueil.html" class="project-link" aria-label="Booki" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/mahmoumaima/projet-booki-accueil" class="project-link" aria-label="Booki github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-booki-accueil.html" class="lien-projet" aria-label="Booki" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/" class="lien-projet" aria-label="Booki github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.2s">
-                    <div class="metro-content">
-                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1400&q=80" alt="JSE Avocats">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">QA</span>
+                <div class="carte-projet etoile-projet" data-category="qa" data-wow-delay="0.2s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=75" alt="Projet JSE Avocats - Tests fonctionnels site WordPress cabinet d'avocats" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">QA</span>
                                 <h3>JSE Avocats</h3>
                                 <p>Tests fonctionnels d'un site WordPress de cabinet d'avocats</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-jse-avocats.html" class="project-link" aria-label="JSE Avocats" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/OpenClassrooms-Student-Center/JSE-Avocats-V2" class="project-link" aria-label="JSE Avocats github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-jse-avocats.html" class="lien-projet" aria-label="JSE Avocats" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/OpenClassrooms-Student-Center/JSE-Avocats-V2" class="lien-projet" aria-label="JSE Avocats github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.25s">
-                    <div class="metro-content">
-                        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=80" alt="724events">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">QA</span>
+                <div class="carte-projet etoile-projet" data-category="qa" data-wow-delay="0.25s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=600&q=75" alt="Projet 724events - Tests plateforme événementielle et reporting QA" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">QA</span>
                                 <h3>724events</h3>
                                 <p>Tests de plateforme événementielle et reporting</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-724events-tests.html" class="project-link" aria-label="724events" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/OpenClassrooms-Student-Center/724-Events-V2" class="project-link" aria-label="724events github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-724events-tests.html" class="lien-projet" aria-label="724events" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/OpenClassrooms-Student-Center/724-Events-V2" class="lien-projet" aria-label="724events github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.3s">
-                    <div class="metro-content">
-                        <img src="assets/projets/print-it/print-it.png" alt="Print it">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">JavaScript</span>
+                <div class="carte-projet etoile-projet" data-category="js" data-wow-delay="0.3s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1614036634955-ae5e90f9b9eb?auto=format&fit=crop&w=600&q=75" alt="Projet Print it - Carrousel JavaScript dynamique pour imprimerie" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">JavaScript</span>
                                 <h3>Print it</h3>
                                 <p>Dynamisation d'un carrousel avec JavaScript</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-print-it-carrousel.html" class="project-link" aria-label="Print it" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/OpenClassrooms-Student-Center/Print-it-JS" class="project-link" aria-label="Print it github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-print-it-carrousel.html" class="lien-projet" aria-label="Print it" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/OpenClassrooms-Student-Center/Print-it-JS" class="lien-projet" aria-label="Print it github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.35s">
-                    <div class="metro-content">
-                        <img src="assets/projets/portfolio-sophie/portfolio-sophie.png" alt="Portfolio Sophie Bluel">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">Front & API</span>
+                <div class="carte-projet etoile-projet" data-category="js" data-wow-delay="0.35s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=75" alt="Projet Portfolio Sophie Bluel - Intégration API portfolio architecte" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">Front & API</span>
                                 <h3>Portfolio Sophie Bluel</h3>
                                 <p>Intégration d'une API dans un portfolio d'architecte</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-site-dynamique-js.html" class="project-link" aria-label="Portfolio Sophie Bluel" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/mahmoumaima/projet-site-dynamique-js" class="project-link" aria-label="Portfolio Sophie Bluel github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-site-dynamique-js.html" class="lien-projet" aria-label="Portfolio Sophie Bluel" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/" class="lien-projet" aria-label="Portfolio Sophie Bluel github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.4s">
-                    <div class="metro-content">
-                        <img src="assets/projets/kasa/kasa.png" alt="Kasa React">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">React</span>
+                <div class="carte-projet etoile-projet" data-category="react" data-wow-delay="0.4s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=600&q=75" alt="Projet Kasa - Application React de location immobilière" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">React</span>
                                 <h3>Kasa React</h3>
                                 <p>Refonte complète en React d'une plateforme de location</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-react-kasa.html" class="project-link" aria-label="Kasa React" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/mahmoumaima/projet-react-kasa" class="project-link" aria-label="Kasa React github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-react-kasa.html" class="lien-projet" aria-label="Kasa React" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/" class="lien-projet" aria-label="Kasa React github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.45s">
-                    <div class="metro-content">
-                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1400&q=80" alt="Menu Maker Qwenta">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">Gestion de projet</span>
+                <div class="carte-projet etoile-projet" data-category="gestion" data-wow-delay="0.45s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=75" alt="Projet Menu Maker Qwenta - Gestion de projet Product Owner" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">Gestion de projet</span>
                                 <h3>Menu Maker Qwenta</h3>
                                 <p>Projet de mise en situation : Rôle Product Owner</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-menu-maker-qwenta.html" class="project-link" aria-label="Menu Maker Qwenta" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://www.figma.com/file/Q6NEUPqwz1U3HFaCaVoF7N/Desktop?node-id=0%3A6" class="project-link" aria-label="Menu Maker Qwenta Figma" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-menu-maker-qwenta.html" class="lien-projet" aria-label="Menu Maker Qwenta" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://www.figma.com/file/Q6NEUPqwz1U3HFaCaVoF7N/Desktop?node-id=0%3A6" class="lien-projet" aria-label="Menu Maker Qwenta Figma" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.5s">
-                    <div class="metro-content">
-                        <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1400&q=80" alt="Eco Bliss Bath">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">Automation</span>
+                <div class="carte-projet etoile-projet" data-category="automation" data-wow-delay="0.5s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1607006344380-b6775a0824a7?auto=format&fit=crop&w=600&q=75" alt="Projet Eco Bliss Bath - Automatisation tests Cypress e-commerce" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">Automation</span>
                                 <h3>Eco Bliss Bath</h3>
                                 <p>Automatisation Cypress pour un site e-commerce eco-responsable</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-automatisation-cypress.html" class="project-link" aria-label="Eco Bliss Bath QA" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2" class="project-link" aria-label="Eco Bliss Bath QA github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-automatisation-cypress.html" class="lien-projet" aria-label="Eco Bliss Bath QA" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2" class="lien-projet" aria-label="Eco Bliss Bath QA github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.55s">
-                    <div class="metro-content">
-                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80" alt="Tomsen stratégie de test">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">QA</span>
+                <div class="carte-projet etoile-projet" data-category="qa" data-wow-delay="0.55s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=600&q=75" alt="Projet Tomsen PayForge - Stratégie de test application paiement" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">QA</span>
                                 <h3>Tomsen PayForge</h3>
                                 <p>Mise en place de la stratégie de test pour application de paiement</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-tomsen-strategie-test.html" class="project-link" aria-label="Tomsen stratégie de test" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://www.figma.com/proto/syO91Dg60fSP9naGVKQ1KV/P11-Tomsen?page-id=0%3A1&node-id=1-43&viewport=599%2C405%2C0.16&scaling=min-zoom&starting-point-node-id=1%3A43" class="project-link" aria-label="Tomsen Figma" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-tomsen-strategie-test.html" class="lien-projet" aria-label="Tomsen stratégie de test" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://www.figma.com/proto/syO91Dg60fSP9naGVKQ1KV/P11-Tomsen?page-id=0%3A1&node-id=1-43&viewport=599%2C405%2C0.16&scaling=min-zoom&starting-point-node-id=1%3A43" class="lien-projet" aria-label="Tomsen Figma" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="metro-item metro-medium wow animate__fadeIn" data-wow-delay="0.6s">
-                    <div class="metro-content">
-                        <img src="assets/projets/portfolio/portfolio.png" alt="Portfolio QA">
-                        <div class="metro-overlay">
-                            <div class="metro-info">
-                                <span class="category">SEO & Déploiement</span>
+                <div class="carte-projet etoile-projet" data-category="gestion" data-wow-delay="0.6s">
+                    <div class="lueur-etoile"></div>
+                    <div class="contenu-carte">
+                        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=75" alt="Projet Portfolio QA - Optimisation SEO et déploiement GitHub Pages" loading="lazy" width="600" height="400">
+                        <div class="superposition">
+                            <div class="info-projet">
+                                <span class="categorie">SEO & Déploiement</span>
                                 <h3>Portfolio QA</h3>
                                 <p>Optimisation SEO et correction des bugs d'un Portfolio professionnel à déployer sur GitHub Pages</p>
-                                <div class="project-links">
-                                    <a href="projets/projet-portfolio-deploiement.html" class="project-link" aria-label="Portfolio QA" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
-                                    <a href="https://github.com/mahmoumaima/projet-portfolio-deploiement" class="project-link" aria-label="Portfolio QA github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                <div class="liens-projet">
+                                    <a href="projets/projet-portfolio-deploiement.html" class="lien-projet" aria-label="Portfolio QA" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/" class="lien-projet" aria-label="Portfolio QA github link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div></div>
+            </div>
+        </div>
     </section>
 
     <!-- About -->
@@ -882,21 +421,16 @@
             <div class="about-grid">
                 <div class="about-image animate__animated animate__fadeInLeft">
                     <div class="image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=600&fit=crop" alt="Profile">
-                        <div class="image-decoration"></div>
+                        <img src="assets/oumi-pro.png" alt="Oumaima Mahmoudi - QA Tester" loading="lazy">
                     </div>
                 </div>
                 <div class="about-content animate__animated animate__fadeInRight">
                     <span class="subtitle">À propos de moi</span>
-                    <h2>Testeuse Fonctionnelle</h2>
-                    <p>
-                        Je sécurise les parcours utilisateurs via des tests end-to-end Cypress, des plans de recette détaillés et une communication claire avec les équipes produit.
-                        Mon quotidien : écrire des cas d'usage, automatiser ce qui apporte le plus de valeur et documenter chaque observation dans un langage accessible.
-                    </p>
-                    <p>
-                        J'utilise des outils simples (Cypress, Postman, Notion, Excel, Jira) pour suivre la couverture, partager les bugs et accompagner les développeurs jusqu'à la mise en production.
-                        Objectif : garantir une expérience fluide et cohérente pour les utilisateurs finaux.
-                    </p>
+                    <h3>Mon Parcours</h3>
+                    <p>Titulaire d'un Master 2 en Banque et Finance, j'ai choisi de réorienter ma carrière vers l'assurance qualité logicielle, un domaine qui correspond parfaitement à mon goût pour l'analyse minutieuse et la résolution de problèmes. Cette transition s'est concrétisée par l'obtention de la certification ISTQB Foundation Level ainsi que par une formation Testeur Logiciel chez OpenClassrooms, qui m'ont permis d'acquérir des compétences solides et reconnues dans le domaine du testing.</p>
+                    <p>Mon parcours atypique constitue un véritable atout : ma formation initiale en finance m'a permis de développer une rigueur analytique et une compréhension approfondie des systèmes complexes, notamment dans les domaines bancaires et financiers. Ces compétences se transposent naturellement dans le monde du testing, où la précision et l'attention aux détails sont essentielles.</p>
+                    <p>Aujourd'hui, mon expertise couvre les tests fonctionnels et non fonctionnels, l'automatisation des tests avec des outils modernes, ainsi que la mise en œuvre de méthodologies Agile. Je suis animée par une passion sincère pour la qualité et l'amélioration continue, toujours à la recherche de nouvelles techniques et bonnes pratiques pour garantir des livrables fiables et performants.</p>
+
                     <div class="stats-grid">
                         <div class="stat-item">
                             <h3>7+</h3>
@@ -917,91 +451,126 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="skills-section">
-        <h2 class="visually-hidden">Skills Section</h2>
+    <section id="skills" class="section-competences section-competences-v2" aria-labelledby="skills-title">
         <div class="container">
-            <div class="section-header">
-                <h2 class="animate__animated animate__fadeInUp">Compétences Techniques</h2>
+            <div class="entete-section">
+                <h2 id="skills-title" class="animate__animated animate__fadeInUp">Compétences Techniques</h2>
                 <p class="animate__animated animate__fadeInUp">Stack technologique et expertises</p>
             </div>
-            
-            <div class="skills-grid">
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-code"></i>
+
+            <div class="competences-showcase">
+                <!-- Colonne gauche : Catégories avec barres -->
+                <div class="competences-barres">
+                    <div class="categorie-competence" data-categorie="testing">
+                        <div class="categorie-header">
+                            <div class="categorie-icone"><i class="fas fa-vial"></i></div>
+                            <div class="categorie-info">
+                                <h3>Tests & Automatisation</h3>
+                                <span class="categorie-niveau">Avancé</span>
+                            </div>
+                        </div>
+                        <div class="barre-niveau">
+                            <div class="barre-remplissage" style="--niveau: 80%;"></div>
+                        </div>
+                        <div class="competences-liste">
+                            <span class="competence-tag">Cypress</span>
+                            <span class="competence-tag">Jest</span>
+                            <span class="competence-tag">Tests E2E</span>
+                            <span class="competence-tag">Tests fonctionnels</span>
+                            <span class="competence-tag">Tests exploratoires</span>
+                        </div>
                     </div>
-                    <h3>Tests Unitaires et Automatisés</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Cypress</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Jest</span>
+
+                    <div class="categorie-competence" data-categorie="api">
+                        <div class="categorie-header">
+                            <div class="categorie-icone"><i class="fas fa-plug"></i></div>
+                            <div class="categorie-info">
+                                <h3>APIs & Intégration</h3>
+                                <span class="categorie-niveau">Intermédiaire</span>
+                            </div>
+                        </div>
+                        <div class="barre-niveau">
+                            <div class="barre-remplissage" style="--niveau: 60%;"></div>
+                        </div>
+                        <div class="competences-liste">
+                            <span class="competence-tag">Postman</span>
+                            <span class="competence-tag">Swagger</span>
+                            <span class="competence-tag">REST API</span>
+                        </div>
+                    </div>
+
+                    <div class="categorie-competence" data-categorie="dev">
+                        <div class="categorie-header">
+                            <div class="categorie-icone"><i class="fas fa-code"></i></div>
+                            <div class="categorie-info">
+                                <h3>Compréhension Web</h3>
+                                <span class="categorie-niveau">Intermédiaire</span>
+                            </div>
+                        </div>
+                        <div class="barre-niveau">
+                            <div class="barre-remplissage" style="--niveau: 60%;"></div>
+                        </div>
+                        <div class="competences-liste">
+                            <span class="competence-tag">HTML5 / CSS3</span>
+                            <span class="competence-tag">JavaScript</span>
+                            <span class="competence-tag">React</span>
+                            <span class="competence-tag">DevTools</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-project-diagram"></i>
+                <!-- Colonne droite : Outils & Méthodologies -->
+                <div class="competences-outils">
+                    <div class="outils-section">
+                        <h4><i class="fas fa-tools"></i> Outils de gestion</h4>
+                        <div class="outils-grille">
+                            <div class="outil-item">
+                                <div class="outil-logo"><i class="fab fa-jira"></i></div>
+                                <span>Jira</span>
+                            </div>
+                            <div class="outil-item">
+                                <div class="outil-logo"><i class="fab fa-trello"></i></div>
+                                <span>Trello</span>
+                            </div>
+                            <div class="outil-item">
+                                <div class="outil-logo"><i class="fas fa-sticky-note"></i></div>
+                                <span>Notion</span>
+                            </div>
+                            <div class="outil-item">
+                                <div class="outil-logo"><i class="fab fa-figma"></i></div>
+                                <span>Figma</span>
+                            </div>
+                            <div class="outil-item">
+                                <div class="outil-logo"><i class="fas fa-file-excel"></i></div>
+                                <span>Excel</span>
+                            </div>
+                            <div class="outil-item">
+                                <div class="outil-logo"><i class="fab fa-github"></i></div>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Tests fonctionnels</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Stratégie de test</span>
-                        <span class="tag">Tests Exploratoires & E2E</span>
-                        <span class="tag">Responsive web</span>
-                        <span class="tag">Accessibilité</span>
-                    </div>
-                </div>
 
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-stream"></i>
-                    </div>
-                    <h3>APIs & intégration</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Postman</span>
-                        <span class="tag">Swagger</span>
-                        <span class="tag">Collections JSON</span>
-                    </div>
-                </div>
-
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Développement Web</h3>
-                    <div class="skill-tags">
-                        <span class="tag">HTML5</span>
-                        <span class="tag">CSS3</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">React</span>
-                        <span class="tag">Chrome DevTools</span>
-                    </div>
-                </div>
-
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-database"></i>
-                    </div>
-                    <h3>Suivi & documentation</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Excel</span>
-                        <span class="tag">Jira</span>
-                        <span class="tag">Trello</span>
-                        <span class="tag">Notion</span>
-                        <span class="tag">Figma</span>
-                    </div>
-                </div>
-
-                <div class="skill-category animate__animated animate__fadeInUp">
-                    <div class="category-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
-                    <h3>Organisation & CI</h3>
-                    <div class="skill-tags">
-                        <span class="tag">GitHub Actions</span>
-                        <span class="tag">Git</span>
-                        <span class="tag">Revues de code</span>
-                        <span class="tag">Checklists QA</span>
-                        <span class="tag">Rétrospectives</span>
+                    <div class="outils-section">
+                        <h4><i class="fas fa-sitemap"></i> Méthodologies</h4>
+                        <div class="methodologies-liste">
+                            <div class="methodo-badge">
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Agile / Scrum</span>
+                            </div>
+                            <div class="methodo-badge">
+                                <i class="fas fa-code-branch"></i>
+                                <span>CI/CD</span>
+                            </div>
+                            <div class="methodo-badge">
+                                <i class="fas fa-clipboard-check"></i>
+                                <span>ISTQB</span>
+                            </div>
+                            <div class="methodo-badge">
+                                <i class="fas fa-universal-access"></i>
+                                <span>Accessibilité</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1009,32 +578,32 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="section-contact" aria-labelledby="contact-title">
         <div class="container">
-            <div class="section-header">
-                <h2 class="animate__animated animate__fadeInUp">Restons en Contact</h2>
+            <div class="entete-section">
+                <h2 id="contact-title" class="animate__animated animate__fadeInUp">Restons en Contact</h2>
                 <p class="animate__animated animate__fadeInUp">Intéressé par une collaboration ? Discutons de votre projet</p>
             </div>
             
-            <div class="contact-grid">
-                <div class="contact-info animate__animated animate__fadeInLeft">
+            <div class="grille-contact">
+                <div class="infos-contact animate__animated animate__fadeInLeft">
                     <h3>Informations de contact</h3>
-                    <div class="contact-items">
-                        <div class="contact-item">
+                    <div class="liste-contacts">
+                        <div class="item-contact">
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
                                 <p>contact@portfolio.com</p>
                             </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="item-contact">
                             <i class="fas fa-phone"></i>
                             <div>
                                 <h4>Téléphone</h4>
                                 <p>+33 6 XX XX XX XX</p>
                             </div>
                         </div>
-                        <div class="contact-item">
+                        <div class="item-contact">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Localisation</h4>
@@ -1044,25 +613,25 @@
                     </div>
                 </div>
 
-                <form id="contact-form" class="contact-form animate__animated animate__fadeInRight" action="https://formspree.io/f/xyzvrdek" method="POST" novalidate>
-                    <div class="form-group">
+                <form id="formulaire-contact" class="formulaire-contact animate__animated animate__fadeInRight" action="https://formspree.io/f/xyzvrdek" method="POST" novalidate>
+                    <div class="groupe-champ">
                         <label for="contact-name">Votre nom</label>
                         <input id="contact-name" type="text" name="name" placeholder="Votre nom" minlength="2" maxlength="80" required aria-required="true">
                     </div>
-                    <div class="form-group">
+                    <div class="groupe-champ">
                         <label for="contact-email">Votre email</label>
                         <input id="contact-email" type="email" name="email" placeholder="Votre email" required aria-required="true" inputmode="email" autocomplete="email">
                     </div>
-                    <div class="form-group">
+                    <div class="groupe-champ">
                         <label for="contact-subject">Sujet</label>
                         <input id="contact-subject" type="text" name="subject" placeholder="Sujet" maxlength="120">
                     </div>
-                    <div class="form-group">
+                    <div class="groupe-champ">
                         <label for="contact-message">Votre message</label>
                         <textarea id="contact-message" name="message" placeholder="Votre message" rows="5" minlength="10" maxlength="1000" required aria-required="true"></textarea>
                     </div>
-                    <div class="form-progress" aria-hidden="true">
-                        <div class="form-progress-bar"></div>
+                    <div class="barre-progression" aria-hidden="true">
+                        <div class="barre-progression-bar"></div>
                     </div>
                     <p class="form-result" role="status" aria-live="polite" aria-atomic="true"></p>
                     <button type="submit" class="btn btn-primary">Envoyer le message</button>
@@ -1072,22 +641,21 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <h2 class="visually-hidden">Footer Section</h2>
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 social-style-3 text-center text-lg-start sm-margin-10px-bottom">
                     <div class="social-icon-style-8 d-inline-block align-middle">
                         <ul class="small-icon mb-0">
-                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://github.com/" title="Dribbble" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
-                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>                                      
+                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://medium.com/" title="Medium" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a></li>
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-content col-lg-4 col-md-2 text-center sm-margin-20px-bottom">
-                   <a class="logo" href="#home"><img src="assets/logo.png" class="default" alt="Pofo" width="105" height="26"></a> 
+                   <a class="logo" href="#home"><img src="assets/logo.png" alt="Logo Oumaima Mahmoudi - Retour à l'accueil"></a> 
                 </div>
                 <div class="footer-content col-lg-4 col-md-5 text-center alt-font text-small font-weight-500 text-lg-end">
                     <p>© 2025 Oumaima Mahmoudi</p>
@@ -1095,45 +663,70 @@
             </div>
         </div>
         <!-- Arrow up -->
-        <a id="arrow-up" class="scroll-top-arrow" href="#home" aria-label="GO UP"><i class="fa fa-arrow-up"></i></a>
+        <a href="#home" class="btn-top" aria-label="Retour en haut">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
     </footer>
 
-    <!-- JS Script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/contact.js"></script>
+    <!-- JS Script - defer pour ne pas bloquer le rendu -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
     <!-- JSON-LD for Google -->
     <script type="application/ld+json">
+    [
         {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Oumaima Mahmoudi",
-        "url": "https://mahmoumaima.github.io/portfolio-oumaima/",
-        "image": "https://mahmoumaima.github.io/portfolio-oumaima/assets/oumi.png",
-        "description": "QA Tester & Banking/Finance Expert",
-        "jobTitle": ["QA Tester", "Banking Specialist", "Product Owner"],
-        "sameAs": [
-            "https://github.com/mahmoumaima"
-        ],
-        "knowsAbout": [
-            "Quality Assurance",
-            "Software Testing",
-            "Banking Systems",
-            "Financial Technology",
-            "Agile Methodology",
-            "STQB Certification",
-            "Test Automation",
-            "Product Ownership"
-        ],
-        "workLocation": {
-            "@type": "Place",
-            "name": "Remote"
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Portfolio Oumaima Mahmoudi",
+            "url": "https://mahmoumaima.github.io/portfolio-oumaima/",
+            "description": "Portfolio professionnel de Oumaima Mahmoudi, Testeuse QA et experte Banque/Finance",
+            "inLanguage": "fr-FR",
+            "author": {
+                "@type": "Person",
+                "name": "Oumaima Mahmoudi"
+            }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Oumaima Mahmoudi",
+            "url": "https://mahmoumaima.github.io/portfolio-oumaima/",
+            "image": "https://mahmoumaima.github.io/portfolio-oumaima/assets/oumi.png",
+            "description": "Testeuse QA certifiée ISTQB avec expertise en Banque et Finance",
+            "jobTitle": ["QA Tester", "Testeuse Fonctionnelle", "Product Owner"],
+            "sameAs": [
+                "https://github.com/mahmoumaima"
+            ],
+            "knowsAbout": [
+                "Assurance Qualité",
+                "Tests Logiciels",
+                "Tests Fonctionnels",
+                "Automatisation Cypress",
+                "Systèmes Bancaires",
+                "Fintech",
+                "Méthodologie Agile",
+                "Certification ISTQB",
+                "Product Ownership"
+            ],
+            "hasCredential": {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "certification",
+                "name": "ISTQB Foundation Level"
+            },
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Master 2 Banque et Finance"
+            },
+            "workLocation": {
+                "@type": "Place",
+                "name": "Paris, France"
+            }
         }
-        }
+    ]
     </script>
 </body>
 </html>
 
 
 
->>>>>>> 765f19d (remplissage projets)

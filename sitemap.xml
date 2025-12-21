@@ -1,43 +1,110 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Page principale -->
   <url>
     <loc>https://mahmoumaima.github.io/portfolio-oumaima/</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://mahmoumaima.github.io/portfolio-oumaima/#home</loc>
-    <lastmod>2025-11-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+
+  <!-- Sections de la page principale -->
   <url>
     <loc>https://mahmoumaima.github.io/portfolio-oumaima/#projects</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mahmoumaima.github.io/portfolio-oumaima/#about</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mahmoumaima.github.io/portfolio-oumaima/#skills</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mahmoumaima.github.io/portfolio-oumaima/#contact</loc>
-    <lastmod>2025-11-30</lastmod>
+    <lastmod>2025-12-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-<<<<<<< HEAD
+
+  <!-- Pages de projets individuelles -->
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-html-initiation.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-riding-cities.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-booki-accueil.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-jse-avocats.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-724events-tests.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-print-it-carrousel.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-site-dynamique-js.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-react-kasa.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-menu-maker-qwenta.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-automatisation-cypress.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-tomsen-strategie-test.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://mahmoumaima.github.io/portfolio-oumaima/projets/projet-portfolio-deploiement.html</loc>
+    <lastmod>2025-12-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
-=======
-</urlset>
->>>>>>> 765f19d (remplissage projets)

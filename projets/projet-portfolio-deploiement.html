@@ -5,334 +5,306 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio QA - Déploiement GitHub Pages | Portfolio Oumaima</title>
+    <meta name="description" content="Projet Portfolio QA : optimisation SEO, correction de bugs et déploiement sur GitHub Pages d'un portfolio professionnel. Portfolio Oumaima Mahmoudi.">
     <link rel="shortcut icon" href="../assets/favicone.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/lib.min.css">
-    <link rel="stylesheet" href="../css/global.min.css">
-    <link rel="stylesheet" href="../css/global.responsive.min.css">
+    <link rel="stylesheet" href="../css/vendors.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/projet-template.css">
 </head>
-<body id="top" class="project-template">
-    <header class="project-header">
-        <nav class="navbar bootsnav bg-transparent navbar-top nav-box-width navbar-transparent-no-sticky">
-            <div class="container-fluid nav-header-container h-50px sm-h-70px">
-                <div class="col d-none d-md-block text-start ps-0">
-                    <div class="header-social-icon border-none no-padding-left no-margin-left">
-                        <a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a>
-                        <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="masthead-logo-centered">
-                    <img src="../assets/logo.png" alt="Logo Oumaima">
-                </div>
-                <div class="nav-container">
-                    <ul class="nav-menu">
-                        <li><a href="../index.html">Portfolio</a></li>
-                        <li><a href="#overview" class="active">Projet</a></li>
-                        <li><a href="#ressources">Ressources</a></li>
-                        <li><a href="#repo">Code</a></li>
-                        <li><a href="#live-preview">Démonstration</a></li>
-                    </ul>
-                    <div class="hamburger"><span></span><span></span><span></span></div>
-                </div>
+<body id="top" class="page-projet">
+
+    <!-- Navigation flottante -->
+    <header class="entete-projet">
+        <nav class="navbar-projet">
+            <a href="../index.html" class="btn-retour" aria-label="Retour au portfolio">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Portfolio</span>
+            </a>
+            <a href="../index.html" class="logo-projet-centre">
+                <img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi">
+            </a>
+            <div class="nav-projet-actions">
+                <a href="https://github.com/" class="btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </nav>
     </header>
 
-    <section id="home" class="project-masthead" style="background-image: linear-gradient(135deg, rgba(15,15,15,0.88), rgba(15,15,35,0.75)), url('../assets/projets/portfolio/portfolio.png');">
-        <div class="container">
-            <span class="masthead-badge animate__animated animate__fadeInDown">
-                <i class="fa-solid fa-rocket"></i> Déploiement
-            </span>
-            <h1 class="project-title animate__animated animate__fadeInUp">Portfolio QA</h1>
-            <p class="project-subtitle animate__animated animate__fadeInUp animate__delay-1s">
-                Création portfolio professionnel testeur logiciel : présentation compétences QA, projets réalisés, déploiement GitHub Pages avec optimisations performance/SEO.
+    <!-- HERO - Bannière immersive plein écran -->
+    <section id="hero" class="hero-immersif">
+        <div class="hero-fond">
+            <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="hero-overlay"></div>
+            <div class="particules-hero"></div>
+        </div>
+
+        <div class="hero-contenu">
+            <div class="hero-badge animate__animated animate__fadeInDown">
+                <span class="badge-icone"><i class="fa-solid fa-rocket"></i></span>
+                <span class="badge-texte">Déploiement</span>
+            </div>
+
+            <h1 class="hero-titre animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="titre-ligne">Portfolio QA</span>
+                <span class="titre-ligne titre-accent">GitHub Pages</span>
+            </h1>
+
+            <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
+                Création d'un portfolio professionnel de testeur logiciel : présentation des compétences QA, projets réalisés, déploiement GitHub Pages avec optimisations performance/SEO.
             </p>
-            <div class="masthead-tags animate__animated animate__fadeInUp animate__delay-1s">
-                <span class="tag tag-icon"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
-                <span class="tag tag-icon"><i class="fa-brands fa-github"></i> GitHub Pages</span>
-                <span class="tag tag-icon"><i class="fa-solid fa-gauge-high"></i> Performance</span>
-                <span class="tag tag-icon"><i class="fa-solid fa-chart-line"></i> SEO</span>
+
+            <div class="hero-tags animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="hero-tag"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+                <span class="hero-tag"><i class="fa-brands fa-github"></i> GitHub Pages</span>
+                <span class="hero-tag"><i class="fa-solid fa-gauge-high"></i> Performance</span>
+                <span class="hero-tag"><i class="fa-solid fa-chart-line"></i> SEO</span>
             </div>
-            <div class="masthead-cta animate__animated animate__fadeInUp animate__delay-1s">
-                <a href="#ressources" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explorer les ressources</a>
-                <a href="#live-preview" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Voir le rendu</a>
-            </div>
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
+
+        </div>
+
+        <!-- Indicateur de scroll -->
+        <div class="hero-scroll">
+            <span class="scroll-texte">Découvrir</span>
+            <div class="scroll-ligne"></div>
+            <div class="scroll-cercle">
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
-    <section id="overview" class="section-block section-light">
+    <!-- PRÉSENTATION - Contexte du projet -->
+    <section id="overview" class="bloc-section section-light">
         <div class="container">
-            <div class="section-title">Aperçu général</div>
-            <div class="section-heading">Vision, portée et résultats</div>
-            <div class="project-info-grid notebook-layout">
-                <div class="card-glass">
-                    <h3>Résumé du projet</h3>
-                    <p>
-                        Projet final de la formation : créer un portfolio professionnel pour présenter compétences et projets de testeur logiciel. 
-                        Le portfolio doit mettre en valeur les 11 projets réalisés pendant la formation, démontrer maîtrise des outils QA 
-                        (Cypress, Jira, Notion, stratégie de test) et être accessible publiquement en ligne.
-                    </p>
-                    <p>
-                        Trois axes principaux : conception portfolio responsive avec HTML/CSS, présentation claire des projets avec détails techniques, 
-                        et déploiement sur GitHub Pages. Le portfolio sert de vitrine professionnelle pour candidatures et doit refléter 
-                        la rigueur et l'attention aux détails d'un testeur logiciel.
-                    </p>
-                    <ul class="functionalities">
-                        <li><strong>Structure portfolio :</strong> page d'accueil avec présentation personnelle, section compétences QA (tests manuels, automatisation, stratégie), galerie 12 projets avec descriptions.</li>
-                        <li><strong>Pages projets détaillées :</strong> pour chaque projet (Booki, JSE Avocats, 724events, Print it, Sophie Bluel, Kasa, Qwenta, Eco Bliss Bath, Tomsen), page dédiée avec contexte, technologies, défis, livrables.</li>
-                        <li><strong>Design responsive :</strong> adaptation mobile/tablette/desktop, navigation intuitive, cohérence visuelle avec charte graphique professionnelle.</li>
-                        <li><strong>Optimisations :</strong> images compressées, lazy loading, minification CSS/JS, méta SEO (title, description, Open Graph), performance Lighthouse >90.</li>
-                        <li><strong>GitHub Pages :</strong> création repository GitHub, configuration GitHub Pages, URL personnalisée (username.github.io/portfolio), documentation README.</li>
-                        <li><strong>Contact :</strong> liens vers profils professionnels (LinkedIn, GitHub), email contact, option téléchargement CV PDF.</li>
-                    </ul>
-                </div>
-                <div class="card-glass">
-                    <h3>Détails clés</h3>
-                    <ul class="project-meta">
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-graduation-cap"></i> Formation</span>
-                            <span class="meta-value">OpenClassrooms Testeur Logiciel</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-briefcase"></i> Objectif</span>
-                            <span class="meta-value">Vitrine professionnelle pour recruteurs</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-user-gear"></i> Rôle</span>
-                            <span class="meta-value">Développeur Front-End & QA</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-calendar-days"></i> Durée</span>
-                            <span class="meta-value">80h</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-diagram-project"></i> Livrables</span>
-                            <span class="meta-value">Portfolio en ligne + repository GitHub public</span>
-                        </li>
-                    </ul>
-                    <h3>Stack & Outils</h3>
-                    <div class="tech-grid">
-                        <span class="tech-tile"><i class="fa-brands fa-html5"></i> HTML5</span>
-                        <span class="tech-tile"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
-                        <span class="tech-tile"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="tech-tile"><i class="fa-brands fa-github"></i> GitHub Pages</span>
-                        <span class="tech-tile"><i class="fa-solid fa-gauge-high"></i> Lighthouse</span>
-                        <span class="tech-tile"><i class="fa-brands fa-git-alt"></i> Git</span>
-                    </div>
-                </div>
+            <div class="contexte-header-v2">
+                <span class="section-label">Le Contexte</span>
+                <h2 class="section-titre-grand">Comprendre le <span class="texte-degrade">challenge</span></h2>
             </div>
-        </div>
-    </section>
+            <div class="grille-infos-projet disposition-carnet">
+                <div class="carte-verre">
+                    <h3><i class="fa-solid fa-bullseye"></i> Mission</h3>
 
-    <section id="ressources" class="section-block section-muted">
-        <div class="container">
-            <div class="section-title">Ressources</div>
-            <div class="section-heading">Templates, guidelines & déploiement</div>
-            <div class="resource-slider">
-                <button class="slider-btn slider-btn-prev" data-direction="prev" aria-label="Slide précédent"><i class="fa-solid fa-chevron-left"></i></button>
-                <div class="resource-slider-window">
-                    <div class="resource-slider-track">
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Brief</span>
-                            <h4>Consignes projet portfolio</h4>
-                            <p>Spécifications du projet final : objectifs portfolio, sections obligatoires (présentation, compétences, projets), 
-                            critères évaluation, contraintes techniques (responsive, GitHub Pages).</p>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" alt="Brief">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Design</span>
-                            <h4>Inspiration & bonnes pratiques</h4>
-                            <p>Exemples portfolios professionnels QA/développeurs, best practices UX/UI :</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li>Navigation claire et intuitive</li>
-                                <li>Projets présentés avec visuels</li>
-                                <li>Appels à l'action (contact, téléchargement CV)</li>
-                                <li>Cohérence visuelle (couleurs, typographies)</li>
-                                <li>Responsive design mobile-first</li>
-                            </ul>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=80" alt="Design">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>GitHub Pages</span>
-                            <h4>Guide déploiement</h4>
-                            <p>Tutoriel complet pour publier portfolio sur GitHub Pages :</p>
-                            <ol style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li>Créer repository GitHub public (username.github.io)</li>
-                                <li>Push code HTML/CSS/JS vers repository</li>
-                                <li>Activer GitHub Pages dans Settings → Pages</li>
-                                <li>Choisir branche main + dossier root</li>
-                                <li>Attendre déploiement (2-3 minutes)</li>
-                                <li>Vérifier site accessible à username.github.io</li>
-                            </ol>
-                            <a href="https://pages.github.com/" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> GitHub Pages</a>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=1000&q=80" alt="GitHub">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Optimisations</span>
-                            <h4>Performance & SEO</h4>
-                            <p>Checklist optimisations avant mise en ligne :</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li><strong>Images :</strong> compression WebP/JPEG, lazy loading</li>
-                                <li><strong>CSS/JS :</strong> minification, suppression code inutilisé</li>
-                                <li><strong>SEO :</strong> balises title/description, meta Open Graph, sitemap.xml</li>
-                                <li><strong>Performance :</strong> audit Lighthouse (objectif >90), cache navigateur</li>
-                                <li><strong>Accessibilité :</strong> alt images, contrastes WCAG, navigation clavier</li>
-                            </ul>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="Optimisations">
-                        </div>
-                    </article>
-                    </div>
-                </div>
-                <button class="slider-btn slider-btn-next" data-direction="next" aria-label="Slide suivant"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-            <div class="slider-progress">
-                <div class="slider-progress-line">
-                    <span class="slider-progress-bar"></span>
-                    <span class="slider-progress-dot"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="repo" class="section-block section-light">
-        <div class="container">
-            <div class="section-title">Code & Delivery</div>
-            <div class="section-heading">Repository GitHub & déploiement</div>
-            <div class="repo-preview">
-                <div class="card-glass">
-                    <h3>GitHub Repository</h3>
-                    <p>Code source portfolio avec HTML/CSS/JS, images optimisées, README documentation et déploiement GitHub Pages actif.</p>
-                    <a href="https://github.com/mahmoumaima/oumi-portfolio" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Voir le repository</a>
-                    <a href="https://mahmoumaima.github.io/oumi-portfolio" target="_blank" class="btn btn-secondary" style="margin-top: 1rem;"><i class="fa-solid fa-globe"></i> Voir le portfolio en ligne</a>
-                </div>
-                <div class="repo-terminal">
-<pre>$ git clone https://github.com/mahmoumaima/oumi-portfolio.git
-<<<<<<< HEAD
-=======
-$ cd oumi-portfolio
-
-# Structure projet
-oumi-portfolio/
-├── index.html              # Page accueil
-├── projets/                # Pages projets détaillées
-│   ├── projet-booki.html
-│   ├── projet-jse-avocats.html
-│   └── ...
-├── css/                    # Styles
-├── js/                     # Scripts
-├── assets/                 # Images optimisées
-└── README.md              # Documentation
->>>>>>> 765f19d (remplissage projets)
-
-# Déploiement GitHub Pages
-$ git add .
-$ git commit -m "Deploy portfolio"
-$ git push origin main
-
-# Site accessible: https://mahmoumaima.github.io/oumi-portfolio</pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="live-preview" class="section-block section-muted">
-        <div class="container">
-            <div class="section-title">Live Preview</div>
-            <div class="section-heading">Portfolio en ligne</div>
-            <div class="project-preview-box">
-                <div class="live-preview">
-                    <div class="mockup-screen">
-                        <div class="mockup-track">
-<<<<<<< HEAD
-                            <img src="../assets/projets/portfolio/screen/1.png" alt="Portfolio accueil">
-                            <img src="../assets/projets/portfolio/screen/2.png" alt="Apropos">
-                            <img src="../assets/projets/portfolio/screen/3.png" alt="Projets">
-=======
-                            <img src="../assets/projets/portfolio/portfolio.png" alt="Portfolio accueil">
-                            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=800&q=80" alt="Section projets">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Performance">
->>>>>>> 765f19d (remplissage projets)
-                        </div>
-                    </div>
-                </div>
-                <div class="project-preview-text">
-                    <div class="preview-summary">
-                        <h3>Résultats finaux</h3>
-                        <p>
-                            Portfolio professionnel testeur logiciel déployé sur GitHub Pages : 12 projets présentés, optimisations performance/SEO, 
-                            design responsive et accessible en ligne pour recruteurs.
+                    <div class="mission-contexte">
+                        <p class="mission-intro">
+                            Projet final de la formation : créer un portfolio professionnel pour présenter les compétences et projets de testeur logiciel.
+                            Le portfolio doit mettre en valeur les 11 projets réalisés pendant la formation.
                         </p>
-                        <ul class="demo-results-list">
-                            <li><strong>Structure complète :</strong> page accueil avec présentation personnelle, section compétences QA (tests manuels/automatisés, outils), galerie 12 projets formation.</li>
-<<<<<<< HEAD
-=======
-                            <li><strong>Pages projets détaillées :</strong> chaque projet (Booki, JSE Avocats, 724events, Print it, Sophie Bluel, Kasa, Qwenta, Eco Bliss Bath, Tomsen) avec contexte, stack technique, défis, captures écran.</li>
->>>>>>> 765f19d (remplissage projets)
-                            <li><strong>Design responsive :</strong> adaptation mobile/tablette/desktop avec breakpoints CSS, navigation hamburger mobile, layout fluide.</li>
-                            <li><strong>Optimisations performance :</strong> images WebP compressées, lazy loading, minification CSS/JS, score Lighthouse 95+ (Performance/SEO/Accessibility).</li>
-                            <li><strong>SEO optimisé :</strong> balises meta (title, description), Open Graph pour réseaux sociaux, sitemap.xml, robots.txt.</li>
-                            <li><strong>GitHub Pages :</strong> déploiement réussi, URL publique active (mahmoumaima.github.io/oumi-portfolio), README documentation complète.</li>
-<<<<<<< HEAD
-=======
-                            <li><strong>Contact professionnel :</strong> liens LinkedIn/GitHub, email contact, bouton téléchargement CV PDF.</li>
->>>>>>> 765f19d (remplissage projets)
+                    </div>
+
+                    <div class="mission-objectif">
+                        <h4><i class="fa-solid fa-crosshairs"></i> Objectif</h4>
+                        <p>
+                            Concevoir un portfolio responsive avec HTML/CSS, présenter clairement les projets avec détails techniques,
+                            et déployer sur GitHub Pages. Le portfolio sert de vitrine professionnelle pour les candidatures.
+                        </p>
+                    </div>
+
+                    <div class="mission-livrables">
+                        <h4><i class="fa-solid fa-box-open"></i> Livrables</h4>
+                        <ul class="liste-livrables">
+                            <li>Portfolio en ligne</li>
+                            <li>Repository GitHub</li>
+                            <li>Pages projets détaillées</li>
+                            <li>Optimisations SEO</li>
                         </ul>
                     </div>
                 </div>
+                <div class="carte-verre">
+                    <h3><i class="fa-solid fa-list-check"></i> Détails clés</h3>
+                    <ul class="meta-projet">
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-graduation-cap"></i> Formation</span>
+                            <span class="valeur-meta">OpenClassrooms Testeur Logiciel</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-briefcase"></i> Objectif</span>
+                            <span class="valeur-meta">Vitrine professionnelle pour recruteurs</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-user-gear"></i> Rôle</span>
+                            <span class="valeur-meta">Développeur Front-End & QA</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-calendar-days"></i> Durée</span>
+                            <span class="valeur-meta">80h</span>
+                        </li>
+                    </ul>
+                    <h3><i class="fa-solid fa-layer-group"></i> Stack & Outils</h3>
+                    <div class="grille-tech">
+                        <span class="tuile-tech"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-github"></i> GitHub Pages</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-gauge-high"></i> Lighthouse</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-git-alt"></i> Git</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <h2 class="visually-hidden">Footer Section</h2>
+    <!-- TIMELINE - Parcours du projet -->
+    <section id="timeline" class="section-timeline">
+
+        <div class="container">
+            <div class="timeline-header">
+                <span class="section-label">Le Parcours</span>
+                <h2 class="section-titre-grand">Phases de <span class="texte-degrade">création</span></h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-ligne"></div>
+
+                <article class="timeline-item" data-step="1">
+                    <div class="timeline-point">
+                        <span>01</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 1</span>
+                            <h3>Conception & Design</h3>
+                            <p>Étude des portfolios professionnels QA/développeurs, définition de la structure (présentation, compétences, projets) et charte graphique.</p>
+                            <div class="timeline-tags">
+                                <span>Inspiration</span>
+                                <span>UX/UI</span>
+                                <span>Structure</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="2">
+                    <div class="timeline-point">
+                        <span>02</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 2</span>
+                            <h3>Développement</h3>
+                            <p>Intégration HTML/CSS responsive, création des pages projets détaillées, ajout des animations et interactions JavaScript.</p>
+                            <div class="timeline-tags">
+                                <span>HTML/CSS</span>
+                                <span>Responsive</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="3">
+                    <div class="timeline-point">
+                        <span>03</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 3</span>
+                            <h3>Optimisations</h3>
+                            <p>Compression des images, minification CSS/JS, ajout des balises meta SEO, audit Lighthouse pour performance.</p>
+                            <div class="timeline-tags">
+                                <span>Images</span>
+                                <span>SEO</span>
+                                <span>Lighthouse</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="4">
+                    <div class="timeline-point">
+                        <span>04</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 4</span>
+                            <h3>Déploiement</h3>
+                            <p>Création du repository GitHub public, configuration GitHub Pages, vérification de l'accessibilité et documentation README.</p>
+                            <div class="timeline-tags">
+                                <span>GitHub</span>
+                                <span>Deploy</span>
+                                <span>README</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉSULTATS - Bilan et apprentissages -->
+    <section id="resultats" class="section-resultats">
+
+        <div class="container">
+            <div class="resultats-header">
+                <span class="section-label">Les Résultats</span>
+                <h2 class="section-titre-grand">Mission <span class="texte-degrade">accomplie</span></h2>
+            </div>
+
+            <div class="resultats-contenu">
+                <p class="resultats-intro">
+                    Portfolio professionnel testeur logiciel déployé sur GitHub Pages : 12 projets présentés, optimisations performance/SEO,
+                    design responsive et accessible en ligne pour les recruteurs.
+                </p>
+                <div class="resultats-grille">
+                    <div class="resultat-carte"><i class="fa-solid fa-folder-open"></i><strong>Structure complète :</strong> page accueil avec présentation, section compétences QA, galerie des 12 projets formation.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-file-lines"></i><strong>Pages projets détaillées :</strong> chaque projet avec contexte, stack technique, défis et captures d'écran.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-mobile-screen"></i><strong>Design responsive :</strong> adaptation mobile/tablette/desktop avec breakpoints CSS, navigation hamburger mobile.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-gauge-high"></i><strong>Optimisations performance :</strong> images WebP compressées, lazy loading, minification, score Lighthouse 95+.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-magnifying-glass"></i><strong>SEO optimisé :</strong> balises meta (title, description), Open Graph pour réseaux sociaux, sitemap.xml.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-globe"></i><strong>GitHub Pages :</strong> déploiement réussi, URL publique active, README documentation complète.</div>
+                </div>
+            </div>
+
+            <!-- CTA Navigation projets -->
+            <div class="projets-navigation">
+                <a href="projet-tomsen-strategie-test.html" class="nav-projet-btn prev">
+                    <span class="nav-direction"><i class="fa-solid fa-arrow-left"></i> Précédent</span>
+                    <span class="nav-titre">Tomsen PayForge</span>
+                </a>
+                <a href="../index.html#projects" class="nav-projet-btn centre">
+                    <i class="fa-solid fa-th-large"></i>
+                    <span>Tous les projets</span>
+                </a>
+                <a href="projet-html-initiation.html" class="nav-projet-btn next">
+                    <span class="nav-direction">Suivant <i class="fa-solid fa-arrow-right"></i></span>
+                    <span class="nav-titre">Initiation HTML/CSS</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 social-style-3 text-center text-lg-start sm-margin-10px-bottom">
                     <div class="social-icon-style-8 d-inline-block align-middle">
                         <ul class="small-icon mb-0">
-                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
-                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/mahmoumaima" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://medium.com/" title="Medium" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a></li>
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-content col-lg-4 col-md-2 text-center sm-margin-20px-bottom">
-                   <a class="logo" href="#home"><img src="../assets/logo.png" class="default" alt="Pofo" width="105" height="26"></a>
+                   <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi - Retour à l'accueil"></a>
                 </div>
                 <div class="footer-content col-lg-4 col-md-5 text-center alt-font text-small font-weight-500 text-lg-end">
                     <p>© 2025 Oumaima Mahmoudi</p>
                 </div>
             </div>
         </div>
-        <a id="arrow-up" class="scroll-top-arrow" href="#home" aria-label="GO UP"><i class="fa fa-arrow-up"></i></a>
     </footer>
+
+    <!-- Bouton retour en haut -->
+    <a href="#hero" class="btn-top" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/projet.js"></script>
 </body>
 </html>

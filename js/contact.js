@@ -1,119 +1,154 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // --- Sélecteurs principaux
-  const form = document.querySelector('.contact-form');
-  if (!form) return;
-  const fields = form.querySelectorAll('input, textarea');
-  const statusEl = form.querySelector('.form-result');
-  const submitBtn = form.querySelector('button[type="submit"]');
-  const progressEl = form.querySelector('.form-progress');
-  const progressBar = form.querySelector('.form-progress-bar');
-  if (statusEl) statusEl.classList.remove('is-visible');
+/**
+ * Portfolio Oumaima Mahmoudi
+ * Formulaire de contact - Validation et envoi AJAX
+ * Développé par Oumaima - 2025
+ */
 
-  // --- Messages en français
-  const messages = {
+document.addEventListener('DOMContentLoaded', () => {
+
+  // =============================================
+  // SÉLECTEURS
+  // =============================================
+
+  const formulaire = document.querySelector('.formulaire-contact');
+  if (!formulaire) return;
+
+  const champs = formulaire.querySelectorAll('input, textarea');
+  const boutonEnvoi = formulaire.querySelector('button[type="submit"]');
+  const messageStatut = formulaire.querySelector('.form-result');
+  const barreProgression = formulaire.querySelector('.barre-progression');
+  const remplissageBarre = formulaire.querySelector('.barre-progression-bar');
+
+
+  // =============================================
+  // MESSAGES DE VALIDATION (en français)
+  // =============================================
+
+  const messagesErreur = {
     name: "Merci d'indiquer un nom entre 2 et 80 caractères.",
     email: "Merci de saisir une adresse email valide (ex: nom@domaine.com).",
     subject: "Le sujet doit contenir au maximum 120 caractères.",
     message: "Merci de détailler votre demande (10 à 1000 caractères)."
   };
 
-  // --- Barre de progression de l'envoi du formulaire
-  const showProgress = () => {
-    if (progressEl && progressBar) {
-      progressEl.classList.add('is-visible');
-      progressBar.style.width = '70%';
+
+  // =============================================
+  // BARRE DE PROGRESSION
+  // =============================================
+
+  const afficherProgression = () => {
+    if (barreProgression && remplissageBarre) {
+      barreProgression.classList.add('is-visible');
+      remplissageBarre.style.width = '70%';
     }
   };
 
-  const endProgress = (success = false) => {
-    if (progressEl && progressBar) {
-      progressBar.style.width = success ? '100%' : '0%';
-      if (!success) {
-        progressEl.classList.remove('is-visible');
-      } else {
-        setTimeout(() => {
-          progressEl.classList.remove('is-visible');
-          progressBar.style.width = '0%';
-        }, 500);
-      }
+  const masquerProgression = (succes) => {
+    if (!barreProgression || !remplissageBarre) return;
+
+    remplissageBarre.style.width = succes ? '100%' : '0%';
+
+    if (succes) {
+      setTimeout(() => {
+        barreProgression.classList.remove('is-visible');
+        remplissageBarre.style.width = '0%';
+      }, 500);
+    } else {
+      barreProgression.classList.remove('is-visible');
     }
   };
 
-  // --- Validation : messages custom + reset
-  fields.forEach((field) => {
-    field.addEventListener('invalid', () => {
-      const key = field.getAttribute('name');
-      if (key && messages[key]) {
-        field.setCustomValidity(messages[key]);
+
+  // =============================================
+  // MESSAGE DE STATUT
+  // =============================================
+
+  const afficherMessage = (texte, estSucces) => {
+    if (!messageStatut) return;
+
+    messageStatut.textContent = texte;
+    messageStatut.classList.remove('is-visible', 'is-success', 'is-error');
+    messageStatut.classList.add('is-visible', estSucces ? 'is-success' : 'is-error');
+  };
+
+  const reinitialiserMessage = () => {
+    if (messageStatut) {
+      messageStatut.textContent = '';
+      messageStatut.classList.remove('is-visible', 'is-success', 'is-error');
+    }
+  };
+
+
+  // =============================================
+  // VALIDATION DES CHAMPS
+  // =============================================
+
+  champs.forEach((champ) => {
+    // Message personnalisé si champ invalide
+    champ.addEventListener('invalid', () => {
+      const nomChamp = champ.getAttribute('name');
+      if (nomChamp && messagesErreur[nomChamp]) {
+        champ.setCustomValidity(messagesErreur[nomChamp]);
       }
     });
 
-    field.addEventListener('input', () => {
-      field.setCustomValidity('');
+    // Réinitialiser quand l'utilisateur tape
+    champ.addEventListener('input', () => {
+      champ.setCustomValidity('');
     });
   });
 
-  // --- Soumission AJAX Formspree
-  form.addEventListener('submit', (e) => {
+
+  // =============================================
+  // ENVOI DU FORMULAIRE (Formspree)
+  // =============================================
+
+  formulaire.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    if (!form.checkValidity()) {
-      form.reportValidity();
+    // Vérifier la validité
+    if (!formulaire.checkValidity()) {
+      formulaire.reportValidity();
       return;
     }
 
-    if (submitBtn) {
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Envoi...';
+    // Désactiver le bouton
+    if (boutonEnvoi) {
+      boutonEnvoi.disabled = true;
+      boutonEnvoi.textContent = 'Envoi...';
     }
-    if (statusEl) {
-      statusEl.textContent = '';
-      statusEl.classList.remove('is-visible', 'is-success', 'is-error');
-    }
-    showProgress();
 
-    const data = new FormData(form);
-    fetch(form.action, {
-      method: form.method || 'POST',
-      body: data,
-      headers: {
-        Accept: 'application/json'
-      }
-    })
-      .then((response) => {
-        if (response.ok) {
-          endProgress(true);
-          if (statusEl) {
-            statusEl.textContent = 'Message envoyé ! Merci pour votre contact.';
-            statusEl.classList.add('is-visible', 'is-success');
-          }
-          form.reset();
-        } else {
-          return response.json().then((data) => {
-            endProgress(false);
-            if (statusEl) {
-              if (Object.prototype.hasOwnProperty.call(data, 'errors')) {
-                statusEl.textContent = data.errors.map((err) => err.message).join(', ');
-              } else {
-                statusEl.textContent = 'Oops! Problème lors de l’envoi.';
-              }
-              statusEl.classList.add('is-visible', 'is-error');
-            }
-          });
-        }
-      })
-      .catch(() => {
-        endProgress(false);
-        if (statusEl) {
-          statusEl.textContent = 'Oops! Problème réseau ou serveur.';
-          statusEl.classList.add('is-visible', 'is-error');
-        }
-      })
-      .finally(() => {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Envoyer le message';
-        }
+    reinitialiserMessage();
+    afficherProgression();
+
+    try {
+      const reponse = await fetch(formulaire.action, {
+        method: 'POST',
+        body: new FormData(formulaire),
+        headers: { Accept: 'application/json' }
       });
+
+      if (reponse.ok) {
+        masquerProgression(true);
+        afficherMessage('Message envoyé ! Merci pour votre contact.', true);
+        formulaire.reset();
+      } else {
+        masquerProgression(false);
+        const donnees = await reponse.json();
+        const erreur = donnees.errors
+          ? donnees.errors.map((err) => err.message).join(', ')
+          : "Oops ! Problème lors de l'envoi.";
+        afficherMessage(erreur, false);
+      }
+    } catch {
+      masquerProgression(false);
+      afficherMessage('Oops ! Problème réseau ou serveur.', false);
+    } finally {
+      if (boutonEnvoi) {
+        boutonEnvoi.disabled = false;
+        boutonEnvoi.textContent = 'Envoyer le message';
+      }
+    }
   });
+
 });

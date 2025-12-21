@@ -5,324 +5,306 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Bliss Bath - Automatisation Cypress | Portfolio Oumaima</title>
+    <meta name="description" content="Projet Eco Bliss Bath : automatisation de tests e2e avec Cypress pour un site e-commerce éco-responsable. Scripts de test et CI/CD. Portfolio Oumaima Mahmoudi.">
     <link rel="shortcut icon" href="../assets/favicone.png">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/lib.min.css">
-    <link rel="stylesheet" href="../css/global.min.css">
-    <link rel="stylesheet" href="../css/global.responsive.min.css">
+    <link rel="stylesheet" href="../css/vendors.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/projet-template.css">
 </head>
-<body id="top" class="project-template">
-    <header class="project-header">
-        <nav class="navbar bootsnav bg-transparent navbar-top nav-box-width navbar-transparent-no-sticky">
-            <div class="container-fluid nav-header-container h-50px sm-h-70px">
-                <div class="col d-none d-md-block text-start ps-0">
-                    <div class="header-social-icon border-none no-padding-left no-margin-left">
-                        <a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a>
-                        <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="masthead-logo-centered">
-                    <img src="../assets/logo.png" alt="Logo Oumaima">
-                </div>
-                <div class="nav-container">
-                    <ul class="nav-menu">
-                        <li><a href="../index.html">Portfolio</a></li>
-                        <li><a href="#overview" class="active">Projet</a></li>
-                        <li><a href="#ressources">Ressources</a></li>
-                        <li><a href="#repo">Code</a></li>
-                        <li><a href="#live-preview">Démonstration</a></li>
-                    </ul>
-                    <div class="hamburger"><span></span><span></span><span></span></div>
-                </div>
+<body id="top" class="page-projet">
+
+    <!-- Navigation flottante -->
+    <header class="entete-projet">
+        <nav class="navbar-projet">
+            <a href="../index.html" class="btn-retour" aria-label="Retour au portfolio">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Portfolio</span>
+            </a>
+            <a href="../index.html" class="logo-projet-centre">
+                <img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi">
+            </a>
+            <div class="nav-projet-actions">
+                <a href="https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2" class="btn-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
             </div>
         </nav>
     </header>
 
-<<<<<<< HEAD
-    <section id="home" class="project-masthead" style="background-image: linear-gradient(135deg, rgba(15,15,15,0.88), rgba(15,15,35,0.75)), url('../assets/projets/ecoblis/eco-bliss.png');">
-=======
-    <section id="home" class="project-masthead" style="background-image: linear-gradient(135deg, rgba(15,15,15,0.88), rgba(15,15,35,0.75)), url('https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1600&q=80');">
->>>>>>> 765f19d (remplissage projets)
-        <div class="container">
-            <span class="masthead-badge animate__animated animate__fadeInDown">
-                <i class="fa-solid fa-robot"></i> Automatisation
-            </span>
-            <h1 class="project-title animate__animated animate__fadeInUp">Eco Bliss Bath</h1>
-            <p class="project-subtitle animate__animated animate__fadeInUp animate__delay-1s">
-                Automatisation Cypress pour e-commerce éco-responsable : tests API (produits/commandes), smoke tests, détection faille XSS et test end-to-end parcours panier/paiement.
+    <!-- HERO - Bannière immersive plein écran -->
+    <section id="hero" class="hero-immersif">
+        <div class="hero-fond">
+            <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1607006344380-b6775a0824a7?auto=format&fit=crop&w=1920&q=80');"></div>
+            <div class="hero-overlay"></div>
+            <div class="particules-hero"></div>
+        </div>
+
+        <div class="hero-contenu">
+            <div class="hero-badge animate__animated animate__fadeInDown">
+                <span class="badge-icone"><i class="fa-solid fa-robot"></i></span>
+                <span class="badge-texte">Automatisation</span>
+            </div>
+
+            <h1 class="hero-titre animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="titre-ligne">Eco Bliss Bath</span>
+                <span class="titre-ligne titre-accent">Cypress</span>
+            </h1>
+
+            <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
+                Automatisation Cypress pour e-commerce éco-responsable : tests API (produits/commandes), smoke tests, détection faille XSS et test end-to-end du parcours panier/paiement.
             </p>
-            <div class="masthead-tags animate__animated animate__fadeInUp animate__delay-1s">
-                <span class="tag tag-icon"><i class="fa-solid fa-vial"></i> Cypress</span>
-                <span class="tag tag-icon"><i class="fa-brands fa-js"></i> JavaScript</span>
-                <span class="tag tag-icon"><i class="fa-solid fa-code"></i> API Testing</span>
-                <span class="tag tag-icon"><i class="fa-solid fa-bug"></i> XSS</span>
+
+            <div class="hero-tags animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="hero-tag"><i class="fa-solid fa-vial"></i> Cypress</span>
+                <span class="hero-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <span class="hero-tag"><i class="fa-solid fa-code"></i> API Testing</span>
+                <span class="hero-tag"><i class="fa-solid fa-bug"></i> XSS</span>
             </div>
-            <div class="masthead-cta animate__animated animate__fadeInUp animate__delay-1s">
-                <a href="#ressources" class="btn btn-primary"><i class="fa-solid fa-compass"></i> Explorer les ressources</a>
-                <a href="#live-preview" class="btn btn-secondary"><i class="fa-solid fa-play"></i> Voir le rendu</a>
-            </div>
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
+
+        </div>
+
+        <!-- Indicateur de scroll -->
+        <div class="hero-scroll">
+            <span class="scroll-texte">Découvrir</span>
+            <div class="scroll-ligne"></div>
+            <div class="scroll-cercle">
+                <i class="fa-solid fa-chevron-down"></i>
             </div>
         </div>
     </section>
 
-    <section id="overview" class="section-block section-light">
+    <!-- PRÉSENTATION - Contexte du projet -->
+    <section id="overview" class="bloc-section section-light">
         <div class="container">
-            <div class="section-title">Aperçu général</div>
-            <div class="section-heading">Vision, portée et résultats</div>
-            <div class="project-info-grid notebook-layout">
-                <div class="card-glass">
-                    <h3>Résumé du projet</h3>
-                    <p>
-                        Recrutement chez Eco Bliss Bath, e-commerce de produits cosmétiques éco-responsables. Julien, CTO, confie la mission 
-                        d'automatiser les tests critiques pour gagner du temps sur les campagnes manuelles répétitives menées par Marie (QA manuelle).
-                    </p>
-                    <p>
-                        Trois axes d'automatisation : tests API pour valider produits et commandes, smoke tests pour éviter régressions majeures, 
-                        et un test end-to-end du parcours le plus risqué (ajout panier + paiement). Bonus : tester une faille XSS potentielle 
-                        sur les commentaires produits signalée en interne.
-                    </p>
-                    <ul class="functionalities">
-                        <li><strong>Tests API :</strong> GET /products (liste produits), POST /orders (création commande), validation réponses JSON et codes status HTTP.</li>
-                        <li><strong>Smoke tests :</strong> vérifications rapides post-déploiement (page accueil charge, produits s'affichent, formulaire contact existe).</li>
-                        <li><strong>Test XSS :</strong> injection script malveillant dans champ commentaire produit, vérification si le site échappe ou exécute le code.</li>
-                        <li><strong>Test E2E panier/paiement :</strong> parcours complet utilisateur (sélection produit, ajout panier, remplissage formulaire paiement, confirmation commande).</li>
-                        <li><strong>Bilan de campagne :</strong> rédaction rapport avec taux de réussite, anomalies détectées, captures d'écran et recommandations.</li>
-                    </ul>
-                </div>
-                <div class="card-glass">
-                    <h3>Détails clés</h3>
-                    <ul class="project-meta">
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-building-columns"></i> Client</span>
-                            <span class="meta-value">Eco Bliss Bath, e-commerce cosmétiques éco-responsables</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-user-tie"></i> CTO</span>
-                            <span class="meta-value">Julien</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-user-check"></i> QA Manuelle</span>
-                            <span class="meta-value">Marie</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-user-gear"></i> Rôle</span>
-                            <span class="meta-value">QA Automation Engineer</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-calendar-days"></i> Durée</span>
-                            <span class="meta-value">60h</span>
-                        </li>
-                        <li>
-                            <span class="meta-title"><i class="fa-solid fa-diagram-project"></i> Livrables</span>
-                            <span class="meta-value">Suite Cypress complète + bilan de campagne + README</span>
-                        </li>
-                    </ul>
-                    <h3>Stack & Outils</h3>
-                    <div class="tech-grid">
-                        <span class="tech-tile"><i class="fa-solid fa-vial"></i> Cypress 13</span>
-                        <span class="tech-tile"><i class="fa-brands fa-node-js"></i> Node.js</span>
-                        <span class="tech-tile"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="tech-tile"><i class="fa-brands fa-docker"></i> Docker</span>
-                        <span class="tech-tile"><i class="fa-solid fa-code"></i> API Testing</span>
-                        <span class="tech-tile"><i class="fa-brands fa-github"></i> GitHub</span>
-                    </div>
-                </div>
+            <div class="contexte-header-v2">
+                <span class="section-label">Le Contexte</span>
+                <h2 class="section-titre-grand">Comprendre le <span class="texte-degrade">challenge</span></h2>
             </div>
-        </div>
-    </section>
+            <div class="grille-infos-projet disposition-carnet">
+                <div class="carte-verre">
+                    <h3><i class="fa-solid fa-bullseye"></i> Mission</h3>
 
-    <section id="ressources" class="section-block section-muted">
-        <div class="container">
-            <div class="section-title">Ressources</div>
-            <div class="section-heading">Environnement, plan de test & documentation</div>
-            <div class="resource-slider">
-                <button class="slider-btn slider-btn-prev" data-direction="prev" aria-label="Slide précédent"><i class="fa-solid fa-chevron-left"></i></button>
-                <div class="resource-slider-window">
-                    <div class="resource-slider-track">
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Environnement</span>
-                            <h4>Application Docker</h4>
-                            <p>Repository GitHub avec application Eco Bliss Bath dockerisée. Installation Docker Desktop, 
-                            docker compose up pour lancer l'application + API backend.</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li>Frontend : http://localhost:3000</li>
-                                <li>Backend API : http://localhost:5000</li>
-                                <li>Base de données préconfigurée avec produits</li>
-                            </ul>
-                            <a href="https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Repository</a>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=1000&q=80" alt="Docker">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Brief</span>
-                            <h4>Email de Julien (CTO)</h4>
-                            <p>Mail détaillant les missions d'automatisation :</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li><strong>Tests API :</strong> valider GET /products et POST /orders</li>
-                                <li><strong>Smoke tests :</strong> page accueil, affichage produits, formulaire contact</li>
-                                <li><strong>Test XSS :</strong> injection script dans commentaire produit</li>
-                                <li><strong>E2E prioritaire :</strong> parcours panier + paiement complet</li>
-                                <li><strong>Bonus :</strong> rapport de campagne avec recommandations</li>
-                            </ul>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=1000&q=80" alt="Brief">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Plan de test</span>
-                            <h4>Bilan campagne manuelle Marie</h4>
-                            <p>Rapport de la dernière campagne manuelle de Marie (QA) à analyser pour identifier les tests répétitifs 
-                            à automatiser en priorité. Contient les cas déjà testés manuellement et les anomalies récurrentes.</p>
-                            <a href="https://course.oc-static.com/projects/TL/P10/Template+bilan.docx" target="_blank" class="btn btn-primary"><i class="fa-solid fa-file-alt"></i> Bilan Marie</a>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80" alt="Plan">
-                        </div>
-                    </article>
-                    <article class="resource-card">
-                        <div class="resource-card-content">
-                            <span>Documentation</span>
-                            <h4>Cypress & best practices</h4>
-                            <p>Ressources pour réussir l'automatisation :</p>
-                            <ul style="font-size: 0.9rem; margin-top: 1rem;">
-                                <li>Documentation officielle Cypress</li>
-                                <li>Cours API testing avec cy.request()</li>
-                                <li>Tutoriel détection XSS avec Cypress</li>
-                                <li>Best practices E2E tests (sélecteurs, fixtures, commandes custom)</li>
-                                <li>Template README pour documenter suite de tests</li>
-                            </ul>
-                        </div>
-                        <div class="resource-card-media">
-                            <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=1000&q=80" alt="Documentation">
-                        </div>
-                    </article>
-                    </div>
-                </div>
-                <button class="slider-btn slider-btn-next" data-direction="next" aria-label="Slide suivant"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-            <div class="slider-progress">
-                <div class="slider-progress-line">
-                    <span class="slider-progress-bar"></span>
-                    <span class="slider-progress-dot"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="repo" class="section-block section-light">
-        <div class="container">
-            <div class="section-title">Code & Delivery</div>
-            <div class="section-heading">Accès Git et Suite Cypress</div>
-            <div class="repo-preview">
-                <div class="card-glass">
-                    <h3>GitHub Repository</h3>
-                    <p>Repository avec application dockerisée + dossier cypress/ contenant tous les tests automatisés (API, smoke, XSS, E2E).</p>
-                    <a href="https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2" target="_blank" class="btn btn-primary"><i class="fa-brands fa-github"></i> Voir le repository</a>
-                </div>
-                <div class="repo-terminal">
-<pre>$ git clone https://github.com/OpenClassrooms-Student-Center/Eco-Bliss-Bath-V2.git
-$ cd Eco-Bliss-Bath-V2
-$ docker compose up
-
-# Dans un autre terminal
-$ npm install
-$ npx cypress open   # mode interactif
-$ npx cypress run    # headless
-
--------------------------------
-✓ Tests API (GET /products, POST /orders)
-✓ Smoke tests (accueil, produits, contact)
-✓ Test XSS commentaire produit
-✓ Test E2E panier + paiement complet</pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="live-preview" class="section-block section-muted">
-        <div class="container">
-            <div class="section-title">Live Preview</div>
-            <div class="section-heading">Résultats automatisation</div>
-            <div class="project-preview-box">
-                <div class="live-preview">
-                    <div class="mockup-screen">
-                        <div class="mockup-track">
-<<<<<<< HEAD
-                            <img src="../assets/projets/ecoblis/screen/1.png" alt="Resultat">
-                            <img src="../assets/projets/ecoblis/screen/2.png" alt="Criticite">
-                            <img src="../assets/projets/ecoblis/screen/3.png" alt="Cypress">
-                            <img src="../assets/projets/ecoblis/screen/4.png" alt="Cypress run">
-                            <img src="../assets/projets/ecoblis/screen/5.png" alt="Cypress report">
-=======
-                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=800&q=80" alt="Eco Bliss Bath">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Suite Cypress">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Résultats tests">
->>>>>>> 765f19d (remplissage projets)
-                        </div>
-                    </div>
-                </div>
-                <div class="project-preview-text">
-                    <div class="preview-summary">
-                        <h3>Résultats finaux</h3>
-                        <p>
-                            Suite Cypress complète pour Eco Bliss Bath : automatisation réussie des tests API, smoke tests, détection faille XSS 
-                            et parcours end-to-end panier/paiement. Gain de temps significatif pour Marie (QA manuelle).
+                    <div class="mission-contexte">
+                        <p class="mission-intro">
+                            Recrutement chez Eco Bliss Bath, e-commerce de produits cosmétiques éco-responsables. Julien, CTO, confie la mission
+                            d'automatiser les tests critiques pour gagner du temps sur les campagnes manuelles répétitives menées par Marie (QA manuelle).
                         </p>
-                        <ul class="demo-results-list">
-                            <li><strong>Tests API :</strong> GET /products valide structure JSON (id, nom, prix, description), POST /orders vérifie création commande avec status 201.</li>
-                            <li><strong>Smoke tests :</strong> page accueil charge en <3s, liste produits affichée, formulaire contact présent avec champs requis.</li>
-                            <li><strong>Test XSS :</strong> injection <code>&lt;script&gt;alert('XSS')&lt;/script&gt;</code> dans commentaire, vérification si site échappe ou exécute (faille détectée).</li>
-                            <li><strong>E2E panier/paiement :</strong> parcours complet automatisé (sélection produit → ajout panier → formulaire paiement → confirmation), validation message succès.</li>
-                            <li><strong>Sélecteurs robustes :</strong> data-testid pour éviter cassures lors changements UI, commandes custom Cypress pour réutilisation.</li>
-                            <li><strong>Bilan de campagne :</strong> rapport avec taux réussite 95%, 1 anomalie XSS critique détectée, recommandations (échapper inputs utilisateur).</li>
-                            <li><strong>README complet :</strong> instructions installation, lancement tests, structure dossier cypress/, explications chaque fichier spec.</li>
+                    </div>
+
+                    <div class="mission-objectif">
+                        <h4><i class="fa-solid fa-crosshairs"></i> Objectif</h4>
+                        <p>
+                            Trois axes d'automatisation : tests API pour valider produits et commandes, smoke tests pour éviter les régressions majeures,
+                            et un test end-to-end du parcours le plus risqué (ajout panier + paiement). Bonus : tester une faille XSS potentielle.
+                        </p>
+                    </div>
+
+                    <div class="mission-livrables">
+                        <h4><i class="fa-solid fa-box-open"></i> Livrables</h4>
+                        <ul class="liste-livrables">
+                            <li>Suite Cypress complète</li>
+                            <li>Bilan de campagne</li>
+                            <li>README documentation</li>
+                            <li>Rapport anomalies</li>
                         </ul>
                     </div>
                 </div>
+                <div class="carte-verre">
+                    <h3><i class="fa-solid fa-list-check"></i> Détails clés</h3>
+                    <ul class="meta-projet">
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-building-columns"></i> Client</span>
+                            <span class="valeur-meta">Eco Bliss Bath, e-commerce éco-responsable</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-user-tie"></i> CTO</span>
+                            <span class="valeur-meta">Julien</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-user-gear"></i> Rôle</span>
+                            <span class="valeur-meta">QA Automation Engineer</span>
+                        </li>
+                        <li>
+                            <span class="titre-meta"><i class="fa-solid fa-calendar-days"></i> Durée</span>
+                            <span class="valeur-meta">60h</span>
+                        </li>
+                    </ul>
+                    <h3><i class="fa-solid fa-layer-group"></i> Stack & Outils</h3>
+                    <div class="grille-tech">
+                        <span class="tuile-tech"><i class="fa-solid fa-vial"></i> Cypress 13</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-docker"></i> Docker</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-code"></i> API Testing</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-github"></i> GitHub</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <h2 class="visually-hidden">Footer Section</h2>
+    <!-- TIMELINE - Parcours du projet -->
+    <section id="timeline" class="section-timeline">
+
+        <div class="container">
+            <div class="timeline-header">
+                <span class="section-label">Le Parcours</span>
+                <h2 class="section-titre-grand">Phases d'<span class="texte-degrade">automatisation</span></h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-ligne"></div>
+
+                <article class="timeline-item" data-step="1">
+                    <div class="timeline-point">
+                        <span>01</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 1</span>
+                            <h3>Setup environnement</h3>
+                            <p>Installation Docker Desktop, docker compose up pour lancer l'application + API backend, configuration Cypress et structure du projet.</p>
+                            <div class="timeline-tags">
+                                <span>Docker</span>
+                                <span>Cypress</span>
+                                <span>Setup</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="2">
+                    <div class="timeline-point">
+                        <span>02</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 2</span>
+                            <h3>Tests API</h3>
+                            <p>Développement des tests cy.request() pour GET /products (liste produits) et POST /orders (création commande), validation JSON et codes HTTP.</p>
+                            <div class="timeline-tags">
+                                <span>API</span>
+                                <span>cy.request</span>
+                                <span>JSON</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="3">
+                    <div class="timeline-point">
+                        <span>03</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 3</span>
+                            <h3>Smoke tests & XSS</h3>
+                            <p>Vérifications post-déploiement (page accueil, produits, formulaire) et test injection XSS dans champ commentaire produit.</p>
+                            <div class="timeline-tags">
+                                <span>Smoke</span>
+                                <span>XSS</span>
+                                <span>Sécurité</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="4">
+                    <div class="timeline-point">
+                        <span>04</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Phase 4</span>
+                            <h3>E2E & Bilan</h3>
+                            <p>Test end-to-end du parcours panier/paiement complet, rédaction du bilan de campagne avec taux de réussite et recommandations.</p>
+                            <div class="timeline-tags">
+                                <span>E2E</span>
+                                <span>Bilan</span>
+                                <span>Rapport</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RÉSULTATS - Bilan et apprentissages -->
+    <section id="resultats" class="section-resultats">
+
+        <div class="container">
+            <div class="resultats-header">
+                <span class="section-label">Les Résultats</span>
+                <h2 class="section-titre-grand">Mission <span class="texte-degrade">accomplie</span></h2>
+            </div>
+
+            <div class="resultats-contenu">
+                <p class="resultats-intro">
+                    Suite Cypress complète pour Eco Bliss Bath : automatisation réussie des tests API, smoke tests, détection faille XSS
+                    et parcours end-to-end panier/paiement. Gain de temps significatif pour Marie (QA manuelle).
+                </p>
+                <div class="resultats-grille">
+                    <div class="resultat-carte"><i class="fa-solid fa-plug"></i><strong>Tests API :</strong> GET /products valide structure JSON (id, nom, prix), POST /orders vérifie création commande avec status 201.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-bolt"></i><strong>Smoke tests :</strong> page accueil charge en moins de 3s, liste produits affichée, formulaire contact présent.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-shield-halved"></i><strong>Test XSS :</strong> injection script dans commentaire, vérification si le site échappe ou exécute le code (faille détectée).</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-cart-shopping"></i><strong>E2E panier/paiement :</strong> parcours complet automatisé (sélection → panier → paiement → confirmation).</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-crosshairs"></i><strong>Sélecteurs robustes :</strong> data-testid pour éviter les cassures lors des changements UI, commandes custom.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-file-lines"></i><strong>Bilan de campagne :</strong> taux réussite 95%, 1 anomalie XSS critique détectée, recommandations échappement inputs.</div>
+                </div>
+            </div>
+
+            <!-- CTA Navigation projets -->
+            <div class="projets-navigation">
+                <a href="projet-menu-maker-qwenta.html" class="nav-projet-btn prev">
+                    <span class="nav-direction"><i class="fa-solid fa-arrow-left"></i> Précédent</span>
+                    <span class="nav-titre">Menu Maker Qwenta</span>
+                </a>
+                <a href="../index.html#projects" class="nav-projet-btn centre">
+                    <i class="fa-solid fa-th-large"></i>
+                    <span>Tous les projets</span>
+                </a>
+                <a href="projet-tomsen-strategie-test.html" class="nav-projet-btn next">
+                    <span class="nav-direction">Suivant <i class="fa-solid fa-arrow-right"></i></span>
+                    <span class="nav-titre">Tomsen PayForge</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-5 social-style-3 text-center text-lg-start sm-margin-10px-bottom">
                     <div class="social-icon-style-8 d-inline-block align-middle">
                         <ul class="small-icon mb-0">
-                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li><a href="https://github.com/mahmoumaima" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://medium.com/" title="Medium" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
-                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="https://linkedin.com/" title="Linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/mahmoumaima" title="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://medium.com/" title="Medium" target="_blank" rel="noopener"><i class="fa-brands fa-medium"></i></a></li>
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-content col-lg-4 col-md-2 text-center sm-margin-20px-bottom">
-                   <a class="logo" href="#home"><img src="../assets/logo.png" class="default" alt="Pofo" width="105" height="26"></a>
+                   <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi - Retour à l'accueil"></a>
                 </div>
                 <div class="footer-content col-lg-4 col-md-5 text-center alt-font text-small font-weight-500 text-lg-end">
                     <p>© 2025 Oumaima Mahmoudi</p>
                 </div>
             </div>
         </div>
-        <a id="arrow-up" class="scroll-top-arrow" href="#home" aria-label="GO UP"><i class="fa fa-arrow-up"></i></a>
     </footer>
+
+    <!-- Bouton retour en haut -->
+    <a href="#hero" class="btn-top" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/projet.js"></script>
 </body>
 </html>
