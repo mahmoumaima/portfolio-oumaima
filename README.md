@@ -1,240 +1,237 @@
-# Portfolio Oumaima Mahmoudi
+# Oumaima Mahmoudi | QA Tester | Banking & Finance Expert
 
-Portfolio professionnel présentant les compétences et projets de **Oumaima Mahmoudi**, QA Tester certifiée ISTQB avec expertise en Banque & Finance.
+Portfolio professionnel showcasing mon parcours de **Testeuse QA** avec une double expertise en **Assurance Qualité Logicielle** et **Banque & Finance**.
 
-**[Voir le portfolio en ligne](https://mahmoumaima.github.io/portfolio-oumaima/)**
-
----
-
-## Aperçu
-
-Portfolio moderne et responsive présentant 12 projets réalisés dans le cadre de la formation OpenClassrooms Testeur Logiciel. Design immersif avec animations fluides et navigation intuitive.
+[Voir le portfolio en ligne](https://mahmoumaima.github.io/portfolio-oumaima/)
 
 ---
 
-## Structure du projet
+## Profil
 
-```
-oumi-portfolio-rempli/
-├── index.html                    # Page d'accueil principale
-├── projets/                      # Pages détaillées des 12 projets
-│   ├── projet-html-initiation.html
-│   ├── projet-riding-cities.html
-│   ├── projet-booki-accueil.html
-│   ├── projet-jse-avocats.html
-│   ├── projet-724events-tests.html
-│   ├── projet-print-it-carrousel.html
-│   ├── projet-site-dynamique-js.html
-│   ├── projet-react-kasa.html
-│   ├── projet-menu-maker-qwenta.html
+Professionnelle de l'assurance qualité logicielle avec un parcours alliant rigueur financière et expertise technique. Titulaire d'un **Master 2 en Banque et Finance** reconverti vers le testing logiciel, je combine une vision métier approfondie avec des compétences techniques solides en automatisation et méthodologies Agile.
+
+### Certifications & Formation
+
+| Certification | Organisme | Domaine |
+|--------------|-----------|---------|
+| ISTQB Foundation Level (en cours) | ISTQB | Assurance Qualité |
+| Testeur Logiciel | OpenClassrooms | Tests & Automatisation |
+| Master 2 Banque & Finance | Université | Finance & Systèmes bancaires |
+
+### Chiffres clés
+
+| Indicateur | Valeur |
+|------------|--------|
+| Années d'expérience | 7+ |
+| Projets réalisés | 16+ |
+| Technologies maîtrisées | 5+ |
+
+---
+
+## Compétences Techniques
+
+### Tests & Automatisation
+
+| Compétence | Niveau | Outils |
+|------------|--------|--------|
+| Tests E2E | Avancé | Cypress |
+| Tests fonctionnels | Avancé | Cahier de recette, Cas de test |
+| Tests exploratoires | Avancé | Techniques ISTQB |
+| Tests unitaires | Intermédiaire | Jest |
+| Tests API | Intermédiaire | Postman, Swagger |
+
+### Développement Web
+
+| Technologie | Niveau | Usage |
+|-------------|--------|-------|
+| HTML5 / CSS3 | Intermédiaire | Compréhension du code front-end |
+| JavaScript | Intermédiaire | Scripts de test, automatisation |
+| React | Notions | Compréhension des composants |
+| DevTools | Avancé | Debug, analyse réseau, performance |
+
+### Outils & Méthodologies
+
+| Catégorie | Outils |
+|-----------|--------|
+| Gestion de projet | Jira, Trello, Notion |
+| Versionning | Git, GitHub |
+| Design | Figma |
+| Méthodologies | Agile/Scrum, CI/CD, ISTQB |
+| Reporting | Excel, Mochawesome |
+
+---
+
+## Projets Réalisés
+
+### Tests & Automatisation
+
+| Projet | Description | Technologies |
+|--------|-------------|--------------|
+| **Eco Bliss Bath** | Automatisation complète E2E d'un site e-commerce | Cypress, Mochawesome |
+| **724events** | Tests fonctionnels plateforme événementielle | React Testing, Debug |
+| **JSE Avocats** | Tests fonctionnels site WordPress | Tests manuels, Cahier de recette |
+| **Tomsen PayForge** | Stratégie de test application paiement | Plan de test, Gestion des risques |
+
+### Intégration Web
+
+| Projet | Description | Technologies |
+|--------|-------------|--------------|
+| **Booki** | Intégration responsive plateforme hébergement | HTML, CSS, Responsive Design |
+| **Kasa** | Refonte application location immobilière | React, React Router |
+| **Portfolio Sophie Bluel** | Intégration API portfolio architecte | JavaScript, API REST, Modal |
+| **Print it** | Carrousel dynamique | JavaScript, DOM |
+
+### Gestion de Projet
+
+| Projet | Description | Livrables |
+|--------|-------------|-----------|
+| **Menu Maker Qwenta** | Rôle Product Owner | Backlog, User Stories, Kanban |
+| **Portfolio QA** | Audit et déploiement | Rapport d'audit, Corrections SEO |
+
+---
+
+## Portfolio Technique
+
+### Architecture du projet
+
+```text
+.
+├── index.html                    # Page d'accueil
+├── projets/                      # 12 pages projets détaillées
 │   ├── projet-automatisation-cypress.html
+│   ├── projet-724events-tests.html
 │   ├── projet-tomsen-strategie-test.html
-│   └── projet-portfolio-deploiement.html
+│   └── ...
 ├── css/
-│   ├── style.css                 # Styles principaux (page d'accueil)
-│   ├── projet-template.css       # Styles des pages projets
-│   └── vendors.min.css           # Librairies CSS minifiées
+│   ├── style.css                 # Styles principaux
+│   ├── projet-template.css       # Template pages projets
+│   └── vendors.min.css           # Librairies minifiées
 ├── js/
-│   ├── script.js                 # JavaScript principal
-│   └── projet.js                 # JavaScript pages projets
-├── assets/
-│   ├── logo.png                  # Logo Oumaima Mahmoudi
-│   ├── oumi.png                  # Photo principale
-│   ├── oumi-pro.png              # Photo section À propos
-│   ├── favicone.png              # Favicon
-│   └── homepage.jpg              # Image de fond accueil
-├── robots.txt                    # Directives pour les moteurs de recherche
-├── sitemap.xml                   # Plan du site pour le SEO
-└── README.md                     # Ce fichier
+│   ├── script.js                 # Interactions principales
+│   ├── projet.js                 # JavaScript pages projets
+│   └── contact.js                # Gestion formulaire
+├── assets/                       # Images et ressources
+├── robots.txt                    # Directives SEO
+└── sitemap.xml                   # Plan du site
 ```
 
----
+### Stack technique du portfolio
 
-## Technologies utilisées
-
-### Front-end
 | Technologie | Version | Usage |
 |-------------|---------|-------|
 | HTML5 | - | Structure sémantique |
-| CSS3 | - | Stylisation, Flexbox, Grid, Variables CSS |
-| JavaScript | ES6+ | Interactions, animations, filtres |
+| CSS3 | - | Flexbox, Grid, Variables CSS, Animations |
+| JavaScript | ES6+ | Interactions, filtres, formulaire |
+| Animate.css | 4.1.1 | Animations d'entrée |
+| Font Awesome | 6.4.0 | Icônes |
+| WOW.js | 1.1.2 | Animations au scroll |
 
-### Librairies CSS
-| Librairie | Version | CDN |
-|-----------|---------|-----|
-| Animate.css | 4.1.1 | Animations d'entrée/sortie |
-| Font Awesome | 6.4.0 | Icônes vectorielles |
+### Fonctionnalités
 
-### Librairies JavaScript
-| Librairie | Version | Usage |
-|-----------|---------|-------|
-| WOW.js | 1.1.2 | Déclenchement animations au scroll |
+**Page d'accueil**
+- Animation avec effet typing
+- Filtres interactifs par catégorie (QA, Intégration, JavaScript, React, Automation, Gestion)
+- Section compétences avec barres de progression
+- Formulaire de contact fonctionnel (Formspree)
 
----
-
-## Fonctionnalités
-
-### Page d'accueil
-- **Hero animé** avec effet de typing pour le nom
-- **Section Projets** avec filtres interactifs par catégorie (Intégration, QA, JavaScript, React, Automation, Gestion)
-- **Effet constellation** avec étoiles animées en arrière-plan
-- **Section À propos** avec statistiques animées
-- **Section Compétences** avec barres de progression
-- **Formulaire de contact** intégré (voir section API)
-
-### Pages projets
-- **Bannière immersive** plein écran avec effet parallaxe
-- **Section Contexte** présentant mission, objectifs et livrables
-- **Timeline interactive** des phases de développement
-- **Section Résultats** avec grille de cartes
-- **Navigation cyclique** entre les 12 projets
-
-### Responsive Design
-- Desktop : > 1024px
-- Tablette : 768px - 1024px
-- Mobile : < 768px
+**Pages projets**
+- Bannière immersive
+- Timeline interactive des phases
+- Navigation cyclique entre projets
+- Design responsive (mobile-first)
 
 ---
 
-## Optimisations
+## Optimisations Réalisées
 
 ### Performance
-- **Images optimisées** via Unsplash CDN (compression automatique, format adaptatif)
-- **Lazy loading** des images hors écran
-- **CSS non-critique** chargé de manière asynchrone
-- **Preconnect** vers les CDN externes
-- **Preload** des ressources critiques (images hero, CSS principal)
+
+| Optimisation | Technique |
+|--------------|-----------|
+| Images | Lazy loading, CDN Unsplash, compression |
+| CSS | Chargement asynchrone non-critique |
+| Ressources | Preconnect, Preload critiques |
+| JavaScript | Defer loading |
 
 ### SEO
-- **Balises meta** complètes (title, description, keywords)
-- **Open Graph** pour le partage sur réseaux sociaux
-- **Twitter Cards** pour l'aperçu Twitter
-- **URL canonique** définie
-- **Robots.txt** configuré
-- **Sitemap.xml** généré
-- **Structure sémantique** (header, nav, main, section, article, footer)
-- **Attributs alt** sur toutes les images
+
+| Élément | Implementation |
+|---------|----------------|
+| Meta tags | Title, description, keywords, author |
+| Open Graph | og:title, og:description, og:image |
+| Twitter Cards | summary_large_image |
+| Structured Data | JSON-LD (Person, WebSite) |
+| Technique | Canonical URL, robots.txt, sitemap.xml |
 
 ### Accessibilité
-- **Navigation clavier** fonctionnelle
-- **Contrastes** respectant les normes WCAG
-- **Attributs ARIA** sur les éléments interactifs
-- **Focus visible** sur les éléments focusables
-- **Textes alternatifs** descriptifs
-- **Structure de titres** hiérarchique (h1 > h2 > h3)
+
+| Critère WCAG | Implementation |
+|--------------|----------------|
+| 1.1.1 Non-text Content | Alt descriptifs sur toutes les images |
+| 1.3.1 Info and Relationships | Structure sémantique HTML5 |
+| 1.4.3 Contrast | Ratios conformes |
+| 2.1.1 Keyboard | Navigation clavier complète |
+| 2.4.6 Headings | Hiérarchie h1 > h2 > h3 |
+
+### Scores Lighthouse
+
+| Métrique | Score |
+|----------|-------|
+| Performance | 95+ |
+| Accessibilité | 95+ |
+| Best Practices | 100 |
+| SEO | 100 |
 
 ---
 
-## Intégration API Formulaire
-
-Le formulaire de contact utilise **FormSubmit** pour l'envoi des emails sans backend.
-
-### Configuration
-```html
-<form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Envoyer</button>
-</form>
-```
-
-### Fonctionnalités FormSubmit
-- Envoi email sans serveur
-- Protection anti-spam (honeypot)
-- Redirection après envoi
-- Template email personnalisable
-
----
-
-## Installation locale
+## Installation
 
 ```bash
 # Cloner le repository
 git clone https://github.com/mahmoumaima/portfolio-oumaima.git
-
-# Accéder au dossier
 cd portfolio-oumaima
 
-# Ouvrir dans le navigateur
-# Option 1 : Ouvrir index.html directement
-# Option 2 : Utiliser un serveur local
+# Lancer un serveur local
 npx serve .
 # ou
 python -m http.server 8000
 ```
 
+Le site sera accessible sur `http://localhost:3000` ou `http://localhost:8000`.
+
 ---
 
-## Déploiement GitHub Pages
+## Déploiement
 
-1. **Pousser sur GitHub** :
-```bash
-git add .
-git commit -m "Deploy portfolio"
-git push origin main
+Le portfolio est déployé sur **GitHub Pages**.
+
+### Configuration
+
+1. Settings > Pages
+2. Source : Deploy from a branch
+3. Branch : `main` / `/ (root)`
+
+### URL de production
+
 ```
-
-2. **Configurer GitHub Pages** :
-   - Aller dans Settings > Pages
-   - Source : Deploy from a branch
-   - Branch : main / (root)
-   - Save
-
-3. **URL de déploiement** :
-   `https://mahmoumaima.github.io/portfolio-oumaima/`
-
----
-
-## Scores Lighthouse
-
-| Catégorie | Score |
-|-----------|-------|
-| Performance | 95+ |
-| Accessibilité | 95+ |
-| Bonnes pratiques | 100 |
-| SEO | 100 |
-
----
-
-## Variables CSS personnalisées
-
-```css
-/* Couleurs principales */
---couleur-principale: crimson;
---couleur-accent: #764BA2;
---couleur-fond: #0a0a0f;
---couleur-texte: #e0e0e0;
-
-/* Transitions */
---transition-rapide: 0.3s ease;
---transition-lente: 0.6s ease;
-
-/* Ombres */
---ombre-carte: 0 10px 40px rgba(0,0,0,0.3);
---ombre-hover: 0 20px 60px rgba(220,20,60,0.2);
+https://mahmoumaima.github.io/portfolio-oumaima/
 ```
 
 ---
 
-## Auteur
+## Contact
 
 **Oumaima Mahmoudi**
-- QA Tester certifiée ISTQB
-- Master 2 Banque & Finance
-- Formation OpenClassrooms Testeur Logiciel
+QA Tester | ISTQB Certified | Banking & Finance Expert
 
-### Contact
-- LinkedIn : [linkedin.com/in/oumaima-mahmoudi](https://linkedin.com/)
-- GitHub : [github.com/mahmoumaima](https://github.com/mahmoumaima)
-- Email : contact@oumaima-mahmoudi.fr
+| Plateforme | Lien |
+|------------|------|
+| Portfolio | [mahmoumaima.github.io/portfolio-oumaima](https://mahmoumaima.github.io/portfolio-oumaima/) |
+| LinkedIn | [linkedin.com/in/oumaima-mahmoudi](https://linkedin.com/) |
+| GitHub | [github.com/mahmoumaima](https://github.com/mahmoumaima) |
 
 ---
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
----
-
-**2025 Oumaima Mahmoudi - Tous droits réservés**
+MIT License - 2025 Oumaima Mahmoudi
