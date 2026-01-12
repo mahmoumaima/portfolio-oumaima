@@ -1381,7 +1381,7 @@ p {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 3rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .image-apropos,
@@ -1392,9 +1392,9 @@ p {
 .cadre-image,
 .image-wrapper {
     position: relative;
-    border-radius: 20px;
-    overflow: visible;
-    box-shadow: var(--ombre);
+    /*border-radius: 20px;*/
+    /*overflow: visible;*/
+    /*box-shadow: var(--ombre);*/
     display: block;
     width: 100%;
 }
@@ -1404,7 +1404,7 @@ p {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 20px;
+    /*border-radius: 20px;*/
 }
 
 .decoration-image,
@@ -1535,8 +1535,8 @@ p {
 .about-image img {
     width: 100%;
     max-width: 100%;
-    border-radius: 20px;
-    box-shadow: var(--ombre);
+    /*border-radius: 20px;
+    box-shadow: var(--ombre);*/
 }
 
 .grille-stats {

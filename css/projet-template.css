@@ -683,9 +683,12 @@
     position: relative;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 100px 0 40px;
+    box-sizing: border-box;
 }
 
 .hero-fond {
@@ -745,6 +748,9 @@
     text-align: center;
     padding: 0 20px;
     max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-badge {
@@ -814,7 +820,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 .hero-tag {
@@ -882,17 +888,14 @@
     background: var(--projet-glass-border);
 }
 
-/* Scroll indicator */
+/* Scroll indicator - Intégré au flux pour centrage vertical */
 .hero-scroll {
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     z-index: 2;
+    margin-top: 40px;
 }
 
 .scroll-texte {
@@ -905,25 +908,26 @@
 
 .scroll-ligne {
     width: 1px;
-    height: 60px;
+    height: 40px;
     background: linear-gradient(to bottom, var(--projet-accent), transparent);
     animation: scroll-pulse 2s ease-in-out infinite;
 }
 
 @keyframes scroll-pulse {
-    0%, 100% { opacity: 1; height: 60px; }
-    50% { opacity: 0.5; height: 40px; }
+    0%, 100% { opacity: 1; height: 40px; }
+    50% { opacity: 0.5; height: 25px; }
 }
 
 .scroll-cercle {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid var(--projet-accent);
     border-radius: 50%;
     color: var(--projet-accent);
+    font-size: 12px;
     animation: scroll-bounce 2s ease-in-out infinite;
 }
 
@@ -2986,5 +2990,215 @@
     .stack-tag {
         padding: 6px 10px;
         font-size: 0.8rem;
+    }
+}
+
+/* ===================
+   Hero Scroll - Responsive (Intégré au flux)
+   =================== */
+
+/* Écrans laptop avec hauteur limitée (MacBook 13", etc.) */
+@media (max-height: 800px) {
+    .hero-immersif {
+        padding: 80px 0 30px;
+    }
+
+    .hero-scroll {
+        margin-top: 25px;
+        gap: 6px;
+    }
+
+    .scroll-texte {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .scroll-ligne {
+        height: 25px;
+    }
+
+    .scroll-cercle {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .hero-description {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+
+    .hero-badge {
+        margin-bottom: 20px;
+    }
+
+    .hero-titre {
+        margin-bottom: 15px;
+    }
+
+    .titre-ligne {
+        font-size: clamp(2.5rem, 8vw, 4.5rem);
+    }
+}
+
+/* Hauteur intermédiaire */
+@media (max-height: 700px) {
+    .hero-immersif {
+        padding: 75px 0 25px;
+    }
+
+    .hero-scroll {
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .scroll-texte {
+        font-size: 8px;
+    }
+
+    .scroll-ligne {
+        height: 20px;
+    }
+
+    .scroll-cercle {
+        width: 26px;
+        height: 26px;
+        font-size: 9px;
+    }
+
+    .hero-description {
+        margin-bottom: 15px;
+        font-size: 1rem;
+    }
+
+    .hero-badge {
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+
+    .titre-ligne {
+        font-size: clamp(2rem, 7vw, 4rem);
+    }
+
+    .hero-tag {
+        padding: 8px 14px;
+        font-size: 13px;
+    }
+}
+
+/* Très petite hauteur d'écran - réduire encore */
+@media (max-height: 600px) {
+    .hero-immersif {
+        padding: 70px 0 20px;
+    }
+
+    .hero-scroll {
+        margin-top: 15px;
+        gap: 4px;
+    }
+
+    .scroll-texte {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .scroll-ligne {
+        height: 15px;
+    }
+
+    .scroll-cercle {
+        width: 22px;
+        height: 22px;
+        font-size: 8px;
+    }
+
+    .hero-badge {
+        padding: 8px 16px;
+        margin-bottom: 12px;
+    }
+
+    .badge-icone {
+        width: 26px;
+        height: 26px;
+        font-size: 11px;
+    }
+
+    .badge-texte {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .hero-titre {
+        margin-bottom: 10px;
+    }
+
+    .titre-ligne {
+        font-size: clamp(1.8rem, 6vw, 3rem);
+    }
+
+    .hero-description {
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .hero-tag {
+        padding: 6px 10px;
+        font-size: 11px;
+        gap: 5px;
+    }
+
+    .hero-tags {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-scroll {
+        margin-top: 30px;
+        gap: 8px;
+    }
+
+    .scroll-texte {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .scroll-ligne {
+        height: 30px;
+    }
+
+    .scroll-cercle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .scroll-cercle i {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-scroll {
+        margin-top: 25px;
+        gap: 6px;
+    }
+
+    .scroll-texte {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .scroll-ligne {
+        height: 25px;
+    }
+
+    .scroll-cercle {
+        width: 26px;
+        height: 26px;
+    }
+
+    .scroll-cercle i {
+        font-size: 10px;
     }
 }
