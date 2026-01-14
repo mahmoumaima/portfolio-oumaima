@@ -272,104 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.5 });
 
-  document.querySelectorAll('.stat-item').forEach((stat) => observateurStats.observe(stat));
-
-
-  // =============================================
-  // CARROUSEL RESSOURCES (Pages projet)
-  // =============================================
-
-  const initialiserCarrousel = () => {
-    const piste = document.querySelector('.piste-slider');
-    const fenetre = document.querySelector('.fenetre-slider');
-    const cartes = piste ? Array.from(piste.querySelectorAll('.carte-ressource')) : [];
-    const btnPrecedent = document.querySelector('[data-direction="prev"]');
-    const btnSuivant = document.querySelector('[data-direction="next"]');
-    const barreProgression = document.querySelector('.barre-progression-slider');
-    const pointProgression = document.querySelector('.point-progression');
-
-    if (!cartes.length) return;
-
-    let indexActuel = 0;
-    let timerAuto = null;
-    let dimensions = {};
-
-    // Calculer les dimensions
-    const calculerDimensions = () => {
-      const style = window.getComputedStyle(piste);
-      const ecart = parseFloat(style.columnGap || style.gap || 0);
-      const margePiste = parseFloat(style.paddingLeft) || 0;
-      const largeurCarte = cartes[0].getBoundingClientRect().width;
-      const largeurFenetre = fenetre ? fenetre.getBoundingClientRect().width : largeurCarte;
-
-      dimensions = {
-        pasDefilement: largeurCarte + ecart,
-        largeurCarte,
-        largeurFenetre,
-        margePiste,
-        indexMax: cartes.length - 1
-      };
-
-      if (indexActuel > dimensions.indexMax) indexActuel = 0;
-    };
-
-    // Mettre à jour la position
-    const mettreAJourPosition = () => {
-      if (!piste || !dimensions.pasDefilement) return;
-
-      const decalage = indexActuel * dimensions.pasDefilement
-                     + dimensions.margePiste
-                     - (dimensions.largeurFenetre - dimensions.largeurCarte) / 2;
-
-      piste.style.transform = `translateX(${-decalage}px)`;
-
-      // Classes CSS pour le style
-      cartes.forEach((carte, i) => {
-        carte.classList.toggle('is-active', i === indexActuel);
-        carte.classList.toggle('is-prev', i === (indexActuel - 1 + cartes.length) % cartes.length);
-        carte.classList.toggle('is-next', i === (indexActuel + 1) % cartes.length);
-      });
-
-      // Barre de progression
-      const progression = dimensions.indexMax > 0 ? (indexActuel / dimensions.indexMax) * 100 : 0;
-      if (barreProgression) barreProgression.style.width = `${progression}%`;
-      if (pointProgression) pointProgression.style.left = `${progression}%`;
-    };
-
-    // Naviguer
-    const naviguer = (direction) => {
-      if (direction === 'next') {
-        indexActuel = indexActuel >= dimensions.indexMax ? 0 : indexActuel + 1;
-      } else {
-        indexActuel = indexActuel <= 0 ? dimensions.indexMax : indexActuel - 1;
-      }
-      mettreAJourPosition();
-      relancerAutoPlay();
-    };
-
-    // Défilement automatique
-    const relancerAutoPlay = () => {
-      if (timerAuto) clearInterval(timerAuto);
-      if (cartes.length > 1) {
-        timerAuto = setInterval(() => naviguer('next'), 8000);
-      }
-    };
-
-    // Événements
-    btnPrecedent?.addEventListener('click', () => naviguer('prev'));
-    btnSuivant?.addEventListener('click', () => naviguer('next'));
-    window.addEventListener('resize', () => {
-      calculerDimensions();
-      mettreAJourPosition();
-    });
-
-    // Initialisation
-    calculerDimensions();
-    mettreAJourPosition();
-    relancerAutoPlay();
-  };
-
-  initialiserCarrousel();
+  document.querySelectorAll('.stat-element').forEach((stat) => observateurStats.observe(stat));
 
 
   // =============================================
@@ -380,24 +283,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (elementAnnee) {
     elementAnnee.textContent = new Date().getFullYear();
   }
-
-
-  // =============================================
-  // EFFET CURSEUR MOCKUP (Aperçu projet)
-  // =============================================
-
-  document.querySelectorAll('.ecran-mockup').forEach((ecran) => {
-    ecran.addEventListener('mousemove', (e) => {
-      const rect = ecran.getBoundingClientRect();
-      ecran.style.setProperty('--pointer-x', `${e.clientX - rect.left}px`);
-      ecran.style.setProperty('--pointer-y', `${e.clientY - rect.top}px`);
-    });
-
-    ecran.addEventListener('mouseleave', () => {
-      ecran.style.setProperty('--pointer-x', '-999px');
-      ecran.style.setProperty('--pointer-y', '-999px');
-    });
-  });
 
 
   // =============================================

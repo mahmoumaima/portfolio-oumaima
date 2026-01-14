@@ -1,190 +1,310 @@
-# Oumaima Mahmoudi | QA Tester | Banking & Finance Expert
+# Oumaima Mahmoudi | Portfolio Professionnel
 
-Portfolio professionnel showcasing mon parcours de **Testeuse QA** avec une double expertise en **Assurance Qualité Logicielle** et **Banque & Finance**.
+Portfolio interactif concu et developpe from scratch pour presenter mon profil de **Testeuse QA** avec une double expertise en **Assurance Qualite Logicielle** et **Banque & Finance**.
 
 [Voir le portfolio en ligne](https://mahmoumaima.github.io/portfolio-oumaima/)
 
 ---
 
-## Profil
+## A propos de moi
 
-Professionnelle de l'assurance qualité logicielle avec un parcours alliant rigueur financière et expertise technique. Titulaire d'un **Master 2 en Banque et Finance** reconverti vers le testing logiciel, je combine une vision métier approfondie avec des compétences techniques solides en automatisation et méthodologies Agile.
+Professionnelle de l'assurance qualite logicielle avec un parcours atypique alliant rigueur financiere et expertise technique. Titulaire d'un **Master 2 en Banque et Finance** reconverti vers le testing logiciel, je combine une vision metier approfondie avec des competences techniques solides en automatisation et methodologies Agile.
 
 ### Certifications & Formation
 
 | Certification | Organisme | Domaine |
-|--------------|-----------|---------|
-| ISTQB Foundation Level (en cours) | ISTQB | Assurance Qualité |
+|---------------|-----------|---------|
+| ISTQB Foundation Level (en cours) | ISTQB | Assurance Qualite |
 | Testeur Logiciel | OpenClassrooms | Tests & Automatisation |
-| Master 2 Banque & Finance | Université | Finance & Systèmes bancaires |
-
-### Chiffres clés
-
-| Indicateur | Valeur |
-|------------|--------|
-| Années d'expérience | 7+ |
-| Projets réalisés | 16+ |
-| Technologies maîtrisées | 5+ |
+| Master 2 Banque & Finance | Universite | Finance & Systemes bancaires |
 
 ---
 
-## Compétences Techniques
+## Le Portfolio : Un projet a part entiere
 
-### Tests & Automatisation
+Ce portfolio n'est pas un simple template : c'est un projet de developpement complet que j'ai concu et code entierement, mettant en pratique mes competences en integration web, animations CSS avancees et JavaScript moderne.
 
-| Compétence | Niveau | Outils |
-|------------|--------|--------|
-| Tests E2E | Avancé | Cypress |
-| Tests fonctionnels | Avancé | Cahier de recette, Cas de test |
-| Tests exploratoires | Avancé | Techniques ISTQB |
-| Tests unitaires | Intermédiaire | Jest |
-| Tests API | Intermédiaire | Postman, Swagger |
+### Theme Constellation
 
-### Développement Web
+Le coeur visuel du portfolio repose sur un **theme spatial immersif** avec :
 
-| Technologie | Niveau | Usage |
-|-------------|--------|-------|
-| HTML5 / CSS3 | Intermédiaire | Compréhension du code front-end |
-| JavaScript | Intermédiaire | Scripts de test, automatisation |
-| React | Notions | Compréhension des composants |
-| DevTools | Avancé | Debug, analyse réseau, performance |
+**Fond etoile anime**
+- 25 etoiles positionnees strategiquement avec des tailles et luminosites variables
+- Animation `scintillement` en CSS avec effets de pulsation et halos lumineux
+- Degrade de fond cosmique : `#1a1a2e` vers `#16213e` vers `#0f3460`
 
-### Outils & Méthodologies
+**Curseur meteorite personnalise**
+- Curseur etoile (`✦`) avec effet de pulsation lumineuse
+- Trainee de particules lumineuses qui suivent le mouvement de la souris
+- Queue de meteorite avec degrade et effet de fondu
+- Desactive automatiquement hors de la section projets
 
-| Catégorie | Outils |
-|-----------|--------|
-| Gestion de projet | Jira, Trello, Notion |
-| Versionning | Git, GitHub |
-| Design | Figma |
-| Méthodologies | Agile/Scrum, CI/CD, ISTQB |
-| Reporting | Excel, Mochawesome |
+**Cartes projets holographiques**
+- Bordure arc-en-ciel animee au survol (`@keyframes bordure-cosmique`)
+- Effet de brillance traversant la carte
+- Lueur externe pulsante avec `filter: blur()`
+- Transformation 3D : `translateY(-10px) rotateX(2deg)`
+- Icone etoile apparaissant au survol avec effet de rebond
+
+### Animations de filtrage spectaculaires
+
+Systeme de filtrage des projets avec 6 animations differentes :
+
+| Animation | Effet |
+|-----------|-------|
+| `anim-spiral` | Rotation 180° depuis le centre avec zoom |
+| `anim-cascade` | Chute elegante avec perspective 3D |
+| `anim-explosion` | Expansion depuis le centre avec rebond |
+| `anim-wave` | Ondulation horizontale elastique |
+| `anim-stellar` | Apparition stellaire avec flash lumineux |
+| `anim-flip` | Retournement 3D sur l'axe Y |
+
+### Widgets interactifs (Desktop)
+
+**Badge "Open to Work"**
+- Point vert pulse animee
+- Position fixe en haut a droite
+- Disparait au scroll (hors section home)
+
+**Widget localisation**
+- Icone geolocalisation animee
+- Indication "Remote friendly" avec avion anime
+
+**Horloge creative**
+- Cercle SVG avec progression des secondes
+- Affichage heure/minutes/secondes en temps reel
+- Date formatee en francais
+
+### Effet de particules magiques
+
+Sur la section hero, un canvas HTML5 genere des particules :
+- Classe `ParticuleMagique` avec physique (vitesse, opacite, taille)
+- Particules rouges/corail creees au mouvement de la souris
+- Disparition progressive avec `requestAnimationFrame`
+- Actif uniquement quand la section home est visible a 50%+
+
+### Barre de progression de lecture
+
+Barre fixe en haut de page :
+- Degrade `#dc143c` vers `#ff6f61`
+- Largeur proportionnelle au scroll de la page
+- Transition fluide de 0.2s
 
 ---
 
-## Projets Réalisés
+## Architecture technique
+
+### Structure du projet
+
+```text
+portfolio-oumaima/
+├── index.html                    # Page d'accueil (One-page)
+├── projets/                      # 12 pages projets detaillees
+│   ├── projet-automatisation-cypress.html
+│   ├── projet-724events-tests.html
+│   ├── projet-tomsen-strategie-test.html
+│   ├── projet-jse-avocats.html
+│   ├── projet-booki-accueil.html
+│   ├── projet-react-kasa.html
+│   ├── projet-print-it-carrousel.html
+│   ├── projet-site-dynamique-js.html
+│   ├── projet-menu-maker-qwenta.html
+│   ├── projet-riding-cities.html
+│   ├── projet-html-initiation.html
+│   └── projet-portfolio-deploiement.html
+├── css/
+│   ├── style.css                 # 2600+ lignes - Styles principaux
+│   ├── projet-template.css       # Template pages projets
+│   └── vendors.min.css           # Librairies CSS minifiees
+├── js/
+│   ├── script.js                 # 850+ lignes - Logique principale
+│   ├── projet.js                 # Interactions pages projets
+│   └── contact.js                # Validation formulaire
+├── assets/
+│   ├── logo.png
+│   ├── oumi.png                  # Photo hero
+│   ├── oumi-pro.png              # Photo section A propos
+│   ├── favicone.png
+│   └── homepage.jpg              # Image banniere
+├── robots.txt
+└── sitemap.xml
+```
+
+### Stack technique
+
+| Technologie | Version | Usage |
+|-------------|---------|-------|
+| HTML5 | - | Structure semantique, accessibilite |
+| CSS3 | - | Variables CSS, Flexbox, Grid, Animations |
+| JavaScript | ES6+ | Classes, IntersectionObserver, Canvas API |
+| Animate.css | 4.1.1 | Animations d'entree |
+| Font Awesome | 6.4.0 | Icones |
+| WOW.js | 1.1.2 | Declenchement animations au scroll |
+
+### Techniques CSS avancees utilisees
+
+| Technique | Application |
+|-----------|-------------|
+| CSS Variables | Palette de couleurs, transitions, ombres |
+| `backdrop-filter: blur()` | Navigation, widgets, cartes verre |
+| `clip-path` | Formes personnalisees |
+| `@keyframes` | 15+ animations personnalisees |
+| CSS Grid | Grille projets responsive |
+| `clamp()` | Typographie fluide |
+| Pseudo-elements | Decorations, effets de survol |
+| `transform-style: preserve-3d` | Effets 3D cartes |
+
+### Techniques JavaScript modernes
+
+| Technique | Application |
+|-----------|-------------|
+| IntersectionObserver | Animations au scroll, lazy loading |
+| Canvas API | Particules magiques section hero |
+| Classes ES6 | ParticuleMagique avec physique |
+| Event delegation | Filtres projets |
+| requestAnimationFrame | Animations fluides 60fps |
+| Template literals | Generation HTML dynamique |
+| Destructuring | Gestion des dimensions carrousel |
+
+---
+
+## Pages projets : Template immersif
+
+Chaque projet dispose d'une page dediee avec :
+
+**Hero immersif plein ecran**
+- Image de fond avec overlay degrade
+- Badge categorie anime
+- Tags technologies
+- Indicateur de scroll personnalise
+
+**Section contexte**
+- Cartes verre (`backdrop-filter`) pour mission et details
+- Grille technologies avec icones
+- Informations client, role, duree
+
+**Timeline interactive**
+- Ligne de progression animee
+- Points numerotes avec effet de survol
+- Cartes phases avec tags
+
+**Section resultats**
+- Grille de cartes avec icones
+- Navigation vers projets precedent/suivant
+
+---
+
+## Optimisations realisees
+
+### Performance
+
+| Optimisation | Implementation |
+|--------------|----------------|
+| Lazy loading | Images avec `loading="lazy"` |
+| Preconnect | CDN externes (fonts, images) |
+| Preload | Ressources critiques (CSS, images hero) |
+| CSS async | `media="print" onload="this.media='all'"` |
+| Defer JS | Scripts non-bloquants |
+| CDN images | Unsplash avec parametres `auto=format&fit=crop` |
+
+### SEO
+
+| Element | Implementation |
+|---------|----------------|
+| Meta tags | Title, description, keywords, author |
+| Open Graph | og:title, og:description, og:image, og:locale |
+| Twitter Cards | summary_large_image |
+| JSON-LD | Schema Person + WebSite |
+| Canonical URL | Definie |
+| robots.txt | Configure |
+| sitemap.xml | 13 pages indexees |
+
+### Accessibilite
+
+| Critere WCAG | Implementation |
+|--------------|----------------|
+| 1.1.1 Non-text Content | Alt descriptifs sur toutes les images |
+| 1.3.1 Info and Relationships | Structure semantique HTML5 |
+| 1.4.3 Contrast | Ratios conformes |
+| 2.1.1 Keyboard | Navigation clavier complete |
+| 2.4.6 Headings | Hierarchie h1 > h2 > h3 |
+| 2.5.5 Target Size | Zones cliquables adequates |
+| `prefers-reduced-motion` | Animations desactivees si preference utilisateur |
+| `.cache-accessible` | Texte cache pour lecteurs d'ecran |
+| `aria-label` | Labels sur boutons icon-only |
+
+### Scores Lighthouse
+
+| Metrique | Score |
+|----------|-------|
+| Performance | 95+ |
+| Accessibilite | 95+ |
+| Best Practices | 100 |
+| SEO | 100 |
+
+---
+
+## Projets presentes
 
 ### Tests & Automatisation
 
 | Projet | Description | Technologies |
 |--------|-------------|--------------|
-| **Eco Bliss Bath** | Automatisation complète E2E d'un site e-commerce | Cypress, Mochawesome |
-| **724events** | Tests fonctionnels plateforme événementielle | React Testing, Debug |
-| **JSE Avocats** | Tests fonctionnels site WordPress | Tests manuels, Cahier de recette |
-| **Tomsen PayForge** | Stratégie de test application paiement | Plan de test, Gestion des risques |
+| **Eco Bliss Bath** | Automatisation E2E e-commerce, tests API, detection XSS | Cypress, Mochawesome |
+| **724events** | Tests fonctionnels plateforme evenementielle | React Testing, Debug |
+| **JSE Avocats** | Tests fonctionnels site WordPress | Cahier de recette |
+| **Tomsen PayForge** | Strategie de test application paiement | Plan de test, Gestion risques |
 
-### Intégration Web
+### Integration Web
 
 | Projet | Description | Technologies |
 |--------|-------------|--------------|
-| **Booki** | Intégration responsive plateforme hébergement | HTML, CSS, Responsive Design |
-| **Kasa** | Refonte application location immobilière | React, React Router |
-| **Portfolio Sophie Bluel** | Intégration API portfolio architecte | JavaScript, API REST, Modal |
+| **Booki** | Integration responsive plateforme hebergement | HTML, CSS, Flexbox |
+| **Kasa** | Refonte application location immobiliere | React, React Router |
+| **Portfolio Sophie Bluel** | Integration API portfolio architecte | JavaScript, API REST, Modal |
 | **Print it** | Carrousel dynamique | JavaScript, DOM |
 
 ### Gestion de Projet
 
 | Projet | Description | Livrables |
 |--------|-------------|-----------|
-| **Menu Maker Qwenta** | Rôle Product Owner | Backlog, User Stories, Kanban |
-| **Portfolio QA** | Audit et déploiement | Rapport d'audit, Corrections SEO |
+| **Menu Maker Qwenta** | Role Product Owner | Backlog, User Stories, Kanban |
+| **Portfolio QA** | Audit et deploiement | Rapport d'audit, Corrections SEO |
 
 ---
 
-## Portfolio Technique
+## Competences techniques
 
-### Architecture du projet
+### Tests & Automatisation
 
-```text
-.
-├── index.html                    # Page d'accueil
-├── projets/                      # 12 pages projets détaillées
-│   ├── projet-automatisation-cypress.html
-│   ├── projet-724events-tests.html
-│   ├── projet-tomsen-strategie-test.html
-│   └── ...
-├── css/
-│   ├── style.css                 # Styles principaux
-│   ├── projet-template.css       # Template pages projets
-│   └── vendors.min.css           # Librairies minifiées
-├── js/
-│   ├── script.js                 # Interactions principales
-│   ├── projet.js                 # JavaScript pages projets
-│   └── contact.js                # Gestion formulaire
-├── assets/                       # Images et ressources
-├── robots.txt                    # Directives SEO
-└── sitemap.xml                   # Plan du site
-```
+| Competence | Niveau | Outils |
+|------------|--------|--------|
+| Tests E2E | Avance | Cypress |
+| Tests fonctionnels | Avance | Cahier de recette, Cas de test |
+| Tests exploratoires | Avance | Techniques ISTQB |
+| Tests API | Intermediaire | Postman, Swagger |
 
-### Stack technique du portfolio
+### Developpement Web
 
-| Technologie | Version | Usage |
-|-------------|---------|-------|
-| HTML5 | - | Structure sémantique |
-| CSS3 | - | Flexbox, Grid, Variables CSS, Animations |
-| JavaScript | ES6+ | Interactions, filtres, formulaire |
-| Animate.css | 4.1.1 | Animations d'entrée |
-| Font Awesome | 6.4.0 | Icônes |
-| WOW.js | 1.1.2 | Animations au scroll |
+| Technologie | Niveau |
+|-------------|--------|
+| HTML5 / CSS3 | Avance |
+| JavaScript ES6+ | Intermediaire |
+| React | Notions |
+| DevTools | Avance |
 
-### Fonctionnalités
+### Outils & Methodologies
 
-**Page d'accueil**
-- Animation avec effet typing
-- Filtres interactifs par catégorie (QA, Intégration, JavaScript, React, Automation, Gestion)
-- Section compétences avec barres de progression
-- Formulaire de contact fonctionnel (Formspree)
-
-**Pages projets**
-- Bannière immersive
-- Timeline interactive des phases
-- Navigation cyclique entre projets
-- Design responsive (mobile-first)
+| Categorie | Outils |
+|-----------|--------|
+| Gestion de projet | Jira, Trello, Notion |
+| Versionning | Git, GitHub |
+| Design | Figma |
+| Methodologies | Agile/Scrum, CI/CD, ISTQB |
 
 ---
 
-## Optimisations Réalisées
-
-### Performance
-
-| Optimisation | Technique |
-|--------------|-----------|
-| Images | Lazy loading, CDN Unsplash, compression |
-| CSS | Chargement asynchrone non-critique |
-| Ressources | Preconnect, Preload critiques |
-| JavaScript | Defer loading |
-
-### SEO
-
-| Élément | Implementation |
-|---------|----------------|
-| Meta tags | Title, description, keywords, author |
-| Open Graph | og:title, og:description, og:image |
-| Twitter Cards | summary_large_image |
-| Structured Data | JSON-LD (Person, WebSite) |
-| Technique | Canonical URL, robots.txt, sitemap.xml |
-
-### Accessibilité
-
-| Critère WCAG | Implementation |
-|--------------|----------------|
-| 1.1.1 Non-text Content | Alt descriptifs sur toutes les images |
-| 1.3.1 Info and Relationships | Structure sémantique HTML5 |
-| 1.4.3 Contrast | Ratios conformes |
-| 2.1.1 Keyboard | Navigation clavier complète |
-| 2.4.6 Headings | Hiérarchie h1 > h2 > h3 |
-
-### Scores Lighthouse
-
-| Métrique | Score |
-|----------|-------|
-| Performance | 95+ |
-| Accessibilité | 95+ |
-| Best Practices | 100 |
-| SEO | 100 |
-
----
-
-## Installation
+## Installation locale
 
 ```bash
 # Cloner le repository
@@ -201,9 +321,9 @@ Le site sera accessible sur `http://localhost:3000` ou `http://localhost:8000`.
 
 ---
 
-## Déploiement
+## Deploiement
 
-Le portfolio est déployé sur **GitHub Pages**.
+Le portfolio est deploye sur **GitHub Pages**.
 
 ### Configuration
 
@@ -222,7 +342,7 @@ https://mahmoumaima.github.io/portfolio-oumaima/
 ## Contact
 
 **Oumaima Mahmoudi**
-QA Tester | ISTQB Certified | Banking & Finance Expert
+QA Tester | ISTQB Certified to be | Banking & Finance Expert
 
 | Plateforme | Lien |
 |------------|------|

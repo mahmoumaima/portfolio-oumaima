@@ -7,12 +7,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // =============================================
-  // NAVIGATION - SCROLL & DOTS
+  // NAVIGATION - SCROLL
   // =============================================
 
   const navbar = document.querySelector('.navbar-projet');
-  const navDots = document.querySelectorAll('.nav-dot');
-  const sections = document.querySelectorAll('section[id]');
 
   // Navbar scroll effect
   if (navbar) {
@@ -22,71 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         navbar.classList.remove('scrolled');
       }
-    });
-  }
-
-  // Navigation dots - highlight active section
-  const observerOptions = {
-    root: null,
-    rootMargin: '-40% 0px -40% 0px',
-    threshold: 0
-  };
-
-  const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        const sectionId = entry.target.id;
-        navDots.forEach((dot) => {
-          dot.classList.remove('active');
-          if (dot.getAttribute('data-section') === sectionId) {
-            dot.classList.add('active');
-          }
-        });
-      }
-    });
-  }, observerOptions);
-
-  sections.forEach((section) => sectionObserver.observe(section));
-
-  // Smooth scroll pour les nav dots
-  navDots.forEach((dot) => {
-    dot.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = dot.getAttribute('href');
-      const target = document.querySelector(targetId);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
-
-
-  // =============================================
-  // GALERIE - CHANGEMENT D'IMAGE
-  // =============================================
-
-  const thumbnails = document.querySelectorAll('.thumbnail');
-  const imagePrincipale = document.querySelector('.navigateur-ecran img');
-
-  if (thumbnails.length && imagePrincipale) {
-    thumbnails.forEach((thumb) => {
-      thumb.addEventListener('click', () => {
-        // Retirer active de tous
-        thumbnails.forEach((t) => t.classList.remove('active'));
-        // Ajouter active au cliqué
-        thumb.classList.add('active');
-
-        // Changer l'image principale avec animation
-        const nouvelleImage = thumb.getAttribute('data-img');
-        imagePrincipale.style.opacity = '0';
-        imagePrincipale.style.transform = 'scale(1.05)';
-
-        setTimeout(() => {
-          imagePrincipale.src = nouvelleImage;
-          imagePrincipale.style.opacity = '1';
-          imagePrincipale.style.transform = 'scale(1)';
-        }, 300);
-      });
     });
   }
 
