@@ -38,6 +38,7 @@
     --ombre: 0 10px 30px rgba(0, 0, 0, 0.1);
     --ombre-hover: 0 20px 60px rgba(0, 0, 0, 0.2);
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --header-offset: clamp(70px, 10vh, 120px);
 }
 
 
@@ -2056,6 +2057,10 @@ p {
     padding: 0 !important;
 }
 
+#home.banniere-accueil {
+    padding-top: var(--header-offset) !important;
+}
+
 .hauteur-mobile {
     min-height: 100vh;
 }
@@ -2451,7 +2456,7 @@ p {
     /* Navigation hamburger sur tablette */
     .nav-menu {
         position: absolute;
-        left: -100%;
+        left: 0;
         top: 100%;
         flex-direction: column;
         background: var(--blanc);
@@ -2459,14 +2464,20 @@ p {
         height: auto;
         text-align: center;
         transition: var(--transition);
-        box-shadow: var(--ombre);
+        box-shadow: none;
         padding: 1.5rem 2rem;
         z-index: 1000;
         gap: 0.5rem;
+        transform: translateX(-110%);
+        opacity: 0;
+        pointer-events: none;
     }
 
     .nav-menu.active {
-        left: 0;
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+        box-shadow: var(--ombre);
     }
 
     .nav-menu a {
