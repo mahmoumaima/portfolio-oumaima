@@ -26,9 +26,9 @@
                 <img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi">
             </a>
             <div class="nav-projet-actions">
-                <span class="bouton-icone disabled" aria-label="GitHub non disponible" title="Pas de dépôt GitHub pour ce projet">
+                <a href="https://github.com/mahmoumaima/projet-8" class="bouton-icone" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i class="fa-brands fa-github"></i>
-                </span>
+                </a>
             </div>
         </nav>
     </header>
@@ -53,14 +53,14 @@
             </h1>
 
             <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
-                Refonte complète d'une plateforme de location immobilière en React : SPA avec React Router, composants réutilisables et respect pixel-perfect des maquettes Figma.
+                Refonte complète d'une plateforme de location immobilière en React avec Vite : SPA avec React Router, composants réutilisables (Gallery, Collapse, Slideshow), maquettes Figma responsives et tests unitaires.
             </p>
 
             <div class="hero-tags animate__animated animate__fadeInUp animate__delay-1s">
-                <span class="hero-tag"><i class="fa-brands fa-react"></i> React 18</span>
+                <span class="hero-tag"><i class="fa-brands fa-react"></i> React</span>
                 <span class="hero-tag"><i class="fa-solid fa-route"></i> React Router</span>
+                <span class="hero-tag"><i class="fa-solid fa-bolt"></i> Vite</span>
                 <span class="hero-tag"><i class="fa-brands fa-sass"></i> Sass</span>
-                <span class="hero-tag"><i class="fa-brands fa-figma"></i> Figma</span>
             </div>
 
             <!-- Indicateur de scroll -->
@@ -87,27 +87,28 @@
 
                     <div class="mission-contexte">
                         <p class="mission-intro">
-                            Kasa, leader français de la location d'appartements entre particuliers avec plus de 500 annonces,
-                            entreprend une refonte complète de sa plateforme web vieillissante (ASP.NET, 15 ans) vers une architecture moderne JavaScript.
+                            Kasa, leader français de la location d'appartements entre particuliers avec plus de 500 annonces postées chaque jour,
+                            entreprend une refonte complète de sa plateforme web vieillissante (ASP.NET, plus de 10 ans) vers une stack complète en JavaScript avec NodeJS côté back-end et React côté front-end.
                         </p>
                     </div>
 
                     <div class="mission-objectif">
                         <h4><i class="fa-solid fa-crosshairs"></i> Objectif</h4>
                         <p>
-                            Développer l'intégralité du front-end React de la nouvelle plateforme, en respectant les maquettes Figma
-                            et les coding guidelines fournies. Le backend (NodeJS) étant en cours de développement, utilisation d'un fichier JSON
-                            simulant les données de 20 logements.
+                            Démarrer le projet React et développer l'ensemble de l'application : composants React, routes React Router,
+                            en suivant les maquettes Figma (responsives) et les coding guidelines de Kasa. Le backend est disponible sur GitHub
+                            et peut être lancé localement via Docker pour récupérer les données des propriétés.
                         </p>
                     </div>
 
                     <div class="mission-livrables">
                         <h4><i class="fa-solid fa-box-open"></i> Livrables</h4>
                         <ul class="liste-livrables">
-                            <li>Application React complète</li>
-                            <li>Routing SPA multi-pages</li>
-                            <li>Composants réutilisables</li>
-                            <li>Design responsive</li>
+                            <li>Application React complète avec Vite</li>
+                            <li>Routing SPA avec React Router</li>
+                            <li>Composants réutilisables (Gallery, Collapse, Slideshow)</li>
+                            <li>Design responsive (desktop/mobile)</li>
+                            <li>Tests unitaires (coverage 80% minimum)</li>
                         </ul>
                     </div>
                 </div>
@@ -129,9 +130,9 @@
                     </ul>
                     <h3><i class="fa-solid fa-layer-group"></i> Stack & Outils</h3>
                     <div class="grille-tech">
-                        <span class="tuile-tech"><i class="fa-brands fa-react"></i> React 18</span>
-                        <span class="tuile-tech"><i class="fa-solid fa-route"></i> React Router v6</span>
-                        <span class="tuile-tech"><i class="fa-brands fa-node-js"></i> Create React App</span>
+                        <span class="tuile-tech"><i class="fa-brands fa-react"></i> React</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-route"></i> React Router</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-bolt"></i> Vite</span>
                         <span class="tuile-tech"><i class="fa-brands fa-sass"></i> Sass</span>
                         <span class="tuile-tech"><i class="fa-brands fa-figma"></i> Figma</span>
                         <span class="tuile-tech"><i class="fa-brands fa-github"></i> GitHub</span>
@@ -159,13 +160,13 @@
                     </div>
                     <div class="timeline-contenu">
                         <div class="timeline-carte">
-                            <span class="timeline-phase">Phase 1</span>
-                            <h3>Analyse & Architecture</h3>
-                            <p>Étude des maquettes Figma (desktop et mobile), analyse du fichier JSON des 20 logements et conception de l'architecture des composants React.</p>
+                            <span class="timeline-phase">Étape 1</span>
+                            <h3>Initialisation de l'application</h3>
+                            <p>Initialisation du projet React avec Vite, création du repo GitHub et vérification que l'application de démonstration se lance correctement avec npm start.</p>
                             <div class="timeline-tags">
-                                <span>Figma</span>
-                                <span>JSON</span>
-                                <span>Architecture</span>
+                                <span>Vite</span>
+                                <span>React</span>
+                                <span>GitHub</span>
                             </div>
                         </div>
                     </div>
@@ -177,13 +178,13 @@
                     </div>
                     <div class="timeline-contenu">
                         <div class="timeline-carte">
-                            <span class="timeline-phase">Phase 2</span>
-                            <h3>Setup & Routing</h3>
-                            <p>Initialisation du projet avec Create React App, configuration de React Router v6 avec les 4 routes (Accueil, À Propos, Logement/:id, 404).</p>
+                            <span class="timeline-phase">Étape 2</span>
+                            <h3>Ajout de React Router</h3>
+                            <p>Installation de React Router et ses dépendances pour gérer la navigation SPA de l'application.</p>
                             <div class="timeline-tags">
-                                <span>CRA</span>
                                 <span>React Router</span>
-                                <span>Routes</span>
+                                <span>SPA</span>
+                                <span>Navigation</span>
                             </div>
                         </div>
                     </div>
@@ -195,13 +196,13 @@
                     </div>
                     <div class="timeline-contenu">
                         <div class="timeline-carte">
-                            <span class="timeline-phase">Phase 3</span>
-                            <h3>Composants React</h3>
-                            <p>Développement des composants réutilisables : Gallery (grille de cards), Carousel (navigation photos), Collapse (accordéon animé), Rating (étoiles).</p>
+                            <span class="timeline-phase">Étape 3</span>
+                            <h3>Création du routeur</h3>
+                            <p>Création de la logique de routage avec les différentes pages de l'application, gestion des routes inexistantes, création du header/footer et mise en page avec CSS/SASS.</p>
                             <div class="timeline-tags">
-                                <span>Components</span>
-                                <span>Props</span>
-                                <span>State</span>
+                                <span>Routes</span>
+                                <span>Layout</span>
+                                <span>SASS</span>
                             </div>
                         </div>
                     </div>
@@ -213,13 +214,139 @@
                     </div>
                     <div class="timeline-contenu">
                         <div class="timeline-carte">
-                            <span class="timeline-phase">Phase 4</span>
-                            <h3>Styling & Responsive</h3>
-                            <p>Intégration des styles Sass, respect pixel-perfect des maquettes, adaptation responsive mobile/tablette/desktop et tests finaux.</p>
+                            <span class="timeline-phase">Étape 4</span>
+                            <h3>Création de la page d'accueil</h3>
+                            <p>Création des composants Banner et Card, récupération des données du back-end via l'API (Docker), affichage de la liste des propriétés avec useState et useEffect.</p>
                             <div class="timeline-tags">
-                                <span>Sass</span>
+                                <span>Banner</span>
+                                <span>Card</span>
+                                <span>API</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="5">
+                    <div class="timeline-point">
+                        <span>05</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Étape 5</span>
+                            <h3>Création du composant Collapse</h3>
+                            <p>Développement du composant Collapse avec deux états (ouvert/fermé), utilisation des props pour passer les données, composant réutilisable selon le contexte.</p>
+                            <div class="timeline-tags">
+                                <span>Collapse</span>
+                                <span>State</span>
+                                <span>Props</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="6">
+                    <div class="timeline-point">
+                        <span>06</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Étape 6</span>
+                            <h3>Création de la page d'erreur</h3>
+                            <p>Création de la page 404 selon la maquette, gestion des routes inexistantes avec redirection automatique vers la page d'erreur.</p>
+                            <div class="timeline-tags">
+                                <span>404</span>
+                                <span>Erreur</span>
+                                <span>Redirection</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="7">
+                    <div class="timeline-point">
+                        <span>07</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Étape 7</span>
+                            <h3>Création du composant Slideshow</h3>
+                            <p>Création du carrousel photos avec flèches et bullet points dynamiques, navigation cyclique (première/dernière image), gestion du cas d'une seule image.</p>
+                            <div class="timeline-tags">
+                                <span>Slideshow</span>
+                                <span>Carrousel</span>
+                                <span>Events</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="8">
+                    <div class="timeline-point">
+                        <span>08</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Étape 8</span>
+                            <h3>Finalisation de la page logement</h3>
+                            <p>Intégration complète de la page logement selon la maquette, réutilisation du composant Collapse pour description et équipements.</p>
+                            <div class="timeline-tags">
+                                <span>Logement</span>
+                                <span>Intégration</span>
+                                <span>Maquette</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="9">
+                    <div class="timeline-point">
+                        <span>09</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Étape 9</span>
+                            <h3>Gestion des erreurs d'ID de propriété</h3>
+                            <p>Gestion des ID de propriété invalides avec redirection vers la page d'erreur 404 en utilisant Navigate ou useNavigate de React Router.</p>
+                            <div class="timeline-tags">
+                                <span>Navigate</span>
+                                <span>useNavigate</span>
+                                <span>Erreur ID</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="10">
+                    <div class="timeline-point">
+                        <span>10</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Étape 10</span>
+                            <h3>Tests unitaires avec Jest</h3>
+                            <p>Mise en place de Jest et React Testing Library, rédaction des tests unitaires pour les composants avec state (Slideshow, Collapse) et sans state (Banner, Card), objectif de couverture 80% minimum.</p>
+                            <div class="timeline-tags">
+                                <span>Jest</span>
+                                <span>Testing Library</span>
+                                <span>Coverage 80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="timeline-item" data-step="11">
+                    <div class="timeline-point">
+                        <span>11</span>
+                    </div>
+                    <div class="timeline-contenu">
+                        <div class="timeline-carte">
+                            <span class="timeline-phase">Étape 11</span>
+                            <h3>Vérification de l'ensemble du site</h3>
+                            <p>Vérification du style responsive, gestion des erreurs de navigation, animations conformes au prototype Figma, validation finale de la couverture de tests.</p>
+                            <div class="timeline-tags">
                                 <span>Responsive</span>
-                                <span>Tests</span>
+                                <span>Validation</span>
+                                <span>Figma</span>
                             </div>
                         </div>
                     </div>
@@ -239,19 +366,19 @@
 
             <div class="resultats-contenu">
                 <p class="resultats-intro">
-                    Application Kasa complète en React : navigation fluide avec React Router, 20 logements affichés en galerie,
-                    pages détaillées avec carrousel photos et composants interactifs, responsive sur tous formats.
+                    Application Kasa complète en React avec Vite : navigation fluide avec React Router, récupération des propriétés via l'API backend (Docker),
+                    pages détaillées avec carrousel photos et composants interactifs, responsive conforme aux maquettes Figma, tests unitaires avec coverage 80%.
                 </p>
                 <div class="resultats-grille">
-                    <div class="resultat-carte"><i class="fa-solid fa-route"></i><strong>React Router SPA :</strong> 4 routes configurées (/, /about, /logement/:id, /404), navigation sans rechargement.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-house"></i><strong>Page Accueil :</strong> galerie 20 cards responsive, clic card → navigation vers page logement correspondante.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-building"></i><strong>Page Logement :</strong> route dynamique avec ID, affichage toutes données (titre, localisation, tags, host, rating 5 étoiles, carrousel photos).</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-images"></i><strong>Carrousel photos :</strong> flèches navigation (masquées si 1 seule photo), numérotation "1/4", changement image au clic.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-chevron-down"></i><strong>Composants Collapse :</strong> description et équipements dépliables, animation chevron 180°, fermés par défaut.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-triangle-exclamation"></i><strong>Page 404 :</strong> route inexistante ou ID invalide → redirection automatique vers page erreur 404.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-cubes"></i><strong>Composants réutilisables :</strong> Card, Carousel, Collapse, Rating, Tag codés en modules indépendants.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-mobile-screen"></i><strong>Responsive complet :</strong> maquettes desktop/mobile respectées, breakpoint tablette défini logiquement.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-check-circle"></i><strong>Code quality :</strong> Sass organisé, un composant par fichier, aucun warning console, guidelines respectées.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-route"></i><strong>Routing SPA implémenté :</strong> Configuration des routes (Accueil, À Propos, Logement/:id, 404) avec navigation fluide sans rechargement de page.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-house"></i><strong>Page d'accueil développée :</strong> Création des composants Banner et Card, intégration de l'API avec useState/useEffect, affichage dynamique des propriétés.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-building"></i><strong>Page logement réalisée :</strong> Route dynamique avec paramètre ID, affichage complet des données (titre, localisation, tags, host, rating, équipements).</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-images"></i><strong>Carrousel photos créé :</strong> Navigation cyclique entre images, masquage automatique des flèches si image unique, hauteur constante maintenue.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-chevron-down"></i><strong>Composant Collapse développé :</strong> Gestion des états ouvert/fermé, fermeture par défaut à l'initialisation, animations fluides au clic.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-triangle-exclamation"></i><strong>Gestion des erreurs mise en place :</strong> Redirection automatique vers page 404 pour routes inexistantes ou ID de propriété invalide.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-vial"></i><strong>Tests unitaires rédigés :</strong> Couverture de 80% minimum sur composants avec state (Slideshow/Collapse) et sans state (Banner/Card).</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-mobile-screen"></i><strong>Design responsive intégré :</strong> Respect des maquettes Figma desktop et mobile, animations conformes au prototype.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-check-circle"></i><strong>Contraintes techniques respectées :</strong> Utilisation minimale de dépendances (Vite, React Router, SASS), respect des coding guidelines.</div>
                 </div>
             </div>
 

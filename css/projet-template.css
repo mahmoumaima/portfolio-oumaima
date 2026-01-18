@@ -482,21 +482,6 @@
     color: #fff;
 }
 
-/* Bouton icône désactivé (pas de lien GitHub valide) */
-.bouton-icone.disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-    pointer-events: none;
-    background: rgba(255, 255, 255, 0.03);
-    border-color: rgba(255, 255, 255, 0.05);
-}
-
-.bouton-icone.disabled:hover {
-    transform: none;
-    box-shadow: none;
-    background: rgba(255, 255, 255, 0.03);
-}
-
 /* ===================
    Bannière Projet Classique
    =================== */

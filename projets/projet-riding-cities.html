@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riding Cities | Portfolio Oumaima</title>
-    <meta name="description" content="Projet Riding Cities : mise à jour d'une page web associative de skate en HTML5 et CSS3. Création de sections et boutons de téléchargement. Portfolio Oumaima Mahmoudi.">
+    <meta name="description" content="Projet Riding Cities : mise à jour d'une page web associative de skate en HTML/CSS. Création de la section Les membres fondateurs et ajout de deux boutons de téléchargement. Portfolio Oumaima Mahmoudi.">
     <link rel="shortcut icon" href="../assets/favicone.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/vendors.min.css">
@@ -23,12 +23,10 @@
                 <span>Portfolio</span>
             </a>
             <a href="../index.html" class="logo-projet-centre">
-                <img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi">
+                <img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi - Retour a l\'accueil">
             </a>
             <div class="nav-projet-actions">
-                <span class="bouton-icone disabled" aria-label="GitHub non disponible" title="Pas de dépôt GitHub pour ce projet">
-                    <i class="fa-brands fa-github"></i>
-                </span>
+                
             </div>
         </nav>
     </header>
@@ -52,9 +50,7 @@
                 <span class="titre-ligne titre-accent">Cities</span>
             </h1>
 
-            <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">
-                Mise à jour d'une page associative de skate : création de la section "Membres fondateurs" avec photos et ajout de deux boutons de téléchargement des plannings.
-            </p>
+            <p class="hero-description animate__animated animate__fadeInUp animate__delay-1s">Mise à jour de la page Riding Cities : création de la section "Les membres fondateurs" avec photos et ajout de deux boutons de téléchargement des plannings (enfants et adultes).</p>
 
             <div class="hero-tags animate__animated animate__fadeInUp animate__delay-1s">
                 <span class="hero-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
@@ -86,27 +82,21 @@
                     <h3><i class="fa-solid fa-bullseye"></i> Mission</h3>
 
                     <div class="mission-contexte">
-                        <p class="mission-intro">
-                            Premier stage en agence web chez Webonzaï : le CTO Romain confie par email la mission d'actualiser la page de Riding Cities,
-                            une association de skate en région. Travail en autonomie pour mettre en pratique les bases HTML/CSS.
-                        </p>
+                        <p class="mission-intro">Stage chez Webonzaï : le CTO Romain confie par email la mission d'actualiser la page de Riding Cities, une association de skate en région. Le travail se fait en autonomie à partir de la page existante, du code fourni et d'une maquette Figma.</p>
                     </div>
 
                     <div class="mission-objectif">
                         <h4><i class="fa-solid fa-crosshairs"></i> Objectif</h4>
-                        <p>
-                            Créer une nouvelle section "Les membres fondateurs" avec noms et photos des créateurs, puis modifier
-                            la section de téléchargement pour proposer deux plannings distincts (enfants et adultes).
-                        </p>
+                        <p>Créer une nouvelle section "Les membres fondateurs" avec noms et photos des créateurs, puis modifier la section de téléchargement pour proposer deux plannings distincts (enfants et adultes) et un titre "Découvrez nos cours".</p>
                     </div>
 
                     <div class="mission-livrables">
                         <h4><i class="fa-solid fa-box-open"></i> Livrables</h4>
                         <ul class="liste-livrables">
-                            <li>Section fondateurs</li>
-                            <li>Boutons téléchargement</li>
-                            <li>Code conforme maquette</li>
-                            <li>Attributs alt renseignés</li>
+                            <li>Section "Les membres fondateurs"</li>
+                            <li>Titre "Découvrez nos cours"</li>
+                            <li>Deux boutons de téléchargement</li>
+                            <li>Liens vers plannings PDF</li>
                         </ul>
                     </div>
                 </div>
@@ -119,11 +109,11 @@
                         </li>
                         <li>
                             <span class="titre-meta"><i class="fa-solid fa-briefcase"></i> Agence</span>
-                            <span class="valeur-meta">Webonzaï</span>
+                            <span class="valeur-meta">Webonzai</span>
                         </li>
                         <li>
                             <span class="titre-meta"><i class="fa-solid fa-user-gear"></i> Rôle</span>
-                            <span class="valeur-meta">Développeur Junior (Stagiaire)</span>
+                            <span class="valeur-meta">Développeur junior (stagiaire)</span>
                         </li>
                     </ul>
                     <h3><i class="fa-solid fa-layer-group"></i> Stack & Outils</h3>
@@ -131,8 +121,8 @@
                         <span class="tuile-tech"><i class="fa-brands fa-html5"></i> HTML5</span>
                         <span class="tuile-tech"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
                         <span class="tuile-tech"><i class="fa-brands fa-figma"></i> Figma</span>
-                        <span class="tuile-tech"><i class="fa-solid fa-universal-access"></i> Accessibilité</span>
-                        <span class="tuile-tech"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-palette"></i> Classes CSS existantes</span>
+                        <span class="tuile-tech"><i class="fa-solid fa-file-pdf"></i> Documents PDF</span>
                     </div>
                 </div>
             </div>
@@ -157,13 +147,13 @@
                     </div>
                     <div class="timeline-contenu">
                         <div class="timeline-carte">
-                            <span class="timeline-phase">Phase 1</span>
-                            <h3>Analyse du code existant</h3>
-                            <p>Étude de la structure HTML et des classes CSS déjà en place, identification des sections à copier-adapter.</p>
+                            <span class="timeline-phase">Étape 1</span>
+                            <h3>Création de la section "Les membres fondateurs"</h3>
+                            <p>Copie et adaptation de la section "La mission de l'asso" : passage de 4 à 3 colonnes, remplacement des textes, ajout des photos avec attributs src (chemin relatif) et alt.</p>
                             <div class="timeline-tags">
                                 <span>HTML</span>
-                                <span>CSS</span>
-                                <span>Analyse</span>
+                                <span>Colonnes</span>
+                                <span>Images</span>
                             </div>
                         </div>
                     </div>
@@ -175,13 +165,13 @@
                     </div>
                     <div class="timeline-contenu">
                         <div class="timeline-carte">
-                            <span class="timeline-phase">Phase 2</span>
-                            <h3>Section fondateurs</h3>
-                            <p>Création de la section "Membres fondateurs" avec 3 colonnes : textes, photos et attributs alt pour l'accessibilité.</p>
+                            <span class="timeline-phase">Étape 1 (suite)</span>
+                            <h3>Utilisation des classes CSS existantes</h3>
+                            <p>Application des classes CSS sans modifier le fichier style.css : couleur de fond, alignement et couleur des textes conformes à la maquette.</p>
                             <div class="timeline-tags">
-                                <span>Section</span>
-                                <span>Colonnes</span>
-                                <span>Images</span>
+                                <span>CSS</span>
+                                <span>Classes</span>
+                                <span>Mise en forme</span>
                             </div>
                         </div>
                     </div>
@@ -193,12 +183,12 @@
                     </div>
                     <div class="timeline-contenu">
                         <div class="timeline-carte">
-                            <span class="timeline-phase">Phase 3</span>
-                            <h3>Boutons téléchargement</h3>
-                            <p>Ajout d'un titre et duplication du bouton existant pour créer deux CTA avec couleurs/hover conformes à la maquette.</p>
+                            <span class="timeline-phase">Étape 2</span>
+                            <h3>Modification de la section de téléchargement</h3>
+                            <p>Ajout du titre "Découvrez nos cours", couleur de fond grise, modification du bouton existant (arrondi, couleur, effet au survol) puis duplication pour créer le second bouton.</p>
                             <div class="timeline-tags">
+                                <span>Titre</span>
                                 <span>Boutons</span>
-                                <span>CTA</span>
                                 <span>Hover</span>
                             </div>
                         </div>
@@ -211,13 +201,13 @@
                     </div>
                     <div class="timeline-contenu">
                         <div class="timeline-carte">
-                            <span class="timeline-phase">Phase 4</span>
-                            <h3>Validation & Tests</h3>
-                            <p>Vérification de la conformité avec la maquette Figma, tests des liens de téléchargement et validation finale.</p>
+                            <span class="timeline-phase">Étape 2 (suite)</span>
+                            <h3>Rattachement des plannings aux boutons</h3>
+                            <p>Placement des boutons en colonne, modification des textes (enfants/adultes), couleurs distinctes, et attributs href vers les documents PDF correspondants.</p>
                             <div class="timeline-tags">
-                                <span>Figma</span>
-                                <span>Tests</span>
-                                <span>Validation</span>
+                                <span>Liens</span>
+                                <span>PDF</span>
+                                <span>href</span>
                             </div>
                         </div>
                     </div>
@@ -236,17 +226,13 @@
             </div>
 
             <div class="resultats-contenu">
-                <p class="resultats-intro">
-                    Page Riding Cities mise à jour avec succès : nouvelle section "Les membres fondateurs" présentant les 3 créateurs
-                    et section "Découvrez nos cours" enrichie avec deux boutons de téléchargement distincts.
-                </p>
+                <p class="resultats-intro">Page Riding Cities mise à jour selon la maquette : nouvelle section "Les membres fondateurs" et section "Découvrez nos cours" avec deux boutons de téléchargement distincts.</p>
                 <div class="resultats-grille">
-                    <div class="resultat-carte"><i class="fa-solid fa-recycle"></i><strong>Réutilisation efficace :</strong> code HTML copié-adapté depuis les sections existantes, zéro ligne de CSS écrite.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-users"></i><strong>Section fondateurs :</strong> 3 colonnes avec textes, photos et attributs alt renseignés pour l'accessibilité.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-download"></i><strong>Boutons interactifs :</strong> deux CTA avec couleurs différentes, effets hover et liens vers les PDF des plannings.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-check-circle"></i><strong>Conformité maquette :</strong> respect pixel-perfect des espacements, couleurs et typographie Figma.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-universal-access"></i><strong>Accessibilité :</strong> tous les attributs alt renseignés, structure sémantique respectée.</div>
-                    <div class="resultat-carte"><i class="fa-solid fa-user-graduate"></i><strong>Pratique autonome :</strong> mission menée à bien sans supervision directe, premier livrable en stage.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-recycle"></i><strong>Code HTML réutilisé efficacement :</strong> structure copiée/adaptée depuis l'existant, aucune modification CSS nécessaire.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-users"></i><strong>Section fondateurs créée :</strong> 3 colonnes intégrées avec textes, photos et attributs alt renseignés.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-download"></i><strong>Boutons de téléchargement ajoutés :</strong> deux CTA enfants/adultes développés avec effets hover et liens vers les plannings PDF.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-check-circle"></i><strong>Maquette respectée :</strong> titres, alignements, couleurs et espacements conformes aux spécifications.</div>
+                    <div class="resultat-carte"><i class="fa-solid fa-universal-access"></i><strong>Accessibilité assurée :</strong> attributs alt et structure sémantique correctement implémentés.</div>
                 </div>
             </div>
 
@@ -281,7 +267,7 @@
                     </div>
                 </div>
                 <div class="footer-content col-lg-4 col-md-2 text-center sm-margin-20px-bottom">
-                   <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi - Retour à l'accueil"></a>
+                   <a class="logo" href="../index.html"><img src="../assets/logo.png" alt="Logo Oumaima Mahmoudi - Retour a l\'accueil"></a>
                 </div>
                 <div class="footer-content col-lg-4 col-md-5 text-center alt-font text-small font-weight-500 text-lg-end">
                     <p>© 2025 Oumaima Mahmoudi</p>
