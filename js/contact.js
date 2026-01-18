@@ -25,11 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // =============================================
 
   const messagesErreur = {
-    name: "Merci d'indiquer un nom entre 2 et 80 caractères.",
-    email: "Merci de saisir une adresse email valide (ex: nom@domaine.com).",
-    subject: "Le sujet doit contenir au maximum 120 caractères.",
-    message: "Merci de détailler votre demande (10 à 1000 caractères)."
+    name: "Veuillez entrer votre nom (lettres, espaces et tirets uniquement).",
+    email: "Veuillez entrer une adresse email valide (exemple : nom@email.com).",
+    subject: "Veuillez entrer un sujet valide (lettres, espaces et tirets uniquement).",
+    message: "Veuillez décrire votre demande (minimum 10 caractères)."
   };
+
+  // Expression régulière pour valider les champs alphabétiques
+  // Accepte : lettres (avec accents), espaces, tirets, apostrophes
+  const regexAlphabetique = /^[a-zA-ZÀ-ÿ\s\-']+$/;
 
 
   // =============================================
@@ -106,7 +110,23 @@ document.addEventListener('DOMContentLoaded', () => {
   formulaire.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    // Vérifier la validité
+    // Validation alphabétique pour nom et sujet
+    const champNom = formulaire.querySelector('input[name="name"]');
+    const champSujet = formulaire.querySelector('input[name="subject"]');
+
+    if (champNom && !regexAlphabetique.test(champNom.value.trim())) {
+      champNom.setCustomValidity(messagesErreur.name);
+      formulaire.reportValidity();
+      return;
+    }
+
+    if (champSujet && !regexAlphabetique.test(champSujet.value.trim())) {
+      champSujet.setCustomValidity(messagesErreur.subject);
+      formulaire.reportValidity();
+      return;
+    }
+
+    // Vérifier la validité HTML5
     if (!formulaire.checkValidity()) {
       formulaire.reportValidity();
       return;

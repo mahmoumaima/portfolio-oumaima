@@ -6,10 +6,6 @@ Portfolio interactif concu et developpe from scratch pour presenter mon profil d
 
 ---
 
-## A propos de moi
-
-Professionnelle de l'assurance qualite logicielle avec un parcours atypique alliant rigueur financiere et expertise technique. Titulaire d'un **Master 2 en Banque et Finance** reconverti vers le testing logiciel, je combine une vision metier approfondie avec des competences techniques solides en automatisation et methodologies Agile.
-
 ### Certifications & Formation
 
 | Certification | Organisme | Domaine |
@@ -24,75 +20,7 @@ Professionnelle de l'assurance qualite logicielle avec un parcours atypique alli
 
 Ce portfolio n'est pas un simple template : c'est un projet de developpement complet que j'ai concu et code entierement, mettant en pratique mes competences en integration web, animations CSS avancees et JavaScript moderne.
 
-### Theme Constellation
-
-Le coeur visuel du portfolio repose sur un **theme spatial immersif** avec :
-
-**Fond etoile anime**
-- 25 etoiles positionnees strategiquement avec des tailles et luminosites variables
-- Animation `scintillement` en CSS avec effets de pulsation et halos lumineux
-- Degrade de fond cosmique : `#1a1a2e` vers `#16213e` vers `#0f3460`
-
-**Curseur meteorite personnalise**
-- Curseur etoile (`✦`) avec effet de pulsation lumineuse
-- Trainee de particules lumineuses qui suivent le mouvement de la souris
-- Queue de meteorite avec degrade et effet de fondu
-- Desactive automatiquement hors de la section projets
-
-**Cartes projets holographiques**
-- Bordure arc-en-ciel animee au survol (`@keyframes bordure-cosmique`)
-- Effet de brillance traversant la carte
-- Lueur externe pulsante avec `filter: blur()`
-- Transformation 3D : `translateY(-10px) rotateX(2deg)`
-- Icone etoile apparaissant au survol avec effet de rebond
-
-### Animations de filtrage spectaculaires
-
-Systeme de filtrage des projets avec 6 animations differentes :
-
-| Animation | Effet |
-|-----------|-------|
-| `anim-spiral` | Rotation 180° depuis le centre avec zoom |
-| `anim-cascade` | Chute elegante avec perspective 3D |
-| `anim-explosion` | Expansion depuis le centre avec rebond |
-| `anim-wave` | Ondulation horizontale elastique |
-| `anim-stellar` | Apparition stellaire avec flash lumineux |
-| `anim-flip` | Retournement 3D sur l'axe Y |
-
-### Widgets interactifs (Desktop)
-
-**Badge "Open to Work"**
-- Point vert pulse animee
-- Position fixe en haut a droite
-- Disparait au scroll (hors section home)
-
-**Widget localisation**
-- Icone geolocalisation animee
-- Indication "Remote friendly" avec avion anime
-
-**Horloge creative**
-- Cercle SVG avec progression des secondes
-- Affichage heure/minutes/secondes en temps reel
-- Date formatee en francais
-
-### Effet de particules magiques
-
-Sur la section hero, un canvas HTML5 genere des particules :
-- Classe `ParticuleMagique` avec physique (vitesse, opacite, taille)
-- Particules rouges/corail creees au mouvement de la souris
-- Disparition progressive avec `requestAnimationFrame`
-- Actif uniquement quand la section home est visible a 50%+
-
-### Barre de progression de lecture
-
-Barre fixe en haut de page :
-- Degrade `#dc143c` vers `#ff6f61`
-- Largeur proportionnelle au scroll de la page
-- Transition fluide de 0.2s
-
 ---
-
-## Architecture technique
 
 ### Structure du projet
 
