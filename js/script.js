@@ -461,49 +461,6 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.appendChild(widgetLocation);
 
-    // --- HORLOGE CRÉATIVE (sous Location) ---
-    const horloge = document.createElement('div');
-    horloge.className = 'widget-horloge';
-    horloge.innerHTML = `
-      <div class="horloge-creative">
-        <div class="horloge-ring">
-          <svg viewBox="0 0 100 100">
-            <circle class="horloge-bg-ring" cx="50" cy="50" r="45"/>
-            <circle class="horloge-sec-ring" cx="50" cy="50" r="45"/>
-          </svg>
-          <div class="horloge-center">
-            <span class="horloge-time" id="horloge-time">00:00</span>
-            <span class="horloge-seconds" id="horloge-sec">00</span>
-          </div>
-        </div>
-        <div class="horloge-date" id="horloge-date">Lun 01 Jan</div>
-      </div>
-    `;
-    document.body.appendChild(horloge);
-
-    // Mettre à jour l'horloge créative
-    const mettreAJourHorloge = () => {
-      const now = new Date();
-      const h = now.getHours().toString().padStart(2, '0');
-      const m = now.getMinutes().toString().padStart(2, '0');
-      const s = now.getSeconds();
-      const jours = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
-      const mois = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Jun', 'Jul', 'Aoû', 'Sep', 'Oct', 'Nov', 'Déc'];
-
-      document.getElementById('horloge-time').textContent = `${h}:${m}`;
-      document.getElementById('horloge-sec').textContent = s.toString().padStart(2, '0');
-      document.getElementById('horloge-date').textContent = `${jours[now.getDay()]} ${now.getDate().toString().padStart(2, '0')} ${mois[now.getMonth()]}`;
-
-      // Animer le cercle des secondes
-      const secRing = document.querySelector('.horloge-sec-ring');
-      if (secRing) {
-        const progress = (s / 60) * 283;
-        secRing.style.strokeDashoffset = 283 - progress;
-      }
-    };
-    mettreAJourHorloge();
-    setInterval(mettreAJourHorloge, 1000);
-
     // Gérer la visibilité des widgets selon la section
     const gererVisibiliteWidgets = () => {
       const rect = sectionHome.getBoundingClientRect();
@@ -518,10 +475,6 @@ document.addEventListener('DOMContentLoaded', () => {
       // Widget location créatif
       widgetLocation.style.opacity = visible ? '1' : '0';
       widgetLocation.style.transform = visible ? 'translateX(0)' : 'translateX(-20px)';
-
-      // Horloge
-      horloge.style.opacity = visible ? '1' : '0';
-      horloge.style.transform = visible ? 'translateX(0)' : 'translateX(20px)';
     };
 
     window.addEventListener('scroll', gererVisibiliteWidgets);
