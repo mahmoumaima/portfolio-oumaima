@@ -431,58 +431,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // =============================================
-  // WIDGETS HOME (Bureau créatif)
-  // =============================================
-
-  // Uniquement sur index.html et desktop
-  if (sectionHome && estPageIndex && !('ontouchstart' in window)) {
-
-    // --- BADGE OPEN TO WORK (large, haut droite) ---
-    const badgeOpen = document.createElement('div');
-    badgeOpen.className = 'widget-badge';
-    badgeOpen.innerHTML = `
-      <span class="badge-dot"></span>
-      <span class="badge-text">Open to work</span>
-    `;
-    document.body.appendChild(badgeOpen);
-
-    // --- WIDGET LOCATION ARTISTIQUE (bas gauche, vertical) ---
-    const widgetLocation = document.createElement('div');
-    widgetLocation.className = 'widget-location-art';
-    widgetLocation.innerHTML = `
-      <div class="loc-art-row">
-        <div class="loc-art-icon"><i class="fas fa-map-marker-alt"></i></div>
-        <span class="loc-art-text">Paris, France</span>
-      </div>
-      <div class="loc-art-row">
-        <div class="loc-art-remote"><i class="fas fa-paper-plane"></i></div>
-        <span class="loc-art-remote-text">Remote friendly</span>
-      </div>
-    `;
-    document.body.appendChild(widgetLocation);
-
-    // Gérer la visibilité des widgets selon la section
-    const gererVisibiliteWidgets = () => {
-      const rect = sectionHome.getBoundingClientRect();
-      // Les widgets sont visibles seulement quand on est dans la section home
-      // Disparaissent dès que le haut de la section home remonte au-dessus de -100px
-      const visible = rect.top > -100;
-
-      // Badge Open to work
-      badgeOpen.style.opacity = visible ? '1' : '0';
-      badgeOpen.style.transform = visible ? 'translateX(0)' : 'translateX(20px)';
-
-      // Widget location créatif
-      widgetLocation.style.opacity = visible ? '1' : '0';
-      widgetLocation.style.transform = visible ? 'translateX(0)' : 'translateX(-20px)';
-    };
-
-    window.addEventListener('scroll', gererVisibiliteWidgets);
-    gererVisibiliteWidgets();
-  }
-
-
-  // =============================================
   // FILTRAGE CONSTELLATION PROJETS - Animation Stellaire
   // =============================================
 

@@ -2148,98 +2148,6 @@ p {
     font-size: 12px;
 }
 
-/* Badge Open to Work (large) */
-.widget-badge {
-    position: fixed;
-    top: 100px;
-    right: 30px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 28px;
-    background: rgba(255, 255, 255, 0.95);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.badge-dot {
-    width: 12px;
-    height: 12px;
-    background: #27c93f;
-    border-radius: 50%;
-    animation: pulse-dot 2s infinite;
-}
-
-@keyframes pulse-dot {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(39, 201, 63, 0.5); }
-    50% { box-shadow: 0 0 0 10px rgba(39, 201, 63, 0); }
-}
-
-.badge-text {
-    color: var(--couleur-foncee);
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-}
-
-/* Widget Location Artistique (bas gauche, vertical) */
-.widget-location-art {
-    position: fixed;
-    left: 30px;
-    bottom: 150px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    z-index: 100;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.loc-art-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.loc-art-icon {
-    font-size: 16px;
-    color: crimson;
-    text-shadow: 0 0 15px rgba(220, 20, 60, 0.4);
-}
-
-.loc-art-text {
-    font-size: 12px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.loc-art-remote {
-    font-size: 14px;
-    color: crimson;
-    animation: fly-plane 3s ease-in-out infinite;
-}
-
-@keyframes fly-plane {
-    0%, 100% { transform: translate(0, 0) rotate(-5deg); }
-    50% { transform: translate(3px, -3px) rotate(5deg); }
-}
-
-.loc-art-remote-text {
-    font-size: 11px;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
 
 /* ===========================================================
    MEDIA QUERIES - Responsive
@@ -2424,11 +2332,6 @@ p {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Masquer widgets sur tablette/mobile */
-    .widget-badge,
-    .widget-location-art {
-        display: none;
-    }
 }
 
 /* ----- Accessibilite (prefers-reduced-motion) ----- */
